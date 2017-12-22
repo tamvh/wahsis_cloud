@@ -6,17 +6,13 @@
 package com.wahsis.iot.model;
 
 import com.wahsis.iot.common.CommonService;
-import com.wahsis.iot.common.DefinedName;
 import com.wahsis.iot.data.Light;
-import com.wahsis.iot.database.MySqlFactory;
-import com.wahsis.iot.database.MsSqlFactory;
 import com.wahsis.iot.database.SQLConnFactory;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -105,16 +101,11 @@ public class LightModel {
         try {
             int brightness = 0;
             // light type: 0(dim), 1(onoff)
-            if (light.getIsActiveBrightness() == 0) {
-                if (light.getOn_off()== 0) {
-                    brightness = 0;
-                } else {
-                    brightness = 100;
-                }
-            } else {
-                brightness = light.getBrightness();
-            }
+            
             connection = SQLConnFactory.getConnection(company_id);
+            if(connection == null) {
+                return ret;
+            }
             cs = connection.prepareStatement("SET NOCOUNT ON ; \n "
                     + " update " + CommonService.getTableName(company_id, "room_area_light") + " \n "
                     + " set [on_off] = ? , [brightness] = ? \n "

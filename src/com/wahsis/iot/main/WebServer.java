@@ -7,6 +7,8 @@ package com.wahsis.iot.main;
 
 import com.wahsis.iot.common.Config;
 import com.wahsis.iot.controller.LightController;
+import com.wahsis.iot.controller.AreaController;
+import com.wahsis.iot.controller.RootAreaCotroller;
 import com.wahsis.iot.controller.NotifyController;
 import com.wahsis.iot.controller.DeviceNotifyController;
 import java.util.concurrent.locks.Lock;
@@ -77,6 +79,8 @@ public class WebServer implements Runnable{
             
             ServletHandler servletHandler = new ServletHandler();
             servletHandler.addServletWithMapping(LightController.class, "/smart/api/light/*");
+            servletHandler.addServletWithMapping(AreaController.class, "/smart/api/area/*");
+            servletHandler.addServletWithMapping(RootAreaCotroller.class, "/smart/api/rootarea/*");
             
             ServletContextHandler servletContext = new ServletContextHandler(ServletContextHandler.NO_SESSIONS);
             servletContext.setContextPath("/");

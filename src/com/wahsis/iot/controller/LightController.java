@@ -26,7 +26,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.apache.log4j.Logger;
-import org.json.simple.JSONArray;
 
 /**
  *
@@ -56,7 +55,7 @@ public class LightController extends HttpServlet {
     private void handle(HttpServletRequest req, HttpServletResponse resp) {
         try {
             processs(req, resp);
-        } catch (Exception ex) {
+        } catch (IOException ex) {
             logger.error(getClass().getSimpleName() + ".handle: " + ex.getMessage(), ex);
         }
     }
@@ -82,13 +81,13 @@ public class LightController extends HttpServlet {
             case "change_brightness_group":
                 content = changeBrightnessGroup(data);
                 break;
-            case "update_data_switch_on_off":
+            case "update_data_switch_on_off_from_gateway":
                 content = updateDataSwitchOnOff(data);
                 break;
-            case "update_data_switch_on_off_group":
+            case "update_data_switch_on_off_group_from_gateway":
                 content = updateDataSwitchOnOffGroup(data);
                 break;
-            case "update_data_change_brightness":
+            case "update_data_change_brightness_from_gateway":
                 content = updateDataChangeBrightness(data);
                 break;
         }
@@ -120,17 +119,11 @@ public class LightController extends HttpServlet {
                     content = CommonModel.FormatResponse(ret, "update data switch onoff faile");
                 }
                 JsonObject jsonMain = new JsonObject();
-                JsonObject jsonData = new JsonObject();
-                jsonData.addProperty("light_code", light.getLight_code());
-                jsonData.addProperty("on_off", light.getOn_off());
-                if (light.getOn_off() == 0) {
-                    light.setBrightness(0);
-                } else {
-                    light.setBrightness(100);
-                }
-                jsonData.addProperty("brightness", light.getBrightness());
+                JsonObject jcontent = new JsonObject();
+                jcontent.addProperty("light_code", light.getLight_code());
+                jcontent.addProperty("on_off", light.getOn_off());
                 jsonMain.addProperty("msg_type", MessageType.MSG_LIGHT_SWITCH_ONOFF);
-                jsonMain.add("dt", jsonData);
+                jsonMain.add("dt", jcontent);
                 String sendData = _gson.toJson(jsonMain);
                 logger.info("updateDataSwitchOnOff: data notify: " + sendData);
                 NotifyController.sendMessageToClient(sendData);
@@ -267,12 +260,17 @@ public class LightController extends HttpServlet {
             JsonObject jsonObject = JsonParserUtil.parseJsonObject(data);
             Light light = new Light();
             Company company = new Company();
-            CommonController.parseData(data, light, company);
-            if (light == null || company == null) {
-                content = CommonModel.FormatResponse(ret, "Invalid parameter");
+            if (jsonObject != null) {
+                if (jsonObject.has("light")) {
+                    light = _gson.fromJson(jsonObject.get("light").getAsJsonObject(), Light.class);
+                }
+                if (jsonObject.has("company")) {
+                    company = _gson.fromJson(jsonObject.get("company").getAsJsonObject(), Company.class);
+                }
             }
-
-            if (light != null && company != null) {
+            if (light == null || company == null) {
+                return CommonModel.FormatResponse(ret, "Invalid parameter");
+            } else {
                 int on_off = light.getOn_off();
                 String value;
                 String light_code = light.getLight_code();
@@ -293,6 +291,7 @@ public class LightController extends HttpServlet {
                 dt_push_gw.addProperty("cm", "switch_on_off");
                 dt_push_gw.addProperty("dt", _gson.toJson(dt));
                 msg_device_notify = _gson.toJson(dt_push_gw);
+                
                 //push notify to crestron gateway
                 DeviceNotifyController.sendMessageToClient(company_id, msg_device_notify);
 
@@ -302,9 +301,7 @@ public class LightController extends HttpServlet {
                 jsonData.add("company", jsonObject.get("company").getAsJsonObject());
                 AddLogTask.getInstance().addSwitchLightMessage(jsonData);
                 ret = 0;
-                content = CommonModel.FormatResponse(ret, "light switch onoff success");
-            } else {
-                content = CommonModel.FormatResponse(ret, "Invalid parameter");
+                return CommonModel.FormatResponse(ret, "light switch onoff success");
             }
 
         } catch (JsonSyntaxException ex) {

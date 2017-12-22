@@ -72,8 +72,8 @@ public class SQLConnFactory {
         if (partner_server_company.containsKey(company_id)) {
             partner_server_id = (String) partner_server_company.get(company_id);
         }
-        if (partner_server.containsKey(partner_server_id)) {
-            partner_pool = ((PartnerServer) partner_server.get(partner_server_id)).getConnectionPool();
+        if (partner_server.containsKey(Long.valueOf(partner_server_id))) {
+            partner_pool = ((PartnerServer) partner_server.get(Long.valueOf(partner_server_id))).getConnectionPool();
         }
         if (partner_pool != null) {
             try {

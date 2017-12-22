@@ -2021,3 +2021,1516 @@ java.lang.UnsupportedOperationException: JsonObject
 2017-09-23 14:10:25  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@688b867f{/gateway/ntf,null,UNAVAILABLE}
 2017-09-23 14:10:25  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@697fa0ee{/smart/ntf,null,UNAVAILABLE}
 2017-09-23 14:10:25  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@3bd5dee1{/static,null,UNAVAILABLE}
+2017-12-09 14:38:44  INFO log:178 - Logging initialized @559ms
+2017-12-09 14:38:44  INFO WebServer:76 - Start server...
+2017-12-09 14:38:44  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@2f3d93e9{/,null,null} contextPath ends with /*
+2017-12-09 14:38:44  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@2bad2d8a{/,null,null} contextPath ends with /*
+2017-12-09 14:38:44  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-09 14:38:44  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@22246e03{/static,null,AVAILABLE}
+2017-12-09 14:38:44  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@2f3d93e9{/smart/ntf,null,AVAILABLE}
+2017-12-09 14:38:44  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@2bad2d8a{/gateway/ntf,null,AVAILABLE}
+2017-12-09 14:38:44  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@54970ff6{/,null,AVAILABLE}
+2017-12-09 14:38:44  INFO ServerConnector:266 - Started ServerConnector@6ffe9373{HTTP/1.1}{0.0.0.0:8021}
+2017-12-09 14:38:44  INFO ServerConnector:266 - Started ServerConnector@66dd80e3{HTTP/1.1}{0.0.0.0:9021}
+2017-12-09 14:38:44  INFO ServerConnector:266 - Started ServerConnector@1d686b50{HTTP/1.1}{0.0.0.0:9022}
+2017-12-09 14:38:44  INFO Server:350 - Started @1228ms
+2017-12-09 14:39:59  INFO ServiceDaemon:33 - Shutdown thread before webserver getinstance
+2017-12-09 14:39:59  INFO ServerConnector:303 - Stopped ServerConnector@6ffe9373{HTTP/1.1}{0.0.0.0:8021}
+2017-12-09 14:39:59  INFO ServerConnector:303 - Stopped ServerConnector@66dd80e3{HTTP/1.1}{0.0.0.0:9021}
+2017-12-09 14:39:59  INFO ServerConnector:303 - Stopped ServerConnector@1d686b50{HTTP/1.1}{0.0.0.0:9022}
+2017-12-09 14:39:59  INFO ContextHandler:864 - Stopped o.e.j.s.ServletContextHandler@54970ff6{/,null,UNAVAILABLE}
+2017-12-09 14:39:59  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@2bad2d8a{/gateway/ntf,null,UNAVAILABLE}
+2017-12-09 14:39:59  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@2f3d93e9{/smart/ntf,null,UNAVAILABLE}
+2017-12-09 14:39:59  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@22246e03{/static,null,UNAVAILABLE}
+2017-12-09 15:17:55  INFO log:178 - Logging initialized @423ms
+2017-12-09 15:17:55  INFO WebServer:76 - Start server...
+2017-12-09 15:17:55  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@42bc75ab{/,null,null} contextPath ends with /*
+2017-12-09 15:17:55  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@34a2fdb3{/,null,null} contextPath ends with /*
+2017-12-09 15:17:55  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-09 15:17:55  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5d529e6b{/static,null,AVAILABLE}
+2017-12-09 15:17:55  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@42bc75ab{/smart/ntf,null,AVAILABLE}
+2017-12-09 15:17:55  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@34a2fdb3{/gateway/ntf,null,AVAILABLE}
+2017-12-09 15:17:55  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@5c0c3fce{/,null,AVAILABLE}
+2017-12-09 15:17:55  INFO ServerConnector:266 - Started ServerConnector@59c98071{HTTP/1.1}{0.0.0.0:8021}
+2017-12-09 15:17:55  INFO ServerConnector:266 - Started ServerConnector@e7f8ce8{HTTP/1.1}{0.0.0.0:9021}
+2017-12-09 15:17:55  INFO ServerConnector:266 - Started ServerConnector@33272998{HTTP/1.1}{0.0.0.0:9022}
+2017-12-09 15:17:55  INFO Server:350 - Started @841ms
+2017-12-10 16:50:11  INFO ServiceDaemon:33 - Shutdown thread before webserver getinstance
+2017-12-10 16:50:11  INFO ServerConnector:303 - Stopped ServerConnector@59c98071{HTTP/1.1}{0.0.0.0:8021}
+2017-12-10 16:50:11  INFO ServerConnector:303 - Stopped ServerConnector@e7f8ce8{HTTP/1.1}{0.0.0.0:9021}
+2017-12-10 16:50:11  INFO ServerConnector:303 - Stopped ServerConnector@33272998{HTTP/1.1}{0.0.0.0:9022}
+2017-12-10 16:50:11  INFO ContextHandler:864 - Stopped o.e.j.s.ServletContextHandler@5c0c3fce{/,null,UNAVAILABLE}
+2017-12-10 16:50:11  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@34a2fdb3{/gateway/ntf,null,UNAVAILABLE}
+2017-12-10 16:50:11  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@42bc75ab{/smart/ntf,null,UNAVAILABLE}
+2017-12-10 16:50:11  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@5d529e6b{/static,null,UNAVAILABLE}
+2017-12-18 22:37:19  INFO log:178 - Logging initialized @335ms
+2017-12-18 22:37:19  INFO WebServer:78 - Start server...
+2017-12-18 22:37:20  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@d902c28{/,null,null} contextPath ends with /*
+2017-12-18 22:37:20  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@4c566fcc{/,null,null} contextPath ends with /*
+2017-12-18 22:37:20  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-18 22:37:20  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@d9bed95{/static,null,AVAILABLE}
+2017-12-18 22:37:20  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@d902c28{/smart/ntf,null,AVAILABLE}
+2017-12-18 22:37:20  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@4c566fcc{/gateway/ntf,null,AVAILABLE}
+2017-12-18 22:37:20  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@201446c2{/,null,AVAILABLE}
+2017-12-18 22:37:20  INFO ServerConnector:266 - Started ServerConnector@6315fd7f{HTTP/1.1}{0.0.0.0:8021}
+2017-12-18 22:37:20  INFO ServerConnector:266 - Started ServerConnector@35020289{HTTP/1.1}{0.0.0.0:9021}
+2017-12-18 22:37:20  INFO ServerConnector:266 - Started ServerConnector@49c3e36f{HTTP/1.1}{0.0.0.0:9022}
+2017-12-18 22:37:20  INFO Server:350 - Started @632ms
+2017-12-18 23:08:18  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"13","on_off":1},"company":{"company_id":"40743"}}
+2017-12-18 23:08:18  INFO LightController:278 - light: 13
+2017-12-18 23:08:18  INFO LightController:279 - company_id: 40743
+2017-12-18 23:08:18  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-18 23:08:18  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=wahsis_live;user=wahsis_pos_user;password=WahSiS@123456
+2017-12-18 23:08:33  INFO pos_live_pool:848 - pos_live_pool: Can't create a new connection for jdbc:sqlserver://10.9.11.11:1433;databaseName=wahsis_live;user=wahsis_pos_user;password=WahSiS@123456
+com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 10.9.11.11, port 1433 has failed. Error: "connect timed out. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:190)
+	at com.microsoft.sqlserver.jdbc.SQLServerException.ConvertConnectExceptionToSQLServerException(SQLServerException.java:241)
+	at com.microsoft.sqlserver.jdbc.SocketFinder.findSocket(IOBuffer.java:2243)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.open(IOBuffer.java:491)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:1309)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:991)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:827)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1012)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at snaq.db.ConnectionPool.create(ConnectionPool.java:256)
+	at snaq.db.ConnectionPool.create(ConnectionPool.java:71)
+	at snaq.util.ObjectPool.checkOut(ObjectPool.java:377)
+	at snaq.util.ObjectPool.checkOut(ObjectPool.java:429)
+	at snaq.db.ConnectionPool.getConnection(ConnectionPool.java:425)
+	at com.wahsis.iot.database.WahSiSConnFactory.getConnection(WahSiSConnFactory.java:42)
+	at com.wahsis.iot.database.PartnerServerModelSQL.selectAllPartnerServer(PartnerServerModelSQL.java:49)
+	at com.wahsis.iot.database.SQLConnFactory.<clinit>(SQLConnFactory.java:38)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:105)
+	at com.wahsis.iot.controller.LightController.updateOnOff(LightController.java:324)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-18 23:08:33 ERROR WahSiSConnFactory:44 - getConnection : The TCP/IP connection to the host 10.9.11.11, port 1433 has failed. Error: "connect timed out. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+2017-12-18 23:10:05  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"13","on_off":1},"company":{"company_id":"40743"}}
+2017-12-18 23:10:05  INFO LightController:278 - light: 13
+2017-12-18 23:10:05  INFO LightController:279 - company_id: 40743
+2017-12-18 23:10:05  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-18 23:14:27  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":"40743"}}
+2017-12-18 23:14:27  INFO LightController:278 - light: 1
+2017-12-18 23:14:27  INFO LightController:279 - company_id: 40743
+2017-12-18 23:14:27  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-18 23:14:52  INFO ServiceDaemon:33 - Shutdown thread before webserver getinstance
+2017-12-18 23:14:52  INFO ServerConnector:303 - Stopped ServerConnector@6315fd7f{HTTP/1.1}{0.0.0.0:8021}
+2017-12-18 23:14:52  INFO ServerConnector:303 - Stopped ServerConnector@35020289{HTTP/1.1}{0.0.0.0:9021}
+2017-12-18 23:14:52  INFO ServerConnector:303 - Stopped ServerConnector@49c3e36f{HTTP/1.1}{0.0.0.0:9022}
+2017-12-18 23:14:52  INFO ContextHandler:864 - Stopped o.e.j.s.ServletContextHandler@201446c2{/,null,UNAVAILABLE}
+2017-12-18 23:14:52  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@4c566fcc{/gateway/ntf,null,UNAVAILABLE}
+2017-12-18 23:14:52  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@d902c28{/smart/ntf,null,UNAVAILABLE}
+2017-12-18 23:14:52  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@d9bed95{/static,null,UNAVAILABLE}
+2017-12-18 23:15:17  INFO log:178 - Logging initialized @905ms
+2017-12-18 23:15:17  INFO WebServer:78 - Start server...
+2017-12-18 23:15:17  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5fdd06ce{/,null,null} contextPath ends with /*
+2017-12-18 23:15:17  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@95ac827{/,null,null} contextPath ends with /*
+2017-12-18 23:15:18  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-18 23:15:18  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5d024629{/static,null,AVAILABLE}
+2017-12-18 23:15:18  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5fdd06ce{/smart/ntf,null,AVAILABLE}
+2017-12-18 23:15:18  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@95ac827{/gateway/ntf,null,AVAILABLE}
+2017-12-18 23:15:18  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@3c455cac{/,null,AVAILABLE}
+2017-12-18 23:15:18  INFO ServerConnector:266 - Started ServerConnector@5e6cb22d{HTTP/1.1}{0.0.0.0:8021}
+2017-12-18 23:15:18  INFO ServerConnector:266 - Started ServerConnector@2b954c3b{HTTP/1.1}{0.0.0.0:9021}
+2017-12-18 23:15:18  INFO ServerConnector:266 - Started ServerConnector@55dc20cf{HTTP/1.1}{0.0.0.0:9022}
+2017-12-18 23:15:18  INFO Server:350 - Started @1591ms
+2017-12-18 23:18:02  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":"40743"}}
+2017-12-18 23:18:02  INFO LightController:278 - light: 1
+2017-12-18 23:18:02  INFO LightController:279 - company_id: 40743
+2017-12-18 23:18:02  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-18 23:18:15  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=wahsis_live;user=wahsis_pos_user;password=WahSiS@123456
+2017-12-18 23:18:52  INFO log:178 - Logging initialized @602ms
+2017-12-18 23:18:52  INFO WebServer:78 - Start server...
+2017-12-18 23:18:52  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@788e6bb9{/,null,null} contextPath ends with /*
+2017-12-18 23:18:52  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@51bfc387{/,null,null} contextPath ends with /*
+2017-12-18 23:18:52  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-18 23:18:52  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@107e90f8{/static,null,AVAILABLE}
+2017-12-18 23:18:52  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@788e6bb9{/smart/ntf,null,AVAILABLE}
+2017-12-18 23:18:52  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@51bfc387{/gateway/ntf,null,AVAILABLE}
+2017-12-18 23:18:52  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@6ecec87{/,null,AVAILABLE}
+2017-12-18 23:18:52  INFO ServerConnector:266 - Started ServerConnector@55dc20cf{HTTP/1.1}{0.0.0.0:8021}
+2017-12-18 23:18:52  INFO ServerConnector:266 - Started ServerConnector@1a69b5bd{HTTP/1.1}{0.0.0.0:9021}
+2017-12-18 23:18:52  INFO ServerConnector:266 - Started ServerConnector@83ea93e{HTTP/1.1}{0.0.0.0:9022}
+2017-12-18 23:18:52  INFO Server:350 - Started @1265ms
+2017-12-18 23:19:07  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":"40743"}}
+2017-12-18 23:19:07  INFO LightController:278 - light: 1
+2017-12-18 23:19:07  INFO LightController:279 - company_id: 40743
+2017-12-18 23:19:07  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-18 23:19:07  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=wahsis_live;user=wahsis_pos_user;password=WahSiS@123456
+2017-12-18 23:19:08  INFO pos_live_pool:848 - pos_live_pool: Can't create a new connection for jdbc:sqlserver://10.9.11.11:1433;databaseName=wahsis_live;user=wahsis_pos_user;password=WahSiS@123456
+com.microsoft.sqlserver.jdbc.SQLServerException: Login failed for user 'wahsis_pos_user'. ClientConnectionId:5ac50df9-d967-4938-9da7-5319168dc942
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.TDSTokenHandler.onEOF(tdsparser.java:254)
+	at com.microsoft.sqlserver.jdbc.TDSParser.parse(tdsparser.java:84)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.sendLogon(SQLServerConnection.java:2908)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.logon(SQLServerConnection.java:2234)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.access$000(SQLServerConnection.java:41)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection$LogonCommand.doExecute(SQLServerConnection.java:2220)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:1326)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:991)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:827)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1012)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at snaq.db.ConnectionPool.create(ConnectionPool.java:256)
+	at snaq.db.ConnectionPool.create(ConnectionPool.java:71)
+	at snaq.util.ObjectPool.checkOut(ObjectPool.java:377)
+	at snaq.util.ObjectPool.checkOut(ObjectPool.java:429)
+	at snaq.db.ConnectionPool.getConnection(ConnectionPool.java:425)
+	at com.wahsis.iot.database.WahSiSConnFactory.getConnection(WahSiSConnFactory.java:42)
+	at com.wahsis.iot.database.PartnerServerModelSQL.selectAllPartnerServer(PartnerServerModelSQL.java:49)
+	at com.wahsis.iot.database.SQLConnFactory.<clinit>(SQLConnFactory.java:38)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:105)
+	at com.wahsis.iot.controller.LightController.updateOnOff(LightController.java:324)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-18 23:19:08 ERROR WahSiSConnFactory:44 - getConnection : Login failed for user 'wahsis_pos_user'. ClientConnectionId:5ac50df9-d967-4938-9da7-5319168dc942
+2017-12-18 23:19:54  INFO log:178 - Logging initialized @416ms
+2017-12-18 23:19:54  INFO WebServer:78 - Start server...
+2017-12-18 23:19:54  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5fdd06ce{/,null,null} contextPath ends with /*
+2017-12-18 23:19:54  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@95ac827{/,null,null} contextPath ends with /*
+2017-12-18 23:19:54  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-18 23:19:54  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5d024629{/static,null,AVAILABLE}
+2017-12-18 23:19:54  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5fdd06ce{/smart/ntf,null,AVAILABLE}
+2017-12-18 23:19:54  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@95ac827{/gateway/ntf,null,AVAILABLE}
+2017-12-18 23:19:54  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@3c455cac{/,null,AVAILABLE}
+2017-12-18 23:19:54  INFO ServerConnector:266 - Started ServerConnector@58d4ef05{HTTP/1.1}{0.0.0.0:8021}
+2017-12-18 23:19:54  INFO ServerConnector:266 - Started ServerConnector@55dc20cf{HTTP/1.1}{0.0.0.0:9021}
+2017-12-18 23:19:54  INFO ServerConnector:266 - Started ServerConnector@1a69b5bd{HTTP/1.1}{0.0.0.0:9022}
+2017-12-18 23:19:54  INFO Server:350 - Started @681ms
+2017-12-18 23:20:07  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":"40743"}}
+2017-12-18 23:20:07  INFO LightController:278 - light: 1
+2017-12-18 23:20:07  INFO LightController:279 - company_id: 40743
+2017-12-18 23:20:07  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-18 23:20:07  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=wahsis_live;user=wahsis_pos_user;password=WahSiS@123456
+2017-12-18 23:20:08  INFO pos_live_pool:848 - pos_live_pool: Can't create a new connection for jdbc:sqlserver://10.9.11.11:1433;databaseName=wahsis_live;user=wahsis_pos_user;password=WahSiS@123456
+com.microsoft.sqlserver.jdbc.SQLServerException: Login failed for user 'wahsis_pos_user'. ClientConnectionId:f725d6f5-b17a-4efd-9900-87d0f7a24e0d
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.TDSTokenHandler.onEOF(tdsparser.java:254)
+	at com.microsoft.sqlserver.jdbc.TDSParser.parse(tdsparser.java:84)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.sendLogon(SQLServerConnection.java:2908)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.logon(SQLServerConnection.java:2234)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.access$000(SQLServerConnection.java:41)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection$LogonCommand.doExecute(SQLServerConnection.java:2220)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:1326)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:991)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:827)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1012)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at snaq.db.ConnectionPool.create(ConnectionPool.java:256)
+	at snaq.db.ConnectionPool.create(ConnectionPool.java:71)
+	at snaq.util.ObjectPool.checkOut(ObjectPool.java:377)
+	at snaq.util.ObjectPool.checkOut(ObjectPool.java:429)
+	at snaq.db.ConnectionPool.getConnection(ConnectionPool.java:425)
+	at com.wahsis.iot.database.WahSiSConnFactory.getConnection(WahSiSConnFactory.java:42)
+	at com.wahsis.iot.database.PartnerServerModelSQL.selectAllPartnerServer(PartnerServerModelSQL.java:49)
+	at com.wahsis.iot.database.SQLConnFactory.<clinit>(SQLConnFactory.java:38)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:105)
+	at com.wahsis.iot.controller.LightController.updateOnOff(LightController.java:324)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-18 23:20:08 ERROR WahSiSConnFactory:44 - getConnection : Login failed for user 'wahsis_pos_user'. ClientConnectionId:f725d6f5-b17a-4efd-9900-87d0f7a24e0d
+2017-12-18 23:24:36  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":"40743"}}
+2017-12-18 23:24:36  INFO LightController:278 - light: 1
+2017-12-18 23:24:36  INFO LightController:279 - company_id: 40743
+2017-12-18 23:24:36  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-18 23:25:00  INFO ServiceDaemon:33 - Shutdown thread before webserver getinstance
+2017-12-18 23:25:00  INFO ServerConnector:303 - Stopped ServerConnector@58d4ef05{HTTP/1.1}{0.0.0.0:8021}
+2017-12-18 23:25:00  INFO ServerConnector:303 - Stopped ServerConnector@55dc20cf{HTTP/1.1}{0.0.0.0:9021}
+2017-12-18 23:25:00  INFO ServerConnector:303 - Stopped ServerConnector@1a69b5bd{HTTP/1.1}{0.0.0.0:9022}
+2017-12-18 23:25:00  INFO ContextHandler:864 - Stopped o.e.j.s.ServletContextHandler@3c455cac{/,null,UNAVAILABLE}
+2017-12-18 23:25:00  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@95ac827{/gateway/ntf,null,UNAVAILABLE}
+2017-12-18 23:25:00  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@5fdd06ce{/smart/ntf,null,UNAVAILABLE}
+2017-12-18 23:25:00  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@5d024629{/static,null,UNAVAILABLE}
+2017-12-18 23:25:07  INFO log:178 - Logging initialized @315ms
+2017-12-18 23:25:07  INFO WebServer:78 - Start server...
+2017-12-18 23:25:07  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@21a07ef3{/,null,null} contextPath ends with /*
+2017-12-18 23:25:07  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@7c106ee3{/,null,null} contextPath ends with /*
+2017-12-18 23:25:07  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-18 23:25:07  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@20629131{/static,null,AVAILABLE}
+2017-12-18 23:25:07  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@21a07ef3{/smart/ntf,null,AVAILABLE}
+2017-12-18 23:25:07  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@7c106ee3{/gateway/ntf,null,AVAILABLE}
+2017-12-18 23:25:07  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@3d6d04fb{/,null,AVAILABLE}
+2017-12-18 23:25:07  INFO ServerConnector:266 - Started ServerConnector@51db3126{HTTP/1.1}{0.0.0.0:8021}
+2017-12-18 23:25:07  INFO ServerConnector:266 - Started ServerConnector@3a8cb807{HTTP/1.1}{0.0.0.0:9021}
+2017-12-18 23:25:07  INFO ServerConnector:266 - Started ServerConnector@7959f1{HTTP/1.1}{0.0.0.0:9022}
+2017-12-18 23:25:07  INFO Server:350 - Started @779ms
+2017-12-18 23:25:31  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":"40743"}}
+2017-12-18 23:25:31  INFO LightController:278 - light: 1
+2017-12-18 23:25:31  INFO LightController:279 - company_id: 40743
+2017-12-18 23:25:31  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-18 23:25:31  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=wahsis_live;user=wahsis_pos_user;password=WahSiS@123456
+2017-12-18 23:25:32  INFO pos_live_pool:848 - pos_live_pool: Can't create a new connection for jdbc:sqlserver://10.9.11.11:1433;databaseName=wahsis_live;user=wahsis_pos_user;password=WahSiS@123456
+com.microsoft.sqlserver.jdbc.SQLServerException: Login failed for user 'wahsis_pos_user'. ClientConnectionId:e239bcf9-2cd1-4a8b-97cb-766248b6dde5
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.TDSTokenHandler.onEOF(tdsparser.java:254)
+	at com.microsoft.sqlserver.jdbc.TDSParser.parse(tdsparser.java:84)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.sendLogon(SQLServerConnection.java:2908)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.logon(SQLServerConnection.java:2234)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.access$000(SQLServerConnection.java:41)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection$LogonCommand.doExecute(SQLServerConnection.java:2220)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:1326)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:991)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:827)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1012)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at snaq.db.ConnectionPool.create(ConnectionPool.java:256)
+	at snaq.db.ConnectionPool.create(ConnectionPool.java:71)
+	at snaq.util.ObjectPool.checkOut(ObjectPool.java:377)
+	at snaq.util.ObjectPool.checkOut(ObjectPool.java:429)
+	at snaq.db.ConnectionPool.getConnection(ConnectionPool.java:425)
+	at com.wahsis.iot.database.WahSiSConnFactory.getConnection(WahSiSConnFactory.java:42)
+	at com.wahsis.iot.database.PartnerServerModelSQL.selectAllPartnerServer(PartnerServerModelSQL.java:49)
+	at com.wahsis.iot.database.SQLConnFactory.<clinit>(SQLConnFactory.java:38)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:105)
+	at com.wahsis.iot.controller.LightController.updateOnOff(LightController.java:324)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-18 23:25:32 ERROR WahSiSConnFactory:44 - getConnection : Login failed for user 'wahsis_pos_user'. ClientConnectionId:e239bcf9-2cd1-4a8b-97cb-766248b6dde5
+2017-12-18 23:36:14  INFO ServiceDaemon:33 - Shutdown thread before webserver getinstance
+2017-12-18 23:36:14  INFO ServerConnector:303 - Stopped ServerConnector@51db3126{HTTP/1.1}{0.0.0.0:8021}
+2017-12-18 23:36:14  INFO ServerConnector:303 - Stopped ServerConnector@3a8cb807{HTTP/1.1}{0.0.0.0:9021}
+2017-12-18 23:36:14  INFO ServerConnector:303 - Stopped ServerConnector@7959f1{HTTP/1.1}{0.0.0.0:9022}
+2017-12-18 23:36:14  INFO ContextHandler:864 - Stopped o.e.j.s.ServletContextHandler@3d6d04fb{/,null,UNAVAILABLE}
+2017-12-18 23:36:14  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@7c106ee3{/gateway/ntf,null,UNAVAILABLE}
+2017-12-18 23:36:14  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@21a07ef3{/smart/ntf,null,UNAVAILABLE}
+2017-12-18 23:36:14  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@20629131{/static,null,UNAVAILABLE}
+2017-12-18 23:36:18  INFO log:178 - Logging initialized @1012ms
+2017-12-18 23:36:18  INFO WebServer:78 - Start server...
+2017-12-18 23:36:19  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@67503894{/,null,null} contextPath ends with /*
+2017-12-18 23:36:19  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@37a13f27{/,null,null} contextPath ends with /*
+2017-12-18 23:36:19  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-18 23:36:19  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@72c60926{/static,null,AVAILABLE}
+2017-12-18 23:36:19  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@67503894{/smart/ntf,null,AVAILABLE}
+2017-12-18 23:36:19  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@37a13f27{/gateway/ntf,null,AVAILABLE}
+2017-12-18 23:36:19  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@373220f8{/,null,AVAILABLE}
+2017-12-18 23:36:19  INFO ServerConnector:266 - Started ServerConnector@af4ea92{HTTP/1.1}{0.0.0.0:8021}
+2017-12-18 23:36:19  INFO ServerConnector:266 - Started ServerConnector@2ecc0433{HTTP/1.1}{0.0.0.0:9021}
+2017-12-18 23:36:19  INFO ServerConnector:266 - Started ServerConnector@73f7ed37{HTTP/1.1}{0.0.0.0:9022}
+2017-12-18 23:36:19  INFO Server:350 - Started @1736ms
+2017-12-18 23:36:40  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":"40743"}}
+2017-12-18 23:36:40  INFO LightController:278 - light: 1
+2017-12-18 23:36:40  INFO LightController:279 - company_id: 40743
+2017-12-18 23:36:40  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-18 23:37:51  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=wahsis_live;user=wahsis_pos_user;password=WahSiS@123456
+2017-12-18 23:37:55  INFO pos_live_pool:848 - pos_live_pool: Can't create a new connection for jdbc:sqlserver://10.9.11.11:1433;databaseName=wahsis_live;user=wahsis_pos_user;password=WahSiS@123456
+com.microsoft.sqlserver.jdbc.SQLServerException: Login failed for user 'wahsis_pos_user'. ClientConnectionId:e0c1c2b4-3ba0-4151-8ec8-d22e2c8063a7
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.TDSTokenHandler.onEOF(tdsparser.java:254)
+	at com.microsoft.sqlserver.jdbc.TDSParser.parse(tdsparser.java:84)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.sendLogon(SQLServerConnection.java:2908)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.logon(SQLServerConnection.java:2234)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.access$000(SQLServerConnection.java:41)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection$LogonCommand.doExecute(SQLServerConnection.java:2220)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:1326)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:991)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:827)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1012)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at snaq.db.ConnectionPool.create(ConnectionPool.java:256)
+	at snaq.db.ConnectionPool.create(ConnectionPool.java:71)
+	at snaq.util.ObjectPool.checkOut(ObjectPool.java:377)
+	at snaq.util.ObjectPool.checkOut(ObjectPool.java:429)
+	at snaq.db.ConnectionPool.getConnection(ConnectionPool.java:425)
+	at com.wahsis.iot.database.WahSiSConnFactory.getConnection(WahSiSConnFactory.java:42)
+	at com.wahsis.iot.database.PartnerServerModelSQL.selectAllPartnerServer(PartnerServerModelSQL.java:49)
+	at com.wahsis.iot.database.SQLConnFactory.<clinit>(SQLConnFactory.java:38)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:105)
+	at com.wahsis.iot.controller.LightController.updateOnOff(LightController.java:324)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-18 23:37:55 ERROR WahSiSConnFactory:44 - getConnection : Login failed for user 'wahsis_pos_user'. ClientConnectionId:e0c1c2b4-3ba0-4151-8ec8-d22e2c8063a7
+2017-12-19 09:58:46  INFO log:178 - Logging initialized @1082ms
+2017-12-19 09:58:47  INFO WebServer:78 - Start server...
+2017-12-19 09:58:47  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@59770ada{/,null,null} contextPath ends with /*
+2017-12-19 09:58:47  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5fa1227e{/,null,null} contextPath ends with /*
+2017-12-19 09:58:47  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-19 09:58:47  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@1de3f95d{/static,null,AVAILABLE}
+2017-12-19 09:58:47  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@59770ada{/smart/ntf,null,AVAILABLE}
+2017-12-19 09:58:47  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5fa1227e{/gateway/ntf,null,AVAILABLE}
+2017-12-19 09:58:47  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@691cef7c{/,null,AVAILABLE}
+2017-12-19 09:58:47  INFO ServerConnector:266 - Started ServerConnector@762a4b58{HTTP/1.1}{0.0.0.0:8021}
+2017-12-19 09:58:47  INFO ServerConnector:266 - Started ServerConnector@4f0a6533{HTTP/1.1}{0.0.0.0:9021}
+2017-12-19 09:58:47  INFO ServerConnector:266 - Started ServerConnector@456e68b4{HTTP/1.1}{0.0.0.0:9022}
+2017-12-19 09:58:47  INFO Server:350 - Started @1677ms
+2017-12-19 09:59:15  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":"40743"}}
+2017-12-19 09:59:15  INFO LightController:278 - light: 1
+2017-12-19 09:59:15  INFO LightController:279 - company_id: 40743
+2017-12-19 09:59:15  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 09:59:39  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=null;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 10:00:37  INFO log:178 - Logging initialized @700ms
+2017-12-19 10:00:37  INFO WebServer:78 - Start server...
+2017-12-19 10:00:37  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5fdd06ce{/,null,null} contextPath ends with /*
+2017-12-19 10:00:37  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@95ac827{/,null,null} contextPath ends with /*
+2017-12-19 10:00:37  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-19 10:00:37  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5d024629{/static,null,AVAILABLE}
+2017-12-19 10:00:37  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5fdd06ce{/smart/ntf,null,AVAILABLE}
+2017-12-19 10:00:37  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@95ac827{/gateway/ntf,null,AVAILABLE}
+2017-12-19 10:00:37  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@3c455cac{/,null,AVAILABLE}
+2017-12-19 10:00:37  INFO ServerConnector:266 - Started ServerConnector@2b954c3b{HTTP/1.1}{0.0.0.0:8021}
+2017-12-19 10:00:37  INFO ServerConnector:266 - Started ServerConnector@55dc20cf{HTTP/1.1}{0.0.0.0:9021}
+2017-12-19 10:00:37  INFO ServerConnector:266 - Started ServerConnector@1a69b5bd{HTTP/1.1}{0.0.0.0:9022}
+2017-12-19 10:00:37  INFO Server:350 - Started @1324ms
+2017-12-19 10:02:01  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":"40743"}}
+2017-12-19 10:02:01  INFO LightController:278 - light: 1
+2017-12-19 10:02:01  INFO LightController:279 - company_id: 40743
+2017-12-19 10:02:01  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 10:02:48  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=null;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 10:02:50  INFO pos_live_pool:848 - pos_live_pool: Can't create a new connection for jdbc:sqlserver://10.9.11.11:1433;databaseName=null;user=wahsis_dev;password=WahSiS@123456
+com.microsoft.sqlserver.jdbc.SQLServerException: Cannot open database "null" requested by the login. The login failed. ClientConnectionId:389273f9-a640-4b33-9225-1ae4ea5b27b7
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.TDSTokenHandler.onEOF(tdsparser.java:254)
+	at com.microsoft.sqlserver.jdbc.TDSParser.parse(tdsparser.java:84)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.sendLogon(SQLServerConnection.java:2908)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.logon(SQLServerConnection.java:2234)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.access$000(SQLServerConnection.java:41)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection$LogonCommand.doExecute(SQLServerConnection.java:2220)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:1326)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:991)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:827)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1012)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at snaq.db.ConnectionPool.create(ConnectionPool.java:256)
+	at snaq.db.ConnectionPool.create(ConnectionPool.java:71)
+	at snaq.util.ObjectPool.checkOut(ObjectPool.java:377)
+	at snaq.util.ObjectPool.checkOut(ObjectPool.java:429)
+	at snaq.db.ConnectionPool.getConnection(ConnectionPool.java:425)
+	at com.wahsis.iot.database.WahSiSConnFactory.getConnection(WahSiSConnFactory.java:42)
+	at com.wahsis.iot.database.PartnerServerModelSQL.selectAllPartnerServer(PartnerServerModelSQL.java:49)
+	at com.wahsis.iot.database.SQLConnFactory.<clinit>(SQLConnFactory.java:38)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:105)
+	at com.wahsis.iot.controller.LightController.updateOnOff(LightController.java:324)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-19 10:02:50 ERROR WahSiSConnFactory:44 - getConnection : Cannot open database "null" requested by the login. The login failed. ClientConnectionId:389273f9-a640-4b33-9225-1ae4ea5b27b7
+2017-12-19 10:03:40  INFO log:178 - Logging initialized @536ms
+2017-12-19 10:03:40  INFO WebServer:78 - Start server...
+2017-12-19 10:03:40  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@3ef9ef4f{/,null,null} contextPath ends with /*
+2017-12-19 10:03:40  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@175c6d2c{/,null,null} contextPath ends with /*
+2017-12-19 10:03:40  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-19 10:03:40  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5b1288c4{/static,null,AVAILABLE}
+2017-12-19 10:03:40  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@3ef9ef4f{/smart/ntf,null,AVAILABLE}
+2017-12-19 10:03:40  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@175c6d2c{/gateway/ntf,null,AVAILABLE}
+2017-12-19 10:03:40  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@20c43ace{/,null,AVAILABLE}
+2017-12-19 10:03:40  INFO ServerConnector:266 - Started ServerConnector@5e6cb22d{HTTP/1.1}{0.0.0.0:8021}
+2017-12-19 10:03:40  INFO ServerConnector:266 - Started ServerConnector@13740e1d{HTTP/1.1}{0.0.0.0:9021}
+2017-12-19 10:03:40  INFO ServerConnector:266 - Started ServerConnector@1f2d6881{HTTP/1.1}{0.0.0.0:9022}
+2017-12-19 10:03:40  INFO Server:350 - Started @972ms
+2017-12-19 10:03:45  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":"40743"}}
+2017-12-19 10:03:45  INFO LightController:278 - light: 1
+2017-12-19 10:03:45  INFO LightController:279 - company_id: 40743
+2017-12-19 10:03:45  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 10:04:02  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=wahsis_dev;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 10:04:02  INFO pos_live_pool:848 - pos_live_pool: Can't create a new connection for jdbc:sqlserver://10.9.11.11:1433;databaseName=wahsis_dev;user=wahsis_dev;password=WahSiS@123456
+com.microsoft.sqlserver.jdbc.SQLServerException: Cannot open database "wahsis_dev" requested by the login. The login failed. ClientConnectionId:bf145b76-b5dd-41db-8326-f4c33af90113
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.TDSTokenHandler.onEOF(tdsparser.java:254)
+	at com.microsoft.sqlserver.jdbc.TDSParser.parse(tdsparser.java:84)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.sendLogon(SQLServerConnection.java:2908)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.logon(SQLServerConnection.java:2234)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.access$000(SQLServerConnection.java:41)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection$LogonCommand.doExecute(SQLServerConnection.java:2220)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:1326)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:991)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:827)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1012)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at snaq.db.ConnectionPool.create(ConnectionPool.java:256)
+	at snaq.db.ConnectionPool.create(ConnectionPool.java:71)
+	at snaq.util.ObjectPool.checkOut(ObjectPool.java:377)
+	at snaq.util.ObjectPool.checkOut(ObjectPool.java:429)
+	at snaq.db.ConnectionPool.getConnection(ConnectionPool.java:425)
+	at com.wahsis.iot.database.WahSiSConnFactory.getConnection(WahSiSConnFactory.java:42)
+	at com.wahsis.iot.database.PartnerServerModelSQL.selectAllPartnerServer(PartnerServerModelSQL.java:49)
+	at com.wahsis.iot.database.SQLConnFactory.<clinit>(SQLConnFactory.java:38)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:105)
+	at com.wahsis.iot.controller.LightController.updateOnOff(LightController.java:324)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-19 10:04:02 ERROR WahSiSConnFactory:44 - getConnection : Cannot open database "wahsis_dev" requested by the login. The login failed. ClientConnectionId:bf145b76-b5dd-41db-8326-f4c33af90113
+2017-12-19 11:09:22  INFO log:178 - Logging initialized @694ms
+2017-12-19 11:09:23  INFO WebServer:78 - Start server...
+2017-12-19 11:09:23  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@67503894{/,null,null} contextPath ends with /*
+2017-12-19 11:09:23  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@37a13f27{/,null,null} contextPath ends with /*
+2017-12-19 11:09:23  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-19 11:09:23  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@72c60926{/static,null,AVAILABLE}
+2017-12-19 11:09:23  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@67503894{/smart/ntf,null,AVAILABLE}
+2017-12-19 11:09:23  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@37a13f27{/gateway/ntf,null,AVAILABLE}
+2017-12-19 11:09:23  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@373220f8{/,null,AVAILABLE}
+2017-12-19 11:09:23  INFO ServerConnector:266 - Started ServerConnector@5e6cb22d{HTTP/1.1}{0.0.0.0:8021}
+2017-12-19 11:09:23  INFO ServerConnector:266 - Started ServerConnector@2ecc0433{HTTP/1.1}{0.0.0.0:9021}
+2017-12-19 11:09:23  INFO ServerConnector:266 - Started ServerConnector@572c28da{HTTP/1.1}{0.0.0.0:9022}
+2017-12-19 11:09:23  INFO Server:350 - Started @1465ms
+2017-12-19 11:09:33  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":"40743"}}
+2017-12-19 11:09:33  INFO LightController:278 - light: 1
+2017-12-19 11:09:33  INFO LightController:279 - company_id: 40743
+2017-12-19 11:09:33  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 11:09:33  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:09:34  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:09:34 ERROR PartnerServerModelSQL:92 - PartnerServerModelSQL.selectAllPartnerServer : Invalid object name 'partner_server'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name 'partner_server'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.database.PartnerServerModelSQL.selectAllPartnerServer(PartnerServerModelSQL.java:55)
+	at com.wahsis.iot.database.SQLConnFactory.<clinit>(SQLConnFactory.java:38)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:105)
+	at com.wahsis.iot.controller.LightController.updateOnOff(LightController.java:324)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-19 11:09:34  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:09:34  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:09:34  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:09:34  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:09:34  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:09:34  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:09:34  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:09:34  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:11:01  INFO log:178 - Logging initialized @617ms
+2017-12-19 11:11:02  INFO WebServer:78 - Start server...
+2017-12-19 11:11:02  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@73a428f7{/,null,null} contextPath ends with /*
+2017-12-19 11:11:02  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@35c763bf{/,null,null} contextPath ends with /*
+2017-12-19 11:11:02  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-19 11:11:02  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@6645bd4a{/static,null,AVAILABLE}
+2017-12-19 11:11:02  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@73a428f7{/smart/ntf,null,AVAILABLE}
+2017-12-19 11:11:02  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@35c763bf{/gateway/ntf,null,AVAILABLE}
+2017-12-19 11:11:02  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@32450e28{/,null,AVAILABLE}
+2017-12-19 11:11:02  INFO ServerConnector:266 - Started ServerConnector@34a1dfcd{HTTP/1.1}{0.0.0.0:8021}
+2017-12-19 11:11:02  INFO ServerConnector:266 - Started ServerConnector@3ddfe112{HTTP/1.1}{0.0.0.0:9021}
+2017-12-19 11:11:02  INFO ServerConnector:266 - Started ServerConnector@7481b8fb{HTTP/1.1}{0.0.0.0:9022}
+2017-12-19 11:11:02  INFO Server:350 - Started @1116ms
+2017-12-19 11:11:06  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":"40743"}}
+2017-12-19 11:11:06  INFO LightController:278 - light: 1
+2017-12-19 11:11:06  INFO LightController:279 - company_id: 40743
+2017-12-19 11:11:06  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 11:11:06  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:11:07  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:11:07  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:11:07  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:11:07  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:11:07 ERROR PartnerServerModelSQL:92 - PartnerServerModelSQL.selectAllPartnerServer : Invalid object name 'partner_server'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name 'partner_server'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.database.PartnerServerModelSQL.selectAllPartnerServer(PartnerServerModelSQL.java:55)
+	at com.wahsis.iot.database.SQLConnFactory.<clinit>(SQLConnFactory.java:38)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:105)
+	at com.wahsis.iot.controller.LightController.updateOnOff(LightController.java:324)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-19 11:11:07  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:11:07  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:11:07  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:11:07  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:11:07  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:11:07  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:11:07  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:14:07  INFO pos_live_pool:839 - pos_live_pool: Destroyed connection
+2017-12-19 11:14:12  INFO pos_live_pool:839 - pos_live_pool: Destroyed connection
+2017-12-19 11:14:12  INFO pos_live_pool:839 - pos_live_pool: Destroyed connection
+2017-12-19 11:14:12  INFO pos_live_pool:839 - pos_live_pool: Destroyed connection
+2017-12-19 11:14:12  INFO pos_live_pool:839 - pos_live_pool: Destroyed connection
+2017-12-19 11:14:12  INFO pos_live_pool:839 - pos_live_pool: Destroyed connection
+2017-12-19 11:15:16  INFO log:178 - Logging initialized @427ms
+2017-12-19 11:15:16  INFO WebServer:78 - Start server...
+2017-12-19 11:15:16  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@3ef9ef4f{/,null,null} contextPath ends with /*
+2017-12-19 11:15:16  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@175c6d2c{/,null,null} contextPath ends with /*
+2017-12-19 11:15:16  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-19 11:15:16  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5b1288c4{/static,null,AVAILABLE}
+2017-12-19 11:15:16  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@3ef9ef4f{/smart/ntf,null,AVAILABLE}
+2017-12-19 11:15:16  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@175c6d2c{/gateway/ntf,null,AVAILABLE}
+2017-12-19 11:15:16  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@20c43ace{/,null,AVAILABLE}
+2017-12-19 11:15:16  INFO ServerConnector:266 - Started ServerConnector@1f2d6881{HTTP/1.1}{0.0.0.0:8021}
+2017-12-19 11:15:16  INFO ServerConnector:266 - Started ServerConnector@5fd798cf{HTTP/1.1}{0.0.0.0:9021}
+2017-12-19 11:15:16  INFO ServerConnector:266 - Started ServerConnector@1c6353c0{HTTP/1.1}{0.0.0.0:9022}
+2017-12-19 11:15:16  INFO Server:350 - Started @967ms
+2017-12-19 11:15:23  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":"40743"}}
+2017-12-19 11:15:23  INFO LightController:278 - light: 1
+2017-12-19 11:15:23  INFO LightController:279 - company_id: 40743
+2017-12-19 11:15:23  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 11:15:41  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:15:44  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:15:44 ERROR PartnerServerModelSQL:92 - PartnerServerModelSQL.selectAllPartnerServer : Invalid object name 'partner_server'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name 'partner_server'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.database.PartnerServerModelSQL.selectAllPartnerServer(PartnerServerModelSQL.java:55)
+	at com.wahsis.iot.database.SQLConnFactory.<clinit>(SQLConnFactory.java:38)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:105)
+	at com.wahsis.iot.controller.LightController.updateOnOff(LightController.java:324)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-19 11:15:44  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:15:45  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:15:45  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:15:45  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:15:45  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:15:45  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:15:45  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:15:45  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:18:48  INFO log:178 - Logging initialized @343ms
+2017-12-19 11:18:48  INFO WebServer:78 - Start server...
+2017-12-19 11:18:48  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5a97d7cf{/,null,null} contextPath ends with /*
+2017-12-19 11:18:48  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@2aa9fbf1{/,null,null} contextPath ends with /*
+2017-12-19 11:18:48  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-19 11:18:48  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@7d38ae4d{/static,null,AVAILABLE}
+2017-12-19 11:18:48  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5a97d7cf{/smart/ntf,null,AVAILABLE}
+2017-12-19 11:18:48  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@2aa9fbf1{/gateway/ntf,null,AVAILABLE}
+2017-12-19 11:18:48  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@6677b00f{/,null,AVAILABLE}
+2017-12-19 11:18:49  INFO ServerConnector:266 - Started ServerConnector@af4ea92{HTTP/1.1}{0.0.0.0:8021}
+2017-12-19 11:18:49  INFO ServerConnector:266 - Started ServerConnector@57f4db8e{HTTP/1.1}{0.0.0.0:9021}
+2017-12-19 11:18:49  INFO ServerConnector:266 - Started ServerConnector@5e87a956{HTTP/1.1}{0.0.0.0:9022}
+2017-12-19 11:18:49  INFO Server:350 - Started @942ms
+2017-12-19 11:18:54  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":"40743"}}
+2017-12-19 11:18:54  INFO LightController:278 - light: 1
+2017-12-19 11:18:54  INFO LightController:279 - company_id: 40743
+2017-12-19 11:18:54  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 11:18:54  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:18:55  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:18:55  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:18:55 ERROR PartnerServerModelSQL:92 - PartnerServerModelSQL.selectAllPartnerServer : Invalid object name 'partner_server'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name 'partner_server'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.database.PartnerServerModelSQL.selectAllPartnerServer(PartnerServerModelSQL.java:55)
+	at com.wahsis.iot.database.SQLConnFactory.<clinit>(SQLConnFactory.java:38)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:105)
+	at com.wahsis.iot.controller.LightController.updateOnOff(LightController.java:324)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-19 11:18:55  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:18:55  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:18:55  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:18:55  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:18:55  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:18:55  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:18:55  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:18:55  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:18:55  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:19:34  INFO log:178 - Logging initialized @562ms
+2017-12-19 11:19:34  INFO WebServer:78 - Start server...
+2017-12-19 11:19:34  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@3ef9ef4f{/,null,null} contextPath ends with /*
+2017-12-19 11:19:34  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@175c6d2c{/,null,null} contextPath ends with /*
+2017-12-19 11:19:34  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-19 11:19:34  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5b1288c4{/static,null,AVAILABLE}
+2017-12-19 11:19:34  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@3ef9ef4f{/smart/ntf,null,AVAILABLE}
+2017-12-19 11:19:34  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@175c6d2c{/gateway/ntf,null,AVAILABLE}
+2017-12-19 11:19:34  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@20c43ace{/,null,AVAILABLE}
+2017-12-19 11:19:34  INFO ServerConnector:266 - Started ServerConnector@4b4b9dac{HTTP/1.1}{0.0.0.0:8021}
+2017-12-19 11:19:34  INFO ServerConnector:266 - Started ServerConnector@1f2d6881{HTTP/1.1}{0.0.0.0:9021}
+2017-12-19 11:19:34  INFO ServerConnector:266 - Started ServerConnector@14f8749f{HTTP/1.1}{0.0.0.0:9022}
+2017-12-19 11:19:34  INFO Server:350 - Started @1082ms
+2017-12-19 11:19:39  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":"40743"}}
+2017-12-19 11:19:39  INFO LightController:278 - light: 1
+2017-12-19 11:19:39  INFO LightController:279 - company_id: 40743
+2017-12-19 11:19:39  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 11:19:39  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:19:40  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:19:40 ERROR PartnerServerModelSQL:92 - PartnerServerModelSQL.selectAllPartnerServer : Invalid object name 'partner_server'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name 'partner_server'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.database.PartnerServerModelSQL.selectAllPartnerServer(PartnerServerModelSQL.java:55)
+	at com.wahsis.iot.database.SQLConnFactory.<clinit>(SQLConnFactory.java:38)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:105)
+	at com.wahsis.iot.controller.LightController.updateOnOff(LightController.java:324)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-19 11:19:40  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:19:40  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:19:40  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:19:41  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:19:41  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:19:41  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:19:41  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:19:41  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:20:09  INFO log:178 - Logging initialized @532ms
+2017-12-19 11:20:09  INFO WebServer:78 - Start server...
+2017-12-19 11:20:09  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5a97d7cf{/,null,null} contextPath ends with /*
+2017-12-19 11:20:09  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@2aa9fbf1{/,null,null} contextPath ends with /*
+2017-12-19 11:20:10  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-19 11:20:10  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@7d38ae4d{/static,null,AVAILABLE}
+2017-12-19 11:20:10  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5a97d7cf{/smart/ntf,null,AVAILABLE}
+2017-12-19 11:20:10  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@2aa9fbf1{/gateway/ntf,null,AVAILABLE}
+2017-12-19 11:20:10  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@6677b00f{/,null,AVAILABLE}
+2017-12-19 11:20:10  INFO ServerConnector:266 - Started ServerConnector@5e6cb22d{HTTP/1.1}{0.0.0.0:8021}
+2017-12-19 11:20:10  INFO ServerConnector:266 - Started ServerConnector@57f4db8e{HTTP/1.1}{0.0.0.0:9021}
+2017-12-19 11:20:10  INFO ServerConnector:266 - Started ServerConnector@5e87a956{HTTP/1.1}{0.0.0.0:9022}
+2017-12-19 11:20:10  INFO Server:350 - Started @1077ms
+2017-12-19 11:20:13  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":"40743"}}
+2017-12-19 11:20:13  INFO LightController:278 - light: 1
+2017-12-19 11:20:13  INFO LightController:279 - company_id: 40743
+2017-12-19 11:20:13  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 11:20:13  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:20:14  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:20:14 ERROR PartnerServerModelSQL:92 - PartnerServerModelSQL.selectAllPartnerServer : Invalid object name 'partner_server'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name 'partner_server'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.database.PartnerServerModelSQL.selectAllPartnerServer(PartnerServerModelSQL.java:55)
+	at com.wahsis.iot.database.SQLConnFactory.<clinit>(SQLConnFactory.java:38)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:105)
+	at com.wahsis.iot.controller.LightController.updateOnOff(LightController.java:324)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-19 11:20:14  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:20:14  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:20:14  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:20:14  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:20:14  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:20:15  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:20:15  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:20:15  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:20:32  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":"40743"}}
+2017-12-19 11:20:32  INFO LightController:278 - light: 1
+2017-12-19 11:20:32  INFO LightController:279 - company_id: 40743
+2017-12-19 11:20:32  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 11:20:44  INFO log:178 - Logging initialized @424ms
+2017-12-19 11:20:44  INFO WebServer:78 - Start server...
+2017-12-19 11:20:45  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@3ef9ef4f{/,null,null} contextPath ends with /*
+2017-12-19 11:20:45  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@175c6d2c{/,null,null} contextPath ends with /*
+2017-12-19 11:20:45  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-19 11:20:45  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5b1288c4{/static,null,AVAILABLE}
+2017-12-19 11:20:45  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@3ef9ef4f{/smart/ntf,null,AVAILABLE}
+2017-12-19 11:20:45  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@175c6d2c{/gateway/ntf,null,AVAILABLE}
+2017-12-19 11:20:45  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@20c43ace{/,null,AVAILABLE}
+2017-12-19 11:20:45  INFO ServerConnector:266 - Started ServerConnector@572395f3{HTTP/1.1}{0.0.0.0:8021}
+2017-12-19 11:20:45  INFO ServerConnector:266 - Started ServerConnector@1f2d6881{HTTP/1.1}{0.0.0.0:9021}
+2017-12-19 11:20:45  INFO ServerConnector:266 - Started ServerConnector@5fd798cf{HTTP/1.1}{0.0.0.0:9022}
+2017-12-19 11:20:45  INFO Server:350 - Started @897ms
+2017-12-19 11:21:06  INFO log:178 - Logging initialized @499ms
+2017-12-19 11:21:06  INFO WebServer:78 - Start server...
+2017-12-19 11:21:06  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5a97d7cf{/,null,null} contextPath ends with /*
+2017-12-19 11:21:06  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@2aa9fbf1{/,null,null} contextPath ends with /*
+2017-12-19 11:21:06  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-19 11:21:06  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@7d38ae4d{/static,null,AVAILABLE}
+2017-12-19 11:21:06  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5a97d7cf{/smart/ntf,null,AVAILABLE}
+2017-12-19 11:21:06  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@2aa9fbf1{/gateway/ntf,null,AVAILABLE}
+2017-12-19 11:21:06  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@6677b00f{/,null,AVAILABLE}
+2017-12-19 11:21:06  INFO ServerConnector:266 - Started ServerConnector@2abaf38e{HTTP/1.1}{0.0.0.0:8021}
+2017-12-19 11:21:06  INFO ServerConnector:266 - Started ServerConnector@57f4db8e{HTTP/1.1}{0.0.0.0:9021}
+2017-12-19 11:21:06  INFO ServerConnector:266 - Started ServerConnector@5e87a956{HTTP/1.1}{0.0.0.0:9022}
+2017-12-19 11:21:06  INFO Server:350 - Started @891ms
+2017-12-19 11:21:09  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":"40743"}}
+2017-12-19 11:21:09  INFO LightController:278 - light: 1
+2017-12-19 11:21:09  INFO LightController:279 - company_id: 40743
+2017-12-19 11:21:09  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 11:21:09  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:21:10  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:21:10  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:21:11 ERROR PartnerServerModelSQL:92 - PartnerServerModelSQL.selectAllPartnerServer : Invalid object name 'partner_server'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name 'partner_server'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.database.PartnerServerModelSQL.selectAllPartnerServer(PartnerServerModelSQL.java:55)
+	at com.wahsis.iot.database.SQLConnFactory.<clinit>(SQLConnFactory.java:38)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:105)
+	at com.wahsis.iot.controller.LightController.updateOnOff(LightController.java:324)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-19 11:21:11  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:21:11  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:21:11  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:21:11  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:21:12  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:21:12  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:21:12  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:21:12  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:21:12  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:21:55  INFO log:178 - Logging initialized @330ms
+2017-12-19 11:21:55  INFO WebServer:78 - Start server...
+2017-12-19 11:21:55  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@3d12c0bc{/,null,null} contextPath ends with /*
+2017-12-19 11:21:55  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@45cce67d{/,null,null} contextPath ends with /*
+2017-12-19 11:21:56  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-19 11:21:56  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@3eca0bac{/static,null,AVAILABLE}
+2017-12-19 11:21:56  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@3d12c0bc{/smart/ntf,null,AVAILABLE}
+2017-12-19 11:21:56  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@45cce67d{/gateway/ntf,null,AVAILABLE}
+2017-12-19 11:21:56  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@5575e177{/,null,AVAILABLE}
+2017-12-19 11:21:56  INFO ServerConnector:266 - Started ServerConnector@35b0a895{HTTP/1.1}{0.0.0.0:8021}
+2017-12-19 11:21:56  INFO ServerConnector:266 - Started ServerConnector@2e74ecfc{HTTP/1.1}{0.0.0.0:9021}
+2017-12-19 11:21:56  INFO ServerConnector:266 - Started ServerConnector@3907d7e7{HTTP/1.1}{0.0.0.0:9022}
+2017-12-19 11:21:56  INFO Server:350 - Started @746ms
+2017-12-19 11:22:02  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":"40743"}}
+2017-12-19 11:22:02  INFO LightController:278 - light: 1
+2017-12-19 11:22:02  INFO LightController:279 - company_id: 40743
+2017-12-19 11:22:02  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 11:22:02  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:22:03  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:22:03 ERROR PartnerServerModelSQL:92 - PartnerServerModelSQL.selectAllPartnerServer : Invalid object name 'partner_server'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name 'partner_server'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.database.PartnerServerModelSQL.selectAllPartnerServer(PartnerServerModelSQL.java:55)
+	at com.wahsis.iot.database.SQLConnFactory.<clinit>(SQLConnFactory.java:38)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:105)
+	at com.wahsis.iot.controller.LightController.updateOnOff(LightController.java:324)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-19 11:22:03  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:22:03  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:22:03  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:22:04  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:22:04  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:22:04  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:22:04  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:22:04  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:24:18  INFO log:178 - Logging initialized @447ms
+2017-12-19 11:24:18  INFO WebServer:78 - Start server...
+2017-12-19 11:24:18  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5fdd06ce{/,null,null} contextPath ends with /*
+2017-12-19 11:24:18  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@95ac827{/,null,null} contextPath ends with /*
+2017-12-19 11:24:18  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-19 11:24:18  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5d024629{/static,null,AVAILABLE}
+2017-12-19 11:24:18  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5fdd06ce{/smart/ntf,null,AVAILABLE}
+2017-12-19 11:24:18  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@95ac827{/gateway/ntf,null,AVAILABLE}
+2017-12-19 11:24:18  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@3c455cac{/,null,AVAILABLE}
+2017-12-19 11:24:18  INFO ServerConnector:266 - Started ServerConnector@5e6cb22d{HTTP/1.1}{0.0.0.0:8021}
+2017-12-19 11:24:18  INFO ServerConnector:266 - Started ServerConnector@2b954c3b{HTTP/1.1}{0.0.0.0:9021}
+2017-12-19 11:24:18  INFO ServerConnector:266 - Started ServerConnector@55dc20cf{HTTP/1.1}{0.0.0.0:9022}
+2017-12-19 11:24:18  INFO Server:350 - Started @974ms
+2017-12-19 11:24:29  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":"40743"}}
+2017-12-19 11:24:29  INFO LightController:278 - light: 1
+2017-12-19 11:24:29  INFO LightController:279 - company_id: 40743
+2017-12-19 11:24:29  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 11:24:29  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:24:31  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:24:31  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:24:31 ERROR PartnerServerModelSQL:92 - PartnerServerModelSQL.selectAllPartnerServer : Invalid object name 'partner_server'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name 'partner_server'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.database.PartnerServerModelSQL.selectAllPartnerServer(PartnerServerModelSQL.java:55)
+	at com.wahsis.iot.database.SQLConnFactory.<clinit>(SQLConnFactory.java:38)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:105)
+	at com.wahsis.iot.controller.LightController.updateOnOff(LightController.java:324)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-19 11:24:31  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:24:31  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:24:32  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:24:32  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:24:32  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:24:32  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:24:32  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:24:32  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:24:32  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:24:53  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.1.3:1433;databaseName=master;user=wahsis_pos_user;password=WahSiS@123456
+2017-12-19 11:25:06  INFO ServiceDaemon:33 - Shutdown thread before webserver getinstance
+2017-12-19 11:25:06  INFO ServerConnector:303 - Stopped ServerConnector@5e6cb22d{HTTP/1.1}{0.0.0.0:8021}
+2017-12-19 11:25:06  INFO ServerConnector:303 - Stopped ServerConnector@2b954c3b{HTTP/1.1}{0.0.0.0:9021}
+2017-12-19 11:26:06  INFO log:178 - Logging initialized @379ms
+2017-12-19 11:26:07  INFO WebServer:78 - Start server...
+2017-12-19 11:26:07  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@67503894{/,null,null} contextPath ends with /*
+2017-12-19 11:26:07  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@37a13f27{/,null,null} contextPath ends with /*
+2017-12-19 11:26:07  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-19 11:26:07  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@72c60926{/static,null,AVAILABLE}
+2017-12-19 11:26:07  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@67503894{/smart/ntf,null,AVAILABLE}
+2017-12-19 11:26:07  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@37a13f27{/gateway/ntf,null,AVAILABLE}
+2017-12-19 11:26:07  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@373220f8{/,null,AVAILABLE}
+2017-12-19 11:26:07  INFO ServerConnector:266 - Started ServerConnector@73096827{HTTP/1.1}{0.0.0.0:8021}
+2017-12-19 11:26:07  INFO ServerConnector:266 - Started ServerConnector@b892fd9{HTTP/1.1}{0.0.0.0:9021}
+2017-12-19 11:26:07  INFO ServerConnector:266 - Started ServerConnector@3ddfe112{HTTP/1.1}{0.0.0.0:9022}
+2017-12-19 11:26:07  INFO Server:350 - Started @962ms
+2017-12-19 11:26:09  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":"40743"}}
+2017-12-19 11:26:09  INFO LightController:278 - light: 1
+2017-12-19 11:26:09  INFO LightController:279 - company_id: 40743
+2017-12-19 11:26:09  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 11:26:13  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:26:15  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:26:16 ERROR PartnerServerModelSQL:92 - PartnerServerModelSQL.selectAllPartnerServer : Invalid object name 'partner_server'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name 'partner_server'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.database.PartnerServerModelSQL.selectAllPartnerServer(PartnerServerModelSQL.java:55)
+	at com.wahsis.iot.database.SQLConnFactory.<clinit>(SQLConnFactory.java:38)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:105)
+	at com.wahsis.iot.controller.LightController.updateOnOff(LightController.java:324)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-19 11:26:16  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:26:16  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:26:16  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:26:16  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:26:16  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:26:16  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:26:16  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:26:16  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:27:06  INFO log:178 - Logging initialized @481ms
+2017-12-19 11:27:06  INFO WebServer:78 - Start server...
+2017-12-19 11:27:06  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5fdd06ce{/,null,null} contextPath ends with /*
+2017-12-19 11:27:06  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@95ac827{/,null,null} contextPath ends with /*
+2017-12-19 11:27:06  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-19 11:27:06  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5d024629{/static,null,AVAILABLE}
+2017-12-19 11:27:06  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5fdd06ce{/smart/ntf,null,AVAILABLE}
+2017-12-19 11:27:06  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@95ac827{/gateway/ntf,null,AVAILABLE}
+2017-12-19 11:27:06  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@3c455cac{/,null,AVAILABLE}
+2017-12-19 11:27:06  INFO ServerConnector:266 - Started ServerConnector@3fa190c2{HTTP/1.1}{0.0.0.0:8021}
+2017-12-19 11:27:06  INFO ServerConnector:266 - Started ServerConnector@2b954c3b{HTTP/1.1}{0.0.0.0:9021}
+2017-12-19 11:27:06  INFO ServerConnector:266 - Started ServerConnector@55dc20cf{HTTP/1.1}{0.0.0.0:9022}
+2017-12-19 11:27:06  INFO Server:350 - Started @992ms
+2017-12-19 11:27:09  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":"40743"}}
+2017-12-19 11:27:09  INFO LightController:278 - light: 1
+2017-12-19 11:27:09  INFO LightController:279 - company_id: 40743
+2017-12-19 11:27:09  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 11:27:12  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:27:23  INFO log:178 - Logging initialized @388ms
+2017-12-19 11:27:23  INFO WebServer:78 - Start server...
+2017-12-19 11:27:24  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@788e6bb9{/,null,null} contextPath ends with /*
+2017-12-19 11:27:24  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@51bfc387{/,null,null} contextPath ends with /*
+2017-12-19 11:27:24  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-19 11:27:24  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@107e90f8{/static,null,AVAILABLE}
+2017-12-19 11:27:24  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@788e6bb9{/smart/ntf,null,AVAILABLE}
+2017-12-19 11:27:24  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@51bfc387{/gateway/ntf,null,AVAILABLE}
+2017-12-19 11:27:24  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@6ecec87{/,null,AVAILABLE}
+2017-12-19 11:27:24  INFO ServerConnector:266 - Started ServerConnector@2ea61899{HTTP/1.1}{0.0.0.0:8021}
+2017-12-19 11:27:24  INFO ServerConnector:266 - Started ServerConnector@13dcc4f2{HTTP/1.1}{0.0.0.0:9021}
+2017-12-19 11:27:24  INFO ServerConnector:266 - Started ServerConnector@55dc20cf{HTTP/1.1}{0.0.0.0:9022}
+2017-12-19 11:27:24  INFO Server:350 - Started @890ms
+2017-12-19 11:27:26  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":"40743"}}
+2017-12-19 11:27:26  INFO LightController:278 - light: 1
+2017-12-19 11:27:26  INFO LightController:279 - company_id: 40743
+2017-12-19 11:27:26  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 11:27:27  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:27:27  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:27:27 ERROR PartnerServerModelSQL:92 - PartnerServerModelSQL.selectAllPartnerServer : Invalid object name 'partner_server'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name 'partner_server'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.database.PartnerServerModelSQL.selectAllPartnerServer(PartnerServerModelSQL.java:55)
+	at com.wahsis.iot.database.SQLConnFactory.<clinit>(SQLConnFactory.java:38)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:105)
+	at com.wahsis.iot.controller.LightController.updateOnOff(LightController.java:324)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-19 11:27:27  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:27:27  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.1.3:1433;databaseName=master;user=wahsis_pos_user;password=WahSiS@123456
+2017-12-19 11:27:28  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:27:28  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:27:28  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:27:28  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:27:28  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:27:28  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 11:27:28  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 11:27:43  INFO pos_pool:848 - pos_pool: Can't create a new connection for jdbc:sqlserver://10.9.1.3:1433;databaseName=master;user=wahsis_pos_user;password=WahSiS@123456
+com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 10.9.1.3, port 1433 has failed. Error: "connect timed out. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:190)
+	at com.microsoft.sqlserver.jdbc.SQLServerException.ConvertConnectExceptionToSQLServerException(SQLServerException.java:241)
+	at com.microsoft.sqlserver.jdbc.SocketFinder.findSocket(IOBuffer.java:2243)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.open(IOBuffer.java:491)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:1309)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:991)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:827)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1012)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at snaq.db.ConnectionPool.create(ConnectionPool.java:256)
+	at snaq.db.ConnectionPool.create(ConnectionPool.java:71)
+	at snaq.util.ObjectPool.checkOut(ObjectPool.java:377)
+	at snaq.util.ObjectPool.checkOut(ObjectPool.java:429)
+	at snaq.db.ConnectionPool.getConnection(ConnectionPool.java:425)
+	at com.wahsis.iot.database.SQLConnFactory.getConnection(SQLConnFactory.java:80)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:105)
+	at com.wahsis.iot.controller.LightController.updateOnOff(LightController.java:324)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-19 11:27:43 ERROR SQLConnFactory:82 - getConnection : The TCP/IP connection to the host 10.9.1.3, port 1433 has failed. Error: "connect timed out. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+2017-12-19 22:55:45  INFO log:178 - Logging initialized @433ms
+2017-12-19 22:55:45  INFO WebServer:78 - Start server...
+2017-12-19 22:55:45  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5fdd06ce{/,null,null} contextPath ends with /*
+2017-12-19 22:55:45  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@95ac827{/,null,null} contextPath ends with /*
+2017-12-19 22:55:45  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-19 22:55:45  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5d024629{/static,null,AVAILABLE}
+2017-12-19 22:55:45  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5fdd06ce{/smart/ntf,null,AVAILABLE}
+2017-12-19 22:55:45  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@95ac827{/gateway/ntf,null,AVAILABLE}
+2017-12-19 22:55:45  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@3c455cac{/,null,AVAILABLE}
+2017-12-19 22:55:45  INFO ServerConnector:266 - Started ServerConnector@2abaf38e{HTTP/1.1}{0.0.0.0:8021}
+2017-12-19 22:55:45  INFO ServerConnector:266 - Started ServerConnector@2b954c3b{HTTP/1.1}{0.0.0.0:9021}
+2017-12-19 22:55:45  INFO ServerConnector:266 - Started ServerConnector@273ba79e{HTTP/1.1}{0.0.0.0:9022}
+2017-12-19 22:55:45  INFO Server:350 - Started @869ms
+2017-12-19 22:55:55  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":"40743"}}
+2017-12-19 22:55:55  INFO LightController:278 - light: 1
+2017-12-19 22:55:55  INFO LightController:279 - company_id: 40743
+2017-12-19 22:55:55  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 22:56:01  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 22:56:04  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 22:56:05 ERROR PartnerServerModelSQL:92 - PartnerServerModelSQL.selectAllPartnerServer : Invalid object name 'partner_server'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name 'partner_server'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.database.PartnerServerModelSQL.selectAllPartnerServer(PartnerServerModelSQL.java:55)
+	at com.wahsis.iot.database.SQLConnFactory.<clinit>(SQLConnFactory.java:38)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:105)
+	at com.wahsis.iot.controller.LightController.updateOnOff(LightController.java:324)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-19 22:56:05  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 22:56:05  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 22:56:05  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 22:56:05  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 22:56:05  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 22:56:05  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 22:56:05  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 22:56:05  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 22:56:31  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.1.23:1433;databaseName=master;user=wahsis_pos_user;password=WahSiS@123456
+2017-12-19 22:56:46  INFO pos_pool:848 - pos_pool: Can't create a new connection for jdbc:sqlserver://10.9.1.23:1433;databaseName=master;user=wahsis_pos_user;password=WahSiS@123456
+com.microsoft.sqlserver.jdbc.SQLServerException: The TCP/IP connection to the host 10.9.1.23, port 1433 has failed. Error: "Connection refused (Connection refused). Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:190)
+	at com.microsoft.sqlserver.jdbc.SQLServerException.ConvertConnectExceptionToSQLServerException(SQLServerException.java:241)
+	at com.microsoft.sqlserver.jdbc.SocketFinder.findSocket(IOBuffer.java:2243)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.open(IOBuffer.java:491)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:1309)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:991)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:827)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1012)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at snaq.db.ConnectionPool.create(ConnectionPool.java:256)
+	at snaq.db.ConnectionPool.create(ConnectionPool.java:71)
+	at snaq.util.ObjectPool.checkOut(ObjectPool.java:377)
+	at snaq.util.ObjectPool.checkOut(ObjectPool.java:429)
+	at snaq.db.ConnectionPool.getConnection(ConnectionPool.java:425)
+	at com.wahsis.iot.database.SQLConnFactory.getConnection(SQLConnFactory.java:80)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:105)
+	at com.wahsis.iot.controller.LightController.updateOnOff(LightController.java:324)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-19 22:57:07  INFO ServiceDaemon:33 - Shutdown thread before webserver getinstance
+2017-12-19 22:57:07  INFO ServerConnector:303 - Stopped ServerConnector@2abaf38e{HTTP/1.1}{0.0.0.0:8021}
+2017-12-19 23:12:56  INFO log:178 - Logging initialized @588ms
+2017-12-19 23:12:56  INFO WebServer:78 - Start server...
+2017-12-19 23:12:56  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@67503894{/,null,null} contextPath ends with /*
+2017-12-19 23:12:56  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@37a13f27{/,null,null} contextPath ends with /*
+2017-12-19 23:12:56  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-19 23:12:56  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@72c60926{/static,null,AVAILABLE}
+2017-12-19 23:12:56  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@67503894{/smart/ntf,null,AVAILABLE}
+2017-12-19 23:12:56  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@37a13f27{/gateway/ntf,null,AVAILABLE}
+2017-12-19 23:12:56  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@373220f8{/,null,AVAILABLE}
+2017-12-19 23:12:56  INFO ServerConnector:266 - Started ServerConnector@572c28da{HTTP/1.1}{0.0.0.0:8021}
+2017-12-19 23:12:56  INFO ServerConnector:266 - Started ServerConnector@64eeb57d{HTTP/1.1}{0.0.0.0:9021}
+2017-12-19 23:12:56  INFO ServerConnector:266 - Started ServerConnector@679925ef{HTTP/1.1}{0.0.0.0:9022}
+2017-12-19 23:12:56  INFO Server:350 - Started @1160ms
+2017-12-19 23:16:08  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":"40743"}}
+2017-12-19 23:16:08  INFO LightController:278 - light: 1
+2017-12-19 23:16:08  INFO LightController:279 - company_id: 40743
+2017-12-19 23:16:08  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 23:16:16  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:16:18  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 23:16:19 ERROR PartnerServerModelSQL:92 - PartnerServerModelSQL.selectAllPartnerServer : Invalid object name 'partner_server'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name 'partner_server'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.database.PartnerServerModelSQL.selectAllPartnerServer(PartnerServerModelSQL.java:55)
+	at com.wahsis.iot.database.SQLConnFactory.<clinit>(SQLConnFactory.java:38)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:105)
+	at com.wahsis.iot.controller.LightController.updateOnOff(LightController.java:324)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-19 23:16:19  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:16:19  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 23:16:19  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:16:19  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 23:16:19  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:16:19  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 23:16:19  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:16:19  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 23:18:36  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:18:37  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-19 23:19:22  INFO log:178 - Logging initialized @499ms
+2017-12-19 23:19:22  INFO WebServer:78 - Start server...
+2017-12-19 23:19:23  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@3d96a198{/,null,null} contextPath ends with /*
+2017-12-19 23:19:23  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@37379f8d{/,null,null} contextPath ends with /*
+2017-12-19 23:19:23  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-19 23:19:23  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@587918d5{/static,null,AVAILABLE}
+2017-12-19 23:19:23  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@3d96a198{/smart/ntf,null,AVAILABLE}
+2017-12-19 23:19:23  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@37379f8d{/gateway/ntf,null,AVAILABLE}
+2017-12-19 23:19:23  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@457f1e8a{/,null,AVAILABLE}
+2017-12-19 23:19:23  INFO ServerConnector:266 - Started ServerConnector@5e87a956{HTTP/1.1}{0.0.0.0:8021}
+2017-12-19 23:19:23  INFO ServerConnector:266 - Started ServerConnector@54c2311c{HTTP/1.1}{0.0.0.0:9021}
+2017-12-19 23:19:23  INFO ServerConnector:266 - Started ServerConnector@7b75f654{HTTP/1.1}{0.0.0.0:9022}
+2017-12-19 23:19:23  INFO Server:350 - Started @1191ms
+2017-12-19 23:19:27  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":"40743"}}
+2017-12-19 23:19:27  INFO LightController:278 - light: 1
+2017-12-19 23:19:27  INFO LightController:279 - company_id: 40743
+2017-12-19 23:19:27  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 23:19:27  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:19:27  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 23:19:27 ERROR PartnerServerModelSQL:92 - PartnerServerModelSQL.selectAllPartnerServer : Invalid object name 'partner_server'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name 'partner_server'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.database.PartnerServerModelSQL.selectAllPartnerServer(PartnerServerModelSQL.java:55)
+	at com.wahsis.iot.database.SQLConnFactory.<clinit>(SQLConnFactory.java:38)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:105)
+	at com.wahsis.iot.controller.LightController.updateOnOff(LightController.java:324)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-19 23:19:27  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:19:27  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 23:19:27  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:19:27  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 23:19:27  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:19:27  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 23:19:27  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:19:27  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 23:19:32  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:19:32  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-19 23:19:32  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:19:32  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-19 23:19:32  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:19:32  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-19 23:19:32  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:19:32  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-19 23:19:32  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:19:32  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-19 23:19:32  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:19:32  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-19 23:20:28 ERROR LightModel:136 - RoomAreaLightModelSQL.updateOnOffByID : Invalid object name '"40743"_company.dbo.room_area_light'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name '"40743"_company.dbo.room_area_light'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:123)
+	at com.wahsis.iot.controller.LightController.updateOnOff(LightController.java:324)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-19 23:21:30  INFO log:178 - Logging initialized @425ms
+2017-12-19 23:21:31  INFO WebServer:78 - Start server...
+2017-12-19 23:21:31  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5fdd06ce{/,null,null} contextPath ends with /*
+2017-12-19 23:21:31  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@95ac827{/,null,null} contextPath ends with /*
+2017-12-19 23:21:31  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-19 23:21:31  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@4c13cf46{/static,null,AVAILABLE}
+2017-12-19 23:21:31  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5fdd06ce{/smart/ntf,null,AVAILABLE}
+2017-12-19 23:21:31  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@95ac827{/gateway/ntf,null,AVAILABLE}
+2017-12-19 23:21:31  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@5a59c6f4{/,null,AVAILABLE}
+2017-12-19 23:21:31  INFO ServerConnector:266 - Started ServerConnector@39157a14{HTTP/1.1}{0.0.0.0:8021}
+2017-12-19 23:21:31  INFO ServerConnector:266 - Started ServerConnector@54c2311c{HTTP/1.1}{0.0.0.0:9021}
+2017-12-19 23:21:31  INFO ServerConnector:266 - Started ServerConnector@2b954c3b{HTTP/1.1}{0.0.0.0:9022}
+2017-12-19 23:21:31  INFO Server:350 - Started @907ms
+2017-12-19 23:24:09  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":"40743"}}
+2017-12-19 23:24:09  INFO LightController:278 - light: 1
+2017-12-19 23:24:09  INFO LightController:279 - company_id: 40743
+2017-12-19 23:24:09  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 23:24:09  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:24:10  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 23:24:10 ERROR PartnerServerModelSQL:92 - PartnerServerModelSQL.selectAllPartnerServer : Invalid object name 'partner_server'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name 'partner_server'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.database.PartnerServerModelSQL.selectAllPartnerServer(PartnerServerModelSQL.java:55)
+	at com.wahsis.iot.database.SQLConnFactory.<clinit>(SQLConnFactory.java:38)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:105)
+	at com.wahsis.iot.controller.LightController.updateOnOff(LightController.java:324)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-19 23:24:10  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:24:10  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:24:10  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 23:24:10  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:24:10  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-19 23:24:10  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 23:24:10  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:24:10  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 23:24:10  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:24:11  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 23:24:15  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":40743}}
+2017-12-19 23:24:15  INFO LightController:278 - light: 1
+2017-12-19 23:24:15  INFO LightController:279 - company_id: 40743
+2017-12-19 23:24:15  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 23:24:32  INFO log:178 - Logging initialized @377ms
+2017-12-19 23:24:32  INFO WebServer:78 - Start server...
+2017-12-19 23:24:33  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@3ef9ef4f{/,null,null} contextPath ends with /*
+2017-12-19 23:24:33  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@175c6d2c{/,null,null} contextPath ends with /*
+2017-12-19 23:24:33  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-19 23:24:33  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5b1288c4{/static,null,AVAILABLE}
+2017-12-19 23:24:33  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@3ef9ef4f{/smart/ntf,null,AVAILABLE}
+2017-12-19 23:24:33  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@175c6d2c{/gateway/ntf,null,AVAILABLE}
+2017-12-19 23:24:33  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@20c43ace{/,null,AVAILABLE}
+2017-12-19 23:24:33  INFO ServerConnector:266 - Started ServerConnector@1f2d6881{HTTP/1.1}{0.0.0.0:8021}
+2017-12-19 23:24:33  INFO ServerConnector:266 - Started ServerConnector@5fd798cf{HTTP/1.1}{0.0.0.0:9021}
+2017-12-19 23:24:33  INFO ServerConnector:266 - Started ServerConnector@1c6353c0{HTTP/1.1}{0.0.0.0:9022}
+2017-12-19 23:24:33  INFO Server:350 - Started @773ms
+2017-12-19 23:24:37  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":40743}}
+2017-12-19 23:24:37  INFO LightController:278 - light: 1
+2017-12-19 23:24:37  INFO LightController:279 - company_id: 40743
+2017-12-19 23:24:37  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 23:24:37  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:24:38  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 23:24:38 ERROR PartnerServerModelSQL:92 - PartnerServerModelSQL.selectAllPartnerServer : Invalid object name 'partner_server'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name 'partner_server'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.database.PartnerServerModelSQL.selectAllPartnerServer(PartnerServerModelSQL.java:55)
+	at com.wahsis.iot.database.SQLConnFactory.<clinit>(SQLConnFactory.java:38)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:105)
+	at com.wahsis.iot.controller.LightController.updateOnOff(LightController.java:324)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-19 23:24:38  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:24:38  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:24:38  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 23:24:38  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:24:38  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-19 23:24:38  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 23:24:38  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:24:38  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 23:24:38  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:24:38  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 23:25:20  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:25:20  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-19 23:25:20  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:25:20  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-19 23:25:20  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:25:20  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-19 23:25:20  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:25:21  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-19 23:25:50  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":40743}}
+2017-12-19 23:25:50  INFO LightController:278 - light: 1
+2017-12-19 23:25:50  INFO LightController:279 - company_id: 40743
+2017-12-19 23:25:50  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 23:26:01  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":40743}}
+2017-12-19 23:26:01  INFO LightController:278 - light: 1
+2017-12-19 23:26:01  INFO LightController:279 - company_id: 40743
+2017-12-19 23:26:01  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 23:26:31  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":40743}}
+2017-12-19 23:26:31  INFO LightController:278 - light: 1
+2017-12-19 23:26:31  INFO LightController:279 - company_id: 40743
+2017-12-19 23:26:31  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 23:27:38  INFO pos_live_pool:839 - pos_live_pool: Destroyed connection
+2017-12-19 23:27:38  INFO pos_live_pool:839 - pos_live_pool: Destroyed connection
+2017-12-19 23:27:38  INFO pos_live_pool:839 - pos_live_pool: Destroyed connection
+2017-12-19 23:27:43  INFO pos_live_pool:839 - pos_live_pool: Destroyed connection
+2017-12-19 23:27:43  INFO pos_live_pool:839 - pos_live_pool: Destroyed connection
+2017-12-19 23:28:20  INFO pos_pool:839 - pos_pool: Destroyed connection
+2017-12-19 23:28:20  INFO pos_pool:839 - pos_pool: Destroyed connection
+2017-12-19 23:28:20  INFO pos_pool:839 - pos_pool: Destroyed connection
+2017-12-19 23:28:25  INFO pos_pool:839 - pos_pool: Destroyed connection
+2017-12-19 23:29:35  INFO pos_pool:839 - pos_pool: Destroyed connection
+2017-12-19 23:33:59  INFO log:178 - Logging initialized @688ms
+2017-12-19 23:33:59  INFO WebServer:78 - Start server...
+2017-12-19 23:33:59  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5a97d7cf{/,null,null} contextPath ends with /*
+2017-12-19 23:33:59  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@2aa9fbf1{/,null,null} contextPath ends with /*
+2017-12-19 23:33:59  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-19 23:33:59  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@7d38ae4d{/static,null,AVAILABLE}
+2017-12-19 23:33:59  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5a97d7cf{/smart/ntf,null,AVAILABLE}
+2017-12-19 23:33:59  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@2aa9fbf1{/gateway/ntf,null,AVAILABLE}
+2017-12-19 23:33:59  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@6677b00f{/,null,AVAILABLE}
+2017-12-19 23:33:59  INFO ServerConnector:266 - Started ServerConnector@57f4db8e{HTTP/1.1}{0.0.0.0:8021}
+2017-12-19 23:33:59  INFO ServerConnector:266 - Started ServerConnector@13740e1d{HTTP/1.1}{0.0.0.0:9021}
+2017-12-19 23:33:59  INFO ServerConnector:266 - Started ServerConnector@5e87a956{HTTP/1.1}{0.0.0.0:9022}
+2017-12-19 23:33:59  INFO Server:350 - Started @1265ms
+2017-12-19 23:42:07  INFO NotifyController:56 - NotifyController.onConnect: client sessionId = 40743
+2017-12-19 23:42:07  INFO NotifyController:73 - NotifyController.onClose: remove connect
+2017-12-19 23:42:07  INFO NotifyController:98 - remove session: session_id
+2017-12-19 23:42:30  INFO ServiceDaemon:33 - Shutdown thread before webserver getinstance
+2017-12-19 23:42:30  INFO ServerConnector:303 - Stopped ServerConnector@57f4db8e{HTTP/1.1}{0.0.0.0:8021}
+2017-12-19 23:42:30  INFO ServerConnector:303 - Stopped ServerConnector@13740e1d{HTTP/1.1}{0.0.0.0:9021}
+2017-12-19 23:42:33  INFO log:178 - Logging initialized @373ms
+2017-12-19 23:42:33  INFO WebServer:78 - Start server...
+2017-12-19 23:42:33  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5860acfc{/,null,null} contextPath ends with /*
+2017-12-19 23:42:33  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@47c76215{/,null,null} contextPath ends with /*
+2017-12-19 23:42:34  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-19 23:42:34  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@39cde281{/static,null,AVAILABLE}
+2017-12-19 23:42:34  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5860acfc{/smart/ntf,null,AVAILABLE}
+2017-12-19 23:42:34  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@47c76215{/gateway/ntf,null,AVAILABLE}
+2017-12-19 23:42:34  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@bc56d4d{/,null,AVAILABLE}
+2017-12-19 23:42:34  INFO ServerConnector:266 - Started ServerConnector@2c1e3420{HTTP/1.1}{0.0.0.0:8021}
+2017-12-19 23:42:34  INFO ServerConnector:266 - Started ServerConnector@df433ff{HTTP/1.1}{0.0.0.0:9021}
+2017-12-19 23:42:34  INFO ServerConnector:266 - Started ServerConnector@1473c603{HTTP/1.1}{0.0.0.0:9022}
+2017-12-19 23:42:34  INFO Server:350 - Started @798ms
+2017-12-19 23:43:01  INFO NotifyController:56 - NotifyController.onConnect: client sessionId = 40743
+2017-12-19 23:43:01  INFO NotifyController:73 - NotifyController.onClose: remove connect
+2017-12-19 23:43:01  INFO NotifyController:98 - remove session: session_id
+2017-12-19 23:45:15  INFO NotifyController:56 - NotifyController.onConnect: client sessionId = 40743
+2017-12-19 23:45:23  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":1},"company":{"company_id":40743}}
+2017-12-19 23:45:23  INFO LightController:278 - light: 1
+2017-12-19 23:45:23  INFO LightController:279 - company_id: 40743
+2017-12-19 23:45:23  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 23:45:23  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:45:24  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 23:45:24  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:45:24  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 23:45:24  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:45:24 ERROR PartnerServerModelSQL:92 - PartnerServerModelSQL.selectAllPartnerServer : Invalid object name 'partner_server'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name 'partner_server'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.database.PartnerServerModelSQL.selectAllPartnerServer(PartnerServerModelSQL.java:55)
+	at com.wahsis.iot.database.SQLConnFactory.<clinit>(SQLConnFactory.java:38)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:105)
+	at com.wahsis.iot.controller.LightController.updateOnOff(LightController.java:324)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-19 23:45:24  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 23:45:24  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:45:24  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 23:45:24  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:45:24  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 23:45:24  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:45:24  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-19 23:45:24  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:45:24  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-19 23:45:24  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:45:24  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-19 23:45:24  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:45:24  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-19 23:45:24  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:45:24  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-19 23:45:24  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:45:24  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-19 23:45:24  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:45:24  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-19 23:45:43  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":40743}}
+2017-12-19 23:45:43  INFO LightController:278 - light: 1
+2017-12-19 23:45:43  INFO LightController:279 - company_id: 40743
+2017-12-19 23:45:43  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 23:48:24  INFO pos_live_pool:839 - pos_live_pool: Destroyed connection
+2017-12-19 23:48:24  INFO pos_pool:839 - pos_pool: Destroyed connection
+2017-12-19 23:48:24  INFO pos_pool:839 - pos_pool: Destroyed connection
+2017-12-19 23:48:29  INFO pos_live_pool:839 - pos_live_pool: Destroyed connection
+2017-12-19 23:48:29  INFO pos_live_pool:839 - pos_live_pool: Destroyed connection
+2017-12-19 23:48:29  INFO pos_live_pool:839 - pos_live_pool: Destroyed connection
+2017-12-19 23:48:29  INFO pos_live_pool:839 - pos_live_pool: Destroyed connection
+2017-12-19 23:48:29  INFO pos_live_pool:839 - pos_live_pool: Destroyed connection
+2017-12-19 23:48:29  INFO pos_pool:839 - pos_pool: Destroyed connection
+2017-12-19 23:48:29  INFO pos_pool:839 - pos_pool: Destroyed connection
+2017-12-19 23:48:29  INFO pos_pool:839 - pos_pool: Destroyed connection
+2017-12-19 23:48:44  INFO pos_pool:839 - pos_pool: Destroyed connection
+2017-12-19 23:53:25  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":40743}}
+2017-12-19 23:53:25  INFO LightController:278 - light: 1
+2017-12-19 23:53:25  INFO LightController:279 - company_id: 40743
+2017-12-19 23:53:25  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 23:53:25  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-19 23:53:25  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-19 23:53:33  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":40743}}
+2017-12-19 23:53:33  INFO LightController:278 - light: 1
+2017-12-19 23:53:33  INFO LightController:279 - company_id: 40743
+2017-12-19 23:53:33  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 23:53:36  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":40743}}
+2017-12-19 23:53:36  INFO LightController:278 - light: 1
+2017-12-19 23:53:36  INFO LightController:279 - company_id: 40743
+2017-12-19 23:53:36  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 23:53:40  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":40743}}
+2017-12-19 23:53:40  INFO LightController:278 - light: 1
+2017-12-19 23:53:40  INFO LightController:279 - company_id: 40743
+2017-12-19 23:53:40  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 23:53:40  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":40743}}
+2017-12-19 23:53:40  INFO LightController:278 - light: 1
+2017-12-19 23:53:40  INFO LightController:279 - company_id: 40743
+2017-12-19 23:53:40  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 23:53:41  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":40743}}
+2017-12-19 23:53:41  INFO LightController:278 - light: 1
+2017-12-19 23:53:41  INFO LightController:279 - company_id: 40743
+2017-12-19 23:53:41  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 23:53:41  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":40743}}
+2017-12-19 23:53:41  INFO LightController:278 - light: 1
+2017-12-19 23:53:41  INFO LightController:279 - company_id: 40743
+2017-12-19 23:53:41  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 23:53:42  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":40743}}
+2017-12-19 23:53:42  INFO LightController:278 - light: 1
+2017-12-19 23:53:42  INFO LightController:279 - company_id: 40743
+2017-12-19 23:53:42  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 23:53:50  INFO NotifyController:73 - NotifyController.onClose: remove connect
+2017-12-19 23:53:50  INFO NotifyController:98 - remove session: session_id
+2017-12-19 23:54:00  INFO NotifyController:56 - NotifyController.onConnect: client sessionId = 40743
+2017-12-19 23:54:05  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":40743}}
+2017-12-19 23:54:05  INFO LightController:278 - light: 1
+2017-12-19 23:54:05  INFO LightController:279 - company_id: 40743
+2017-12-19 23:54:05  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 23:54:13  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":40743}}
+2017-12-19 23:54:13  INFO LightController:278 - light: 1
+2017-12-19 23:54:13  INFO LightController:279 - company_id: 40743
+2017-12-19 23:54:13  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-19 23:57:15  INFO pos_pool:839 - pos_pool: Destroyed connection
+2017-12-20 00:00:54  INFO NotifyController:56 - NotifyController.onConnect: client sessionId = 40743
+2017-12-20 00:00:54  INFO NotifyController:61 - NotifyController.onConnect: close old client sessionId = 40743
+2017-12-20 00:00:54  INFO NotifyController:73 - NotifyController.onClose: remove connect
+2017-12-20 00:00:54  INFO NotifyController:98 - remove session: session_id
+2017-12-20 00:01:03  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":40743}}
+2017-12-20 00:01:03  INFO LightController:278 - light: 1
+2017-12-20 00:01:03  INFO LightController:279 - company_id: 40743
+2017-12-20 00:01:03  INFO DeviceNotifyController:97 - push data to client, ssid: 40743
+2017-12-20 00:01:03  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-20 00:01:04  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-20 00:04:04  INFO pos_pool:839 - pos_pool: Destroyed connection
+2017-12-20 00:11:04  INFO NotifyController:73 - NotifyController.onClose: remove connect
+2017-12-20 00:11:04  INFO NotifyController:98 - remove session: session_id
+2017-12-20 00:12:56  INFO ServiceDaemon:33 - Shutdown thread before webserver getinstance
+2017-12-20 00:12:56  INFO ServerConnector:303 - Stopped ServerConnector@2c1e3420{HTTP/1.1}{0.0.0.0:8021}
+2017-12-20 00:12:56  INFO ServerConnector:303 - Stopped ServerConnector@df433ff{HTTP/1.1}{0.0.0.0:9021}
+2017-12-20 00:12:56  INFO ServerConnector:303 - Stopped ServerConnector@1473c603{HTTP/1.1}{0.0.0.0:9022}
+2017-12-20 00:12:56  INFO ContextHandler:864 - Stopped o.e.j.s.ServletContextHandler@bc56d4d{/,null,UNAVAILABLE}
+2017-12-20 00:12:56  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@47c76215{/gateway/ntf,null,UNAVAILABLE}
+2017-12-20 00:12:56  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@5860acfc{/smart/ntf,null,UNAVAILABLE}
+2017-12-20 00:12:56  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@39cde281{/static,null,UNAVAILABLE}
+2017-12-20 00:13:55  INFO log:178 - Logging initialized @497ms
+2017-12-20 00:13:55  INFO WebServer:78 - Start server...
+2017-12-20 00:13:56  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@3ef9ef4f{/,null,null} contextPath ends with /*
+2017-12-20 00:13:56  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@175c6d2c{/,null,null} contextPath ends with /*
+2017-12-20 00:13:56  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-20 00:13:56  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5b1288c4{/static,null,AVAILABLE}
+2017-12-20 00:13:56  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@3ef9ef4f{/smart/ntf,null,AVAILABLE}
+2017-12-20 00:13:56  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@175c6d2c{/gateway/ntf,null,AVAILABLE}
+2017-12-20 00:13:56  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@20c43ace{/,null,AVAILABLE}
+2017-12-20 00:13:56  INFO ServerConnector:266 - Started ServerConnector@1f2d6881{HTTP/1.1}{0.0.0.0:8021}
+2017-12-20 00:13:56  INFO ServerConnector:266 - Started ServerConnector@5fd798cf{HTTP/1.1}{0.0.0.0:9021}
+2017-12-20 00:13:56  INFO ServerConnector:266 - Started ServerConnector@1c6353c0{HTTP/1.1}{0.0.0.0:9022}
+2017-12-20 00:13:56  INFO Server:350 - Started @1109ms
