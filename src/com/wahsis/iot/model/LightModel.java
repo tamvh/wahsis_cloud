@@ -97,9 +97,14 @@ public class LightModel {
         Connection connection = null;
         ResultSet rs = null;
         PreparedStatement cs = null;
+        logger.info("LightModel.updateOnOffByID, company_id: " + company_id);
         int ret = -1;
         try {
             int brightness = 0;
+            if(light.getOn_off() == 1) {
+                brightness = 100;
+            }
+            light.setBrightness(brightness);
             // light type: 0(dim), 1(onoff)
             
             connection = SQLConnFactory.getConnection(company_id);
@@ -121,6 +126,7 @@ public class LightModel {
             cs.setString(count++, light.getLight_code());
             cs.setString(count++, light.getLight_code());
             boolean kq = cs.execute();
+            logger.info("LightModel.updateOnOffByID, kq: " + kq);
             if (kq) {
                 rs = cs.getResultSet();
                 if (rs.next()) {
@@ -133,7 +139,8 @@ public class LightModel {
                 }
             }
         } catch (SQLException ex) {
-            logger.error("RoomAreaLightModelSQL.updateOnOffByID : " + ex.getMessage(), ex);
+            logger.error("LightModel.updateOnOffByID : " + ex.getMessage(), ex);
+            ret = -1;
         } finally {
             SQLConnFactory.safeClose(rs);
             SQLConnFactory.safeClose(cs);

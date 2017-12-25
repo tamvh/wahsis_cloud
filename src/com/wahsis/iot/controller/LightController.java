@@ -253,7 +253,7 @@ public class LightController extends HttpServlet {
         return content;
     }
 
-    public String switchOnOff(String data) {
+    public String switchOnOff(String data) throws IOException {
         String content;
         int ret = -1;
         try {
@@ -275,8 +275,8 @@ public class LightController extends HttpServlet {
                 String value;
                 String light_code = light.getLight_code();
                 String company_id = company.getCompany_id();
-                logger.info("light: " + light_code);
-                logger.info("company_id: " + company_id);
+                logger.info(getClass().getSimpleName() + ".switchOnOff, light: " + light_code);
+                logger.info(getClass().getSimpleName() + ".switchOnOff, company_id: " + company_id);
                 String msg_device_notify;
                 if (on_off == 0) {
                     value = "0";
@@ -294,14 +294,11 @@ public class LightController extends HttpServlet {
                 
                 //push notify to crestron gateway
                 DeviceNotifyController.sendMessageToClient(company_id, msg_device_notify);
+                                                      
+                AddLogTask.getInstance().addSWitchOnOffMsg(data);
 
-                //push notify to client
-                JsonObject jsonData = new JsonObject();
-                jsonData.add("light", jsonObject.get("light").getAsJsonObject());
-                jsonData.add("company", jsonObject.get("company").getAsJsonObject());
-                AddLogTask.getInstance().addSwitchLightMessage(jsonData);
                 ret = 0;
-                return CommonModel.FormatResponse(ret, "light switch onoff success");
+                content = CommonModel.FormatResponse(ret, "light switch onoff success");
             }
 
         } catch (JsonSyntaxException ex) {
@@ -321,6 +318,8 @@ public class LightController extends HttpServlet {
             } else {
                 Light light = new Light();
                 light = _gson.fromJson(jsonObject, Light.class);
+                logger.info(getClass().getSimpleName() + ".updateOnOff, company_id: " + company_id);
+                logger.info(getClass().getSimpleName() + ".updateOnOff, data: " + data);
                 ret = LightModel.getInstance().updateOnOffByID(company_id, light);
 
                 JsonObject jsonMain = new JsonObject();
@@ -439,7 +438,7 @@ public class LightController extends HttpServlet {
                             JsonObject jsonData = new JsonObject();
                             jsonData.add("light", light);
                             jsonData.add("company", jsonObject.get("company").getAsJsonObject());
-                            AddLogTask.getInstance().addSwitchLightMessage(jsonData);
+//                            AddLogTask.getInstance().addSwitchLightMessage(jsonData);
                         }
                     } else {
                         return CommonModel.FormatResponse(ret, "Invalid parameter");

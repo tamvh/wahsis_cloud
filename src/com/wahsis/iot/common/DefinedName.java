@@ -11,6 +11,7 @@ package com.wahsis.iot.common;
  */
 public class DefinedName {
     public static final String  UUID                    = "uuid";
+    public static final String  TIMESTAMP               = "timestamp";
     public static final String  SESSION_ID              = "session_id";
     public static final String  COMPANY_ID              = "company_id";
     public static final String  MASTER_DB_NAME          = "sos";

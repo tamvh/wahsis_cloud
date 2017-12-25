@@ -3534,3 +3534,1360 @@ com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name 'partner_se
 2017-12-20 00:13:56  INFO ServerConnector:266 - Started ServerConnector@5fd798cf{HTTP/1.1}{0.0.0.0:9021}
 2017-12-20 00:13:56  INFO ServerConnector:266 - Started ServerConnector@1c6353c0{HTTP/1.1}{0.0.0.0:9022}
 2017-12-20 00:13:56  INFO Server:350 - Started @1109ms
+2017-12-22 16:34:38  INFO log:178 - Logging initialized @929ms
+2017-12-22 16:34:38  INFO WebServer:78 - Start server...
+2017-12-22 16:34:38  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5a97d7cf{/,null,null} contextPath ends with /*
+2017-12-22 16:34:38  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@2aa9fbf1{/,null,null} contextPath ends with /*
+2017-12-22 16:34:38  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-22 16:34:39  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@7d38ae4d{/static,null,AVAILABLE}
+2017-12-22 16:34:39  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5a97d7cf{/smart/ntf,null,AVAILABLE}
+2017-12-22 16:34:39  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@2aa9fbf1{/gateway/ntf,null,AVAILABLE}
+2017-12-22 16:34:39  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@6677b00f{/,null,AVAILABLE}
+2017-12-22 16:34:39  INFO ServerConnector:266 - Started ServerConnector@57f4db8e{HTTP/1.1}{0.0.0.0:8021}
+2017-12-22 16:34:39  INFO ServerConnector:266 - Started ServerConnector@639f282e{HTTP/1.1}{0.0.0.0:9021}
+2017-12-22 16:34:39  INFO ServerConnector:266 - Started ServerConnector@5e87a956{HTTP/1.1}{0.0.0.0:9022}
+2017-12-22 16:34:39  INFO Server:350 - Started @1654ms
+2017-12-22 16:36:28  INFO NotifyController:65 - NotifyController.onConnect: client sessionId = 1234, company_id: 4444
+2017-12-22 16:36:45  WARN NotifyController:243 - Unhandled Error (closing connection)
+org.eclipse.jetty.websocket.api.WebSocketException: Cannot call method public void com.wahsis.iot.controller.NotifyController#onConnect(org.eclipse.jetty.websocket.api.Session) with args: [org.eclipse.jetty.websocket.common.WebSocketSession]
+	at org.eclipse.jetty.websocket.common.events.annotated.CallableMethod.call(CallableMethod.java:99)
+	at org.eclipse.jetty.websocket.common.events.JettyAnnotatedEventDriver.onConnect(JettyAnnotatedEventDriver.java:131)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.openSession(AbstractEventDriver.java:227)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.open(WebSocketSession.java:406)
+	at org.eclipse.jetty.websocket.server.WebSocketServerConnection.onOpen(WebSocketServerConnection.java:63)
+	at org.eclipse.jetty.server.HttpConnection.completed(HttpConnection.java:318)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:405)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:232)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:534)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:607)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:536)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.jetty.websocket.common.events.annotated.CallableMethod.call(CallableMethod.java:71)
+	... 11 more
+Caused by: java.lang.NullPointerException
+	at com.wahsis.iot.controller.NotifyController.onConnect(NotifyController.java:75)
+	... 16 more
+2017-12-22 16:36:45  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 16:38:54  INFO log:178 - Logging initialized @548ms
+2017-12-22 16:38:54  INFO WebServer:78 - Start server...
+2017-12-22 16:38:55  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5a97d7cf{/,null,null} contextPath ends with /*
+2017-12-22 16:38:55  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@2aa9fbf1{/,null,null} contextPath ends with /*
+2017-12-22 16:38:55  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-22 16:38:55  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@7d38ae4d{/static,null,AVAILABLE}
+2017-12-22 16:38:55  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5a97d7cf{/smart/ntf,null,AVAILABLE}
+2017-12-22 16:38:55  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@2aa9fbf1{/gateway/ntf,null,AVAILABLE}
+2017-12-22 16:38:55  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@6677b00f{/,null,AVAILABLE}
+2017-12-22 16:38:55  INFO ServerConnector:266 - Started ServerConnector@57f4db8e{HTTP/1.1}{0.0.0.0:8021}
+2017-12-22 16:38:55  INFO ServerConnector:266 - Started ServerConnector@5e87a956{HTTP/1.1}{0.0.0.0:9021}
+2017-12-22 16:38:55  INFO ServerConnector:266 - Started ServerConnector@7b75f654{HTTP/1.1}{0.0.0.0:9022}
+2017-12-22 16:38:55  INFO Server:350 - Started @907ms
+2017-12-22 16:39:00  INFO NotifyController:65 - NotifyController.onConnect: client sessionId = 1234, company_id: 4444
+2017-12-22 16:39:50  INFO NotifyController:125 - NotifyController.sendMessageToClient: response to client company_id = 4444, data = data1234
+2017-12-22 16:49:50  INFO NotifyController:88 - NotifyController.onClose: remove connect
+2017-12-22 19:00:28  INFO log:178 - Logging initialized @377ms
+2017-12-22 19:00:28  INFO WebServer:78 - Start server...
+2017-12-22 19:00:28  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@d902c28{/,null,null} contextPath ends with /*
+2017-12-22 19:00:28  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@4c566fcc{/,null,null} contextPath ends with /*
+2017-12-22 19:00:28  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-22 19:00:28  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@d9bed95{/static,null,AVAILABLE}
+2017-12-22 19:00:28  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@d902c28{/smart/ntf,null,AVAILABLE}
+2017-12-22 19:00:28  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@4c566fcc{/gateway/ntf,null,AVAILABLE}
+2017-12-22 19:00:28  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@201446c2{/,null,AVAILABLE}
+2017-12-22 19:00:28  INFO ServerConnector:266 - Started ServerConnector@6315fd7f{HTTP/1.1}{0.0.0.0:8021}
+2017-12-22 19:00:28  INFO ServerConnector:266 - Started ServerConnector@35020289{HTTP/1.1}{0.0.0.0:9021}
+2017-12-22 19:00:28  INFO ServerConnector:266 - Started ServerConnector@49c3e36f{HTTP/1.1}{0.0.0.0:9022}
+2017-12-22 19:00:28  INFO Server:350 - Started @842ms
+2017-12-22 19:00:36  INFO NotifyController:65 - NotifyController.onConnect: client sessionId = 1234, company_id: 4444
+2017-12-22 19:00:36  INFO NotifyController:125 - NotifyController.sendMessageToClient: response to client company_id = 4444, data = data 1234
+2017-12-22 19:01:28  INFO NotifyController:88 - NotifyController.onClose: remove connect
+2017-12-22 19:01:35  INFO NotifyController:65 - NotifyController.onConnect: client sessionId = 1234, company_id: 4444
+2017-12-22 19:01:35  INFO NotifyController:69 - NotifyController.onConnect: close old client sessionId = 1234, company_id: 4444
+2017-12-22 19:01:35  INFO NotifyController:125 - NotifyController.sendMessageToClient: response to client company_id = 4444, data = data 1234
+2017-12-22 19:05:20  INFO NotifyController:65 - NotifyController.onConnect: client sessionId = 1236, company_id: 4444
+2017-12-22 19:05:20  INFO NotifyController:69 - NotifyController.onConnect: close old client sessionId = 1236, company_id: 4444
+2017-12-22 19:05:20  INFO NotifyController:88 - NotifyController.onClose: remove connect
+2017-12-22 19:05:20  INFO NotifyController:125 - NotifyController.sendMessageToClient: response to client company_id = 4444, data = data 1236
+2017-12-22 19:05:20  WARN NotifyController:243 - Unhandled Error (closing connection)
+org.eclipse.jetty.websocket.api.WebSocketException: Cannot call method public void com.wahsis.iot.controller.NotifyController#onConnect(org.eclipse.jetty.websocket.api.Session) with args: [org.eclipse.jetty.websocket.common.WebSocketSession]
+	at org.eclipse.jetty.websocket.common.events.annotated.CallableMethod.call(CallableMethod.java:99)
+	at org.eclipse.jetty.websocket.common.events.JettyAnnotatedEventDriver.onConnect(JettyAnnotatedEventDriver.java:131)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.openSession(AbstractEventDriver.java:227)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.open(WebSocketSession.java:406)
+	at org.eclipse.jetty.websocket.server.WebSocketServerConnection.onOpen(WebSocketServerConnection.java:63)
+	at org.eclipse.jetty.server.HttpConnection.completed(HttpConnection.java:318)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:405)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:232)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:534)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:607)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:536)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.jetty.websocket.common.events.annotated.CallableMethod.call(CallableMethod.java:71)
+	... 11 more
+Caused by: org.eclipse.jetty.websocket.api.WebSocketException: RemoteEndpoint unavailable, current state [CLOSING], expecting [OPEN or CONNECTED]
+	at org.eclipse.jetty.websocket.common.WebSocketSession.getRemote(WebSocketSession.java:245)
+	at com.wahsis.iot.controller.NotifyController.sendMessageToClient(NotifyController.java:127)
+	at com.wahsis.iot.controller.NotifyController.onConnect(NotifyController.java:82)
+	... 16 more
+2017-12-22 19:05:20  INFO NotifyController:88 - NotifyController.onClose: remove connect
+2017-12-22 19:05:50  INFO ServiceDaemon:33 - Shutdown thread before webserver getinstance
+2017-12-22 19:05:50  INFO ServerConnector:303 - Stopped ServerConnector@6315fd7f{HTTP/1.1}{0.0.0.0:8021}
+2017-12-22 19:05:50  INFO ServerConnector:303 - Stopped ServerConnector@35020289{HTTP/1.1}{0.0.0.0:9021}
+2017-12-22 19:05:50  INFO ServerConnector:303 - Stopped ServerConnector@49c3e36f{HTTP/1.1}{0.0.0.0:9022}
+2017-12-22 19:05:50  INFO ContextHandler:864 - Stopped o.e.j.s.ServletContextHandler@201446c2{/,null,UNAVAILABLE}
+2017-12-22 19:05:50  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@4c566fcc{/gateway/ntf,null,UNAVAILABLE}
+2017-12-22 19:05:50  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@d902c28{/smart/ntf,null,UNAVAILABLE}
+2017-12-22 19:05:50  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@d9bed95{/static,null,UNAVAILABLE}
+2017-12-22 19:15:34  INFO log:178 - Logging initialized @456ms
+2017-12-22 19:15:34  INFO WebServer:78 - Start server...
+2017-12-22 19:15:34  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@21a07ef3{/,null,null} contextPath ends with /*
+2017-12-22 19:15:34  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@7c106ee3{/,null,null} contextPath ends with /*
+2017-12-22 19:15:34  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-22 19:15:34  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@20629131{/static,null,AVAILABLE}
+2017-12-22 19:15:34  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@21a07ef3{/smart/ntf,null,AVAILABLE}
+2017-12-22 19:15:34  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@7c106ee3{/gateway/ntf,null,AVAILABLE}
+2017-12-22 19:15:34  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@3d6d04fb{/,null,AVAILABLE}
+2017-12-22 19:15:34  INFO ServerConnector:266 - Started ServerConnector@51db3126{HTTP/1.1}{0.0.0.0:8021}
+2017-12-22 19:15:34  INFO ServerConnector:266 - Started ServerConnector@3a8cb807{HTTP/1.1}{0.0.0.0:9021}
+2017-12-22 19:15:34  INFO ServerConnector:266 - Started ServerConnector@7959f1{HTTP/1.1}{0.0.0.0:9022}
+2017-12-22 19:15:34  INFO Server:350 - Started @886ms
+2017-12-22 19:15:49  INFO NotifyController:65 - NotifyController.onConnect: client sessionId = 1234, company_id: 4444
+2017-12-22 19:15:49  INFO NotifyController:134 - NotifyController.sendMessageToClient: response to client company_id = 4444, data = data 1234
+2017-12-22 19:16:04  INFO NotifyController:65 - NotifyController.onConnect: client sessionId = 1236, company_id: 4444
+2017-12-22 19:16:04  INFO NotifyController:69 - NotifyController.onConnect: close old client sessionId = 1236, company_id: 4444
+2017-12-22 19:16:04  INFO NotifyController:134 - NotifyController.sendMessageToClient: response to client company_id = 4444, data = data 1236
+2017-12-22 19:18:33  INFO ServiceDaemon:33 - Shutdown thread before webserver getinstance
+2017-12-22 19:18:33  INFO ServerConnector:303 - Stopped ServerConnector@51db3126{HTTP/1.1}{0.0.0.0:8021}
+2017-12-22 19:18:33  INFO ServerConnector:303 - Stopped ServerConnector@3a8cb807{HTTP/1.1}{0.0.0.0:9021}
+2017-12-22 19:18:33  INFO ServerConnector:303 - Stopped ServerConnector@7959f1{HTTP/1.1}{0.0.0.0:9022}
+2017-12-22 19:18:33  INFO ContextHandler:864 - Stopped o.e.j.s.ServletContextHandler@3d6d04fb{/,null,UNAVAILABLE}
+2017-12-22 19:18:33  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@7c106ee3{/gateway/ntf,null,UNAVAILABLE}
+2017-12-22 19:18:33  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@21a07ef3{/smart/ntf,null,UNAVAILABLE}
+2017-12-22 19:18:33  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@20629131{/static,null,UNAVAILABLE}
+2017-12-22 19:18:37  INFO log:178 - Logging initialized @394ms
+2017-12-22 19:18:37  INFO WebServer:78 - Start server...
+2017-12-22 19:18:37  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5860acfc{/,null,null} contextPath ends with /*
+2017-12-22 19:18:37  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@47c76215{/,null,null} contextPath ends with /*
+2017-12-22 19:18:37  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-22 19:18:37  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@39cde281{/static,null,AVAILABLE}
+2017-12-22 19:18:37  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5860acfc{/smart/ntf,null,AVAILABLE}
+2017-12-22 19:18:37  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@47c76215{/gateway/ntf,null,AVAILABLE}
+2017-12-22 19:18:37  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@bc56d4d{/,null,AVAILABLE}
+2017-12-22 19:18:37  INFO ServerConnector:266 - Started ServerConnector@680ec203{HTTP/1.1}{0.0.0.0:8021}
+2017-12-22 19:18:37  INFO ServerConnector:266 - Started ServerConnector@18a08fe5{HTTP/1.1}{0.0.0.0:9021}
+2017-12-22 19:18:37  INFO ServerConnector:266 - Started ServerConnector@2c1e3420{HTTP/1.1}{0.0.0.0:9022}
+2017-12-22 19:18:37  INFO Server:350 - Started @990ms
+2017-12-22 19:18:40  INFO NotifyController:65 - NotifyController.onConnect: client sessionId = 1236, company_id: 4444
+2017-12-22 19:18:40  INFO NotifyController:134 - NotifyController.sendMessageToClient: response to client company_id = 4444, data = data 1236
+2017-12-22 19:18:52  INFO NotifyController:65 - NotifyController.onConnect: client sessionId = 1234, company_id: 4444
+2017-12-22 19:18:52  INFO NotifyController:69 - NotifyController.onConnect: close old client sessionId = 1234, company_id: 4444
+2017-12-22 19:18:52  INFO NotifyController:134 - NotifyController.sendMessageToClient: response to client company_id = 4444, data = data 1234
+2017-12-22 19:19:20  INFO NotifyController:97 - NotifyController.onClose: remove connect
+2017-12-22 19:19:21  INFO NotifyController:65 - NotifyController.onConnect: client sessionId = 1234, company_id: 4444
+2017-12-22 19:19:21  INFO NotifyController:69 - NotifyController.onConnect: close old client sessionId = 1234, company_id: 4444
+2017-12-22 19:19:21  INFO NotifyController:134 - NotifyController.sendMessageToClient: response to client company_id = 4444, data = data 1234
+2017-12-22 19:19:42  INFO NotifyController:97 - NotifyController.onClose: remove connect
+2017-12-22 19:19:43  INFO NotifyController:65 - NotifyController.onConnect: client sessionId = 1234, company_id: 4444
+2017-12-22 19:19:43  INFO NotifyController:69 - NotifyController.onConnect: close old client sessionId = 1234, company_id: 4444
+2017-12-22 19:19:43  INFO NotifyController:134 - NotifyController.sendMessageToClient: response to client company_id = 4444, data = data 1234
+2017-12-22 19:19:59  INFO ServiceDaemon:33 - Shutdown thread before webserver getinstance
+2017-12-22 19:19:59  INFO ServerConnector:303 - Stopped ServerConnector@680ec203{HTTP/1.1}{0.0.0.0:8021}
+2017-12-22 19:19:59  INFO ServerConnector:303 - Stopped ServerConnector@18a08fe5{HTTP/1.1}{0.0.0.0:9021}
+2017-12-22 19:19:59  INFO ServerConnector:303 - Stopped ServerConnector@2c1e3420{HTTP/1.1}{0.0.0.0:9022}
+2017-12-22 19:19:59  INFO ContextHandler:864 - Stopped o.e.j.s.ServletContextHandler@bc56d4d{/,null,UNAVAILABLE}
+2017-12-22 19:19:59  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@47c76215{/gateway/ntf,null,UNAVAILABLE}
+2017-12-22 19:19:59  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@5860acfc{/smart/ntf,null,UNAVAILABLE}
+2017-12-22 19:19:59  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@39cde281{/static,null,UNAVAILABLE}
+2017-12-22 19:21:09  INFO log:178 - Logging initialized @764ms
+2017-12-22 19:21:10  INFO WebServer:78 - Start server...
+2017-12-22 19:21:10  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@3d12c0bc{/,null,null} contextPath ends with /*
+2017-12-22 19:21:10  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@45cce67d{/,null,null} contextPath ends with /*
+2017-12-22 19:21:10  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-22 19:21:10  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@3eca0bac{/static,null,AVAILABLE}
+2017-12-22 19:21:10  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@3d12c0bc{/smart/ntf,null,AVAILABLE}
+2017-12-22 19:21:10  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@45cce67d{/gateway/ntf,null,AVAILABLE}
+2017-12-22 19:21:10  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@5575e177{/,null,AVAILABLE}
+2017-12-22 19:21:10  INFO ServerConnector:266 - Started ServerConnector@6e6d2aa0{HTTP/1.1}{0.0.0.0:8021}
+2017-12-22 19:21:10  INFO ServerConnector:266 - Started ServerConnector@2e74ecfc{HTTP/1.1}{0.0.0.0:9021}
+2017-12-22 19:21:10  INFO ServerConnector:266 - Started ServerConnector@77f7920d{HTTP/1.1}{0.0.0.0:9022}
+2017-12-22 19:21:10  INFO Server:350 - Started @1351ms
+2017-12-22 19:21:15  INFO NotifyController:65 - NotifyController.onConnect: client sessionId = 1236, company_id: 4444
+2017-12-22 19:21:15  INFO NotifyController:134 - NotifyController.sendMessageToClient: response to client company_id = 4444, data = data 1236
+2017-12-22 19:22:32  INFO NotifyController:65 - NotifyController.onConnect: client sessionId = 1234, company_id: 4444
+2017-12-22 19:22:49  INFO NotifyController:69 - NotifyController.onConnect: close old client sessionId = 1234, company_id: 4444
+2017-12-22 19:25:42  INFO log:178 - Logging initialized @319ms
+2017-12-22 19:25:42  INFO WebServer:78 - Start server...
+2017-12-22 19:25:42  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@4e3ddf0a{/,null,null} contextPath ends with /*
+2017-12-22 19:25:42  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@76b5f648{/,null,null} contextPath ends with /*
+2017-12-22 19:25:42  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-22 19:25:42  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@1f8fb513{/static,null,AVAILABLE}
+2017-12-22 19:25:42  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@4e3ddf0a{/smart/ntf,null,AVAILABLE}
+2017-12-22 19:25:42  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@76b5f648{/gateway/ntf,null,AVAILABLE}
+2017-12-22 19:25:42  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@75e6ec71{/,null,AVAILABLE}
+2017-12-22 19:25:42  INFO ServerConnector:266 - Started ServerConnector@4e45a654{HTTP/1.1}{0.0.0.0:8021}
+2017-12-22 19:25:42  INFO ServerConnector:266 - Started ServerConnector@1b152c4c{HTTP/1.1}{0.0.0.0:9021}
+2017-12-22 19:25:42  INFO ServerConnector:266 - Started ServerConnector@2c150cfa{HTTP/1.1}{0.0.0.0:9022}
+2017-12-22 19:25:42  INFO Server:350 - Started @639ms
+2017-12-22 19:25:49  INFO NotifyController:65 - NotifyController.onConnect: client sessionId = 1236, company_id: 4444
+2017-12-22 19:25:49  INFO NotifyController:136 - NotifyController.sendMessageToClient: response to client company_id = 4444, data = data 1236
+2017-12-22 19:25:57  INFO NotifyController:65 - NotifyController.onConnect: client sessionId = 1234, company_id: 4444
+2017-12-22 19:25:57  INFO NotifyController:69 - NotifyController.onConnect: close old client sessionId = 1234, company_id: 4444
+2017-12-22 19:25:57  INFO NotifyController:136 - NotifyController.sendMessageToClient: response to client company_id = 4444, data = data 1234
+2017-12-22 19:26:10  INFO NotifyController:99 - NotifyController.onClose: remove connect
+2017-12-22 19:26:10  INFO NotifyController:65 - NotifyController.onConnect: client sessionId = 1234, company_id: 4444
+2017-12-22 19:26:10  INFO NotifyController:69 - NotifyController.onConnect: close old client sessionId = 1234, company_id: 4444
+2017-12-22 19:26:10  INFO NotifyController:99 - NotifyController.onClose: remove connect
+2017-12-22 19:26:10  INFO NotifyController:136 - NotifyController.sendMessageToClient: response to client company_id = 4444, data = data 1234
+2017-12-22 19:26:10  WARN NotifyController:243 - Unhandled Error (closing connection)
+org.eclipse.jetty.websocket.api.WebSocketException: Cannot call method public void com.wahsis.iot.controller.NotifyController#onConnect(org.eclipse.jetty.websocket.api.Session) with args: [org.eclipse.jetty.websocket.common.WebSocketSession]
+	at org.eclipse.jetty.websocket.common.events.annotated.CallableMethod.call(CallableMethod.java:99)
+	at org.eclipse.jetty.websocket.common.events.JettyAnnotatedEventDriver.onConnect(JettyAnnotatedEventDriver.java:131)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.openSession(AbstractEventDriver.java:227)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.open(WebSocketSession.java:406)
+	at org.eclipse.jetty.websocket.server.WebSocketServerConnection.onOpen(WebSocketServerConnection.java:63)
+	at org.eclipse.jetty.server.HttpConnection.completed(HttpConnection.java:318)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:405)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:232)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:534)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:607)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:536)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.jetty.websocket.common.events.annotated.CallableMethod.call(CallableMethod.java:71)
+	... 11 more
+Caused by: org.eclipse.jetty.websocket.api.WebSocketException: RemoteEndpoint unavailable, current state [CLOSING], expecting [OPEN or CONNECTED]
+	at org.eclipse.jetty.websocket.common.WebSocketSession.getRemote(WebSocketSession.java:245)
+	at com.wahsis.iot.controller.NotifyController.sendMessageToClient(NotifyController.java:138)
+	at com.wahsis.iot.controller.NotifyController.onConnect(NotifyController.java:93)
+	... 16 more
+2017-12-22 19:26:11  INFO NotifyController:99 - NotifyController.onClose: remove connect
+2017-12-22 19:29:04  INFO log:178 - Logging initialized @353ms
+2017-12-22 19:29:04  INFO WebServer:78 - Start server...
+2017-12-22 19:29:04  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@7ac67306{/,null,null} contextPath ends with /*
+2017-12-22 19:29:04  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@2422c51f{/,null,null} contextPath ends with /*
+2017-12-22 19:29:05  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-22 19:29:05  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@711e72ac{/static,null,AVAILABLE}
+2017-12-22 19:29:05  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@7ac67306{/smart/ntf,null,AVAILABLE}
+2017-12-22 19:29:05  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@2422c51f{/gateway/ntf,null,AVAILABLE}
+2017-12-22 19:29:05  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@558466fa{/,null,AVAILABLE}
+2017-12-22 19:29:05  WARN AbstractLifeCycle:210 - FAILED ServerConnector@3439639c{HTTP/1.1}{0.0.0.0:8021}: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:279)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:218)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:337)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at com.wahsis.iot.main.WebServer.run(WebServer.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-22 19:29:05  WARN AbstractLifeCycle:210 - FAILED ServerConnector@508761fd{HTTP/1.1}{0.0.0.0:9021}: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:279)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:218)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:337)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at com.wahsis.iot.main.WebServer.run(WebServer.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-22 19:29:05  WARN AbstractLifeCycle:210 - FAILED ServerConnector@4e6093cc{HTTP/1.1}{0.0.0.0:9022}: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:279)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:218)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:337)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at com.wahsis.iot.main.WebServer.run(WebServer.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-22 19:29:05  WARN AbstractLifeCycle:210 - FAILED org.eclipse.jetty.server.Server@4656dd6e: MultiException[java.net.BindException: Address already in use, java.net.BindException: Address already in use, java.net.BindException: Address already in use]
+MultiException[java.net.BindException: Address already in use, java.net.BindException: Address already in use, java.net.BindException: Address already in use]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:303)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at com.wahsis.iot.main.WebServer.run(WebServer.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:279)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:218)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:337)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at com.wahsis.iot.main.WebServer.run(WebServer.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:279)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:218)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:337)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at com.wahsis.iot.main.WebServer.run(WebServer.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:279)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:218)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:337)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at com.wahsis.iot.main.WebServer.run(WebServer.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-22 19:29:05 ERROR WebServer:130 - Cannot start web server: Multiple exceptions
+2017-12-22 19:29:05  INFO ServiceDaemon:33 - Shutdown thread before webserver getinstance
+2017-12-22 19:29:05  INFO ServerConnector:303 - Stopped ServerConnector@3439639c{HTTP/1.1}{0.0.0.0:8021}
+2017-12-22 19:29:05  INFO ServerConnector:303 - Stopped ServerConnector@508761fd{HTTP/1.1}{0.0.0.0:9021}
+2017-12-22 19:29:05  INFO ServerConnector:303 - Stopped ServerConnector@4e6093cc{HTTP/1.1}{0.0.0.0:9022}
+2017-12-22 19:29:05  INFO ContextHandler:864 - Stopped o.e.j.s.ServletContextHandler@558466fa{/,null,UNAVAILABLE}
+2017-12-22 19:29:05  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@2422c51f{/gateway/ntf,null,UNAVAILABLE}
+2017-12-22 19:29:05  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@7ac67306{/smart/ntf,null,UNAVAILABLE}
+2017-12-22 19:29:05  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@711e72ac{/static,null,UNAVAILABLE}
+2017-12-22 19:29:14  INFO ServiceDaemon:33 - Shutdown thread before webserver getinstance
+2017-12-22 19:29:14  INFO ServerConnector:303 - Stopped ServerConnector@4e45a654{HTTP/1.1}{0.0.0.0:8021}
+2017-12-22 19:29:14  INFO ServerConnector:303 - Stopped ServerConnector@1b152c4c{HTTP/1.1}{0.0.0.0:9021}
+2017-12-22 19:29:14  INFO ServerConnector:303 - Stopped ServerConnector@2c150cfa{HTTP/1.1}{0.0.0.0:9022}
+2017-12-22 19:29:14  INFO ContextHandler:864 - Stopped o.e.j.s.ServletContextHandler@75e6ec71{/,null,UNAVAILABLE}
+2017-12-22 19:29:14  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@76b5f648{/gateway/ntf,null,UNAVAILABLE}
+2017-12-22 19:29:14  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@4e3ddf0a{/smart/ntf,null,UNAVAILABLE}
+2017-12-22 19:29:14  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@1f8fb513{/static,null,UNAVAILABLE}
+2017-12-22 19:29:18  INFO log:178 - Logging initialized @425ms
+2017-12-22 19:29:18  INFO WebServer:78 - Start server...
+2017-12-22 19:29:18  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5a97d7cf{/,null,null} contextPath ends with /*
+2017-12-22 19:29:18  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@2aa9fbf1{/,null,null} contextPath ends with /*
+2017-12-22 19:29:18  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-22 19:29:19  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@7d38ae4d{/static,null,AVAILABLE}
+2017-12-22 19:29:19  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5a97d7cf{/smart/ntf,null,AVAILABLE}
+2017-12-22 19:29:19  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@2aa9fbf1{/gateway/ntf,null,AVAILABLE}
+2017-12-22 19:29:19  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@6677b00f{/,null,AVAILABLE}
+2017-12-22 19:29:19  INFO ServerConnector:266 - Started ServerConnector@af4ea92{HTTP/1.1}{0.0.0.0:8021}
+2017-12-22 19:29:19  INFO ServerConnector:266 - Started ServerConnector@162d3324{HTTP/1.1}{0.0.0.0:9021}
+2017-12-22 19:29:19  INFO ServerConnector:266 - Started ServerConnector@57f4db8e{HTTP/1.1}{0.0.0.0:9022}
+2017-12-22 19:29:19  INFO Server:350 - Started @872ms
+2017-12-22 19:31:53  INFO NotifyController:65 - NotifyController.onConnect: client sessionId = 1234, company_id: 4444
+2017-12-22 19:31:53  INFO NotifyController:131 - NotifyController.sendMessageToClient: response to client company_id = 4444, data = data 1234
+2017-12-22 19:33:11  INFO NotifyController:94 - NotifyController.onClose: remove connect
+2017-12-22 20:17:27  INFO log:178 - Logging initialized @375ms
+2017-12-22 20:17:27  INFO WebServer:78 - Start server...
+2017-12-22 20:17:27  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@7d697876{/,null,null} contextPath ends with /*
+2017-12-22 20:17:27  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@2427e02c{/,null,null} contextPath ends with /*
+2017-12-22 20:17:28  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-22 20:17:28  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@68258d98{/static,null,AVAILABLE}
+2017-12-22 20:17:28  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@7d697876{/smart/ntf,null,AVAILABLE}
+2017-12-22 20:17:28  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@2427e02c{/gateway/ntf,null,AVAILABLE}
+2017-12-22 20:17:28  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@2eda3940{/,null,AVAILABLE}
+2017-12-22 20:17:28  INFO ServerConnector:266 - Started ServerConnector@1531201c{HTTP/1.1}{0.0.0.0:8021}
+2017-12-22 20:17:28  INFO ServerConnector:266 - Started ServerConnector@3feb3240{HTTP/1.1}{0.0.0.0:9021}
+2017-12-22 20:17:28  INFO ServerConnector:266 - Started ServerConnector@4ab3f23b{HTTP/1.1}{0.0.0.0:9022}
+2017-12-22 20:17:28  INFO Server:350 - Started @730ms
+2017-12-22 20:19:07  INFO NotifyController:85 - NotifyController.onClose: remove connect
+2017-12-22 20:19:43  INFO ServiceDaemon:33 - Shutdown thread before webserver getinstance
+2017-12-22 20:19:43  WARN ServerConnector:322 - 
+java.io.IOException: Broken pipe
+	at sun.nio.ch.NativeThread.signal(Native Method)
+	at sun.nio.ch.ServerSocketChannelImpl.implCloseSelectableChannel(ServerSocketChannelImpl.java:292)
+	at java.nio.channels.spi.AbstractSelectableChannel.implCloseChannel(AbstractSelectableChannel.java:234)
+	at java.nio.channels.spi.AbstractInterruptibleChannel.close(AbstractInterruptibleChannel.java:115)
+	at org.eclipse.jetty.server.ServerConnector.close(ServerConnector.java:318)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.shutdown(AbstractNetworkConnector.java:107)
+	at org.eclipse.jetty.server.ServerConnector.shutdown(ServerConnector.java:300)
+	at org.eclipse.jetty.server.Server.doStop(Server.java:375)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at com.wahsis.iot.main.WebServer.stop(WebServer.java:136)
+	at com.wahsis.iot.main.ServiceDaemon$1.run(ServiceDaemon.java:35)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-22 20:19:43  INFO ServerConnector:303 - Stopped ServerConnector@1531201c{HTTP/1.1}{0.0.0.0:8021}
+2017-12-22 20:19:43  INFO ServerConnector:303 - Stopped ServerConnector@3feb3240{HTTP/1.1}{0.0.0.0:9021}
+2017-12-22 20:19:43  INFO ServerConnector:303 - Stopped ServerConnector@4ab3f23b{HTTP/1.1}{0.0.0.0:9022}
+2017-12-22 20:19:43  INFO ContextHandler:864 - Stopped o.e.j.s.ServletContextHandler@2eda3940{/,null,UNAVAILABLE}
+2017-12-22 20:19:43  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@2427e02c{/gateway/ntf,null,UNAVAILABLE}
+2017-12-22 20:19:43  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@7d697876{/smart/ntf,null,UNAVAILABLE}
+2017-12-22 20:19:43  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@68258d98{/static,null,UNAVAILABLE}
+2017-12-22 20:19:46  INFO log:178 - Logging initialized @318ms
+2017-12-22 20:19:46  INFO WebServer:78 - Start server...
+2017-12-22 20:19:46  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@7d697876{/,null,null} contextPath ends with /*
+2017-12-22 20:19:46  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@2427e02c{/,null,null} contextPath ends with /*
+2017-12-22 20:19:46  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-22 20:19:46  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@68258d98{/static,null,AVAILABLE}
+2017-12-22 20:19:46  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@7d697876{/smart/ntf,null,AVAILABLE}
+2017-12-22 20:19:46  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@2427e02c{/gateway/ntf,null,AVAILABLE}
+2017-12-22 20:19:46  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@2eda3940{/,null,AVAILABLE}
+2017-12-22 20:19:46  INFO ServerConnector:266 - Started ServerConnector@64d45e38{HTTP/1.1}{0.0.0.0:8021}
+2017-12-22 20:19:46  INFO ServerConnector:266 - Started ServerConnector@3feb3240{HTTP/1.1}{0.0.0.0:9021}
+2017-12-22 20:19:46  INFO ServerConnector:266 - Started ServerConnector@4ab3f23b{HTTP/1.1}{0.0.0.0:9022}
+2017-12-22 20:19:46  INFO Server:350 - Started @672ms
+2017-12-22 20:20:10  INFO NotifyController:85 - NotifyController.onClose: remove connect
+2017-12-22 20:20:51  INFO NotifyController:68 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 20:20:51  INFO NotifyController:122 - NotifyController.sendMessageToClient: response to client company_id = 4444@@123456, data = 4444@@123456
+2017-12-22 20:21:25  INFO NotifyController:85 - NotifyController.onClose: remove connect
+2017-12-22 20:21:25  INFO NotifyController:110 - remove session: session_id
+2017-12-22 20:21:56  INFO ServiceDaemon:33 - Shutdown thread before webserver getinstance
+2017-12-22 20:21:56  WARN ServerConnector:322 - 
+java.io.IOException: Broken pipe
+	at sun.nio.ch.NativeThread.signal(Native Method)
+	at sun.nio.ch.ServerSocketChannelImpl.implCloseSelectableChannel(ServerSocketChannelImpl.java:292)
+	at java.nio.channels.spi.AbstractSelectableChannel.implCloseChannel(AbstractSelectableChannel.java:234)
+	at java.nio.channels.spi.AbstractInterruptibleChannel.close(AbstractInterruptibleChannel.java:115)
+	at org.eclipse.jetty.server.ServerConnector.close(ServerConnector.java:318)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.shutdown(AbstractNetworkConnector.java:107)
+	at org.eclipse.jetty.server.ServerConnector.shutdown(ServerConnector.java:300)
+	at org.eclipse.jetty.server.Server.doStop(Server.java:375)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at com.wahsis.iot.main.WebServer.stop(WebServer.java:136)
+	at com.wahsis.iot.main.ServiceDaemon$1.run(ServiceDaemon.java:35)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-22 20:21:56  INFO ServerConnector:303 - Stopped ServerConnector@64d45e38{HTTP/1.1}{0.0.0.0:8021}
+2017-12-22 20:21:56  INFO ServerConnector:303 - Stopped ServerConnector@3feb3240{HTTP/1.1}{0.0.0.0:9021}
+2017-12-22 20:21:56  INFO ServerConnector:303 - Stopped ServerConnector@4ab3f23b{HTTP/1.1}{0.0.0.0:9022}
+2017-12-22 20:21:56  INFO ContextHandler:864 - Stopped o.e.j.s.ServletContextHandler@2eda3940{/,null,UNAVAILABLE}
+2017-12-22 20:21:56  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@2427e02c{/gateway/ntf,null,UNAVAILABLE}
+2017-12-22 20:21:56  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@7d697876{/smart/ntf,null,UNAVAILABLE}
+2017-12-22 20:21:56  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@68258d98{/static,null,UNAVAILABLE}
+2017-12-22 20:22:15  INFO log:178 - Logging initialized @450ms
+2017-12-22 20:22:15  INFO WebServer:78 - Start server...
+2017-12-22 20:22:15  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5a97d7cf{/,null,null} contextPath ends with /*
+2017-12-22 20:22:15  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@2aa9fbf1{/,null,null} contextPath ends with /*
+2017-12-22 20:22:15  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-22 20:22:15  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@7d38ae4d{/static,null,AVAILABLE}
+2017-12-22 20:22:15  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5a97d7cf{/smart/ntf,null,AVAILABLE}
+2017-12-22 20:22:15  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@2aa9fbf1{/gateway/ntf,null,AVAILABLE}
+2017-12-22 20:22:15  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@6677b00f{/,null,AVAILABLE}
+2017-12-22 20:22:15  INFO ServerConnector:266 - Started ServerConnector@57f4db8e{HTTP/1.1}{0.0.0.0:8021}
+2017-12-22 20:22:15  INFO ServerConnector:266 - Started ServerConnector@5e87a956{HTTP/1.1}{0.0.0.0:9021}
+2017-12-22 20:22:15  INFO ServerConnector:266 - Started ServerConnector@7b75f654{HTTP/1.1}{0.0.0.0:9022}
+2017-12-22 20:22:15  INFO Server:350 - Started @903ms
+2017-12-22 20:22:21  INFO NotifyController:68 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 20:22:21  INFO NotifyController:122 - NotifyController.sendMessageToClient: response to client company_id = 4444@@123456, data = 4444@@123456
+2017-12-22 20:22:28  INFO NotifyController:85 - NotifyController.onClose: remove connect
+2017-12-22 20:23:51  INFO ServiceDaemon:33 - Shutdown thread before webserver getinstance
+2017-12-22 20:30:00  INFO log:178 - Logging initialized @348ms
+2017-12-22 20:30:00  INFO WebServer:78 - Start server...
+2017-12-22 20:30:00  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@668ba1e1{/,null,null} contextPath ends with /*
+2017-12-22 20:30:00  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@1f98d9e0{/,null,null} contextPath ends with /*
+2017-12-22 20:30:00  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-22 20:30:00  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@68258d98{/static,null,AVAILABLE}
+2017-12-22 20:30:00  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@668ba1e1{/smart/ntf,null,AVAILABLE}
+2017-12-22 20:30:00  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@1f98d9e0{/gateway/ntf,null,AVAILABLE}
+2017-12-22 20:30:00  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@2eda3940{/,null,AVAILABLE}
+2017-12-22 20:30:00  INFO ServerConnector:266 - Started ServerConnector@3feb3240{HTTP/1.1}{0.0.0.0:8021}
+2017-12-22 20:30:00  INFO ServerConnector:266 - Started ServerConnector@4ab3f23b{HTTP/1.1}{0.0.0.0:9021}
+2017-12-22 20:30:00  INFO ServerConnector:266 - Started ServerConnector@2213f2b2{HTTP/1.1}{0.0.0.0:9022}
+2017-12-22 20:30:00  INFO Server:350 - Started @704ms
+2017-12-22 20:36:22  INFO NotifyController:68 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 20:36:22  INFO NotifyController:122 - NotifyController.sendMessageToClient: response to client company_id = 4444@@123456, data = 4444@@123456
+2017-12-22 20:37:30  INFO ServiceDaemon:33 - Shutdown thread before webserver getinstance
+2017-12-22 20:37:30  INFO ServerConnector:303 - Stopped ServerConnector@3feb3240{HTTP/1.1}{0.0.0.0:8021}
+2017-12-22 20:37:30  INFO ServerConnector:303 - Stopped ServerConnector@4ab3f23b{HTTP/1.1}{0.0.0.0:9021}
+2017-12-22 20:37:30  INFO ServerConnector:303 - Stopped ServerConnector@2213f2b2{HTTP/1.1}{0.0.0.0:9022}
+2017-12-22 20:37:30  INFO ContextHandler:864 - Stopped o.e.j.s.ServletContextHandler@2eda3940{/,null,UNAVAILABLE}
+2017-12-22 20:37:31  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@1f98d9e0{/gateway/ntf,null,UNAVAILABLE}
+2017-12-22 20:37:31  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@668ba1e1{/smart/ntf,null,UNAVAILABLE}
+2017-12-22 20:37:31  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@68258d98{/static,null,UNAVAILABLE}
+2017-12-22 20:37:35  INFO log:178 - Logging initialized @377ms
+2017-12-22 20:37:35  INFO WebServer:78 - Start server...
+2017-12-22 20:37:35  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5a97d7cf{/,null,null} contextPath ends with /*
+2017-12-22 20:37:35  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@2aa9fbf1{/,null,null} contextPath ends with /*
+2017-12-22 20:37:36  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-22 20:37:36  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@7d38ae4d{/static,null,AVAILABLE}
+2017-12-22 20:37:36  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5a97d7cf{/smart/ntf,null,AVAILABLE}
+2017-12-22 20:37:36  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@2aa9fbf1{/gateway/ntf,null,AVAILABLE}
+2017-12-22 20:37:36  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@6677b00f{/,null,AVAILABLE}
+2017-12-22 20:37:36  INFO ServerConnector:266 - Started ServerConnector@5e6cb22d{HTTP/1.1}{0.0.0.0:8021}
+2017-12-22 20:37:36  INFO ServerConnector:266 - Started ServerConnector@57f4db8e{HTTP/1.1}{0.0.0.0:9021}
+2017-12-22 20:37:36  INFO ServerConnector:266 - Started ServerConnector@5e87a956{HTTP/1.1}{0.0.0.0:9022}
+2017-12-22 20:37:36  INFO Server:350 - Started @745ms
+2017-12-22 20:38:44  INFO NotifyController:68 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 20:38:44  INFO NotifyController:123 - NotifyController.sendMessageToClient: response to client company_id = 4444@@123456, data = 4444@@123456
+2017-12-22 20:38:50  INFO NotifyController:85 - NotifyController.onClose: remove connect
+2017-12-22 20:38:55  INFO NotifyController:111 - remove session: 4444@@123456
+2017-12-22 20:39:40  INFO log:178 - Logging initialized @395ms
+2017-12-22 20:39:41  INFO WebServer:78 - Start server...
+2017-12-22 20:39:41  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5a97d7cf{/,null,null} contextPath ends with /*
+2017-12-22 20:39:41  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@2aa9fbf1{/,null,null} contextPath ends with /*
+2017-12-22 20:39:41  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-22 20:39:41  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@7d38ae4d{/static,null,AVAILABLE}
+2017-12-22 20:39:41  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5a97d7cf{/smart/ntf,null,AVAILABLE}
+2017-12-22 20:39:41  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@2aa9fbf1{/gateway/ntf,null,AVAILABLE}
+2017-12-22 20:39:41  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@6677b00f{/,null,AVAILABLE}
+2017-12-22 20:39:41  INFO ServerConnector:266 - Started ServerConnector@73096827{HTTP/1.1}{0.0.0.0:8021}
+2017-12-22 20:39:41  INFO ServerConnector:266 - Started ServerConnector@57f4db8e{HTTP/1.1}{0.0.0.0:9021}
+2017-12-22 20:39:41  INFO ServerConnector:266 - Started ServerConnector@5e87a956{HTTP/1.1}{0.0.0.0:9022}
+2017-12-22 20:39:41  INFO Server:350 - Started @765ms
+2017-12-22 20:39:42  INFO NotifyController:68 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 20:49:01  INFO log:178 - Logging initialized @415ms
+2017-12-22 20:49:01  INFO WebServer:78 - Start server...
+2017-12-22 20:49:01  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@3ef9ef4f{/,null,null} contextPath ends with /*
+2017-12-22 20:49:01  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@175c6d2c{/,null,null} contextPath ends with /*
+2017-12-22 20:49:02  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-22 20:49:02  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5b1288c4{/static,null,AVAILABLE}
+2017-12-22 20:49:02  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@3ef9ef4f{/smart/ntf,null,AVAILABLE}
+2017-12-22 20:49:02  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@175c6d2c{/gateway/ntf,null,AVAILABLE}
+2017-12-22 20:49:02  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@20c43ace{/,null,AVAILABLE}
+2017-12-22 20:49:02  INFO ServerConnector:266 - Started ServerConnector@af4ea92{HTTP/1.1}{0.0.0.0:8021}
+2017-12-22 20:49:02  INFO ServerConnector:266 - Started ServerConnector@1f2d6881{HTTP/1.1}{0.0.0.0:9021}
+2017-12-22 20:49:02  INFO ServerConnector:266 - Started ServerConnector@5fd798cf{HTTP/1.1}{0.0.0.0:9022}
+2017-12-22 20:49:02  INFO Server:350 - Started @962ms
+2017-12-22 20:49:19  INFO NotifyController:68 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 20:49:19  INFO NotifyController:123 - NotifyController.sendMessageToClient: response to client company_id = 4444@@123456, data = 4444@@123456
+2017-12-22 20:49:45  INFO log:178 - Logging initialized @339ms
+2017-12-22 20:49:45  INFO WebServer:78 - Start server...
+2017-12-22 20:49:45  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5a97d7cf{/,null,null} contextPath ends with /*
+2017-12-22 20:49:45  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@2aa9fbf1{/,null,null} contextPath ends with /*
+2017-12-22 20:49:45  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-22 20:49:45  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@7d38ae4d{/static,null,AVAILABLE}
+2017-12-22 20:49:45  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5a97d7cf{/smart/ntf,null,AVAILABLE}
+2017-12-22 20:49:45  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@2aa9fbf1{/gateway/ntf,null,AVAILABLE}
+2017-12-22 20:49:45  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@6677b00f{/,null,AVAILABLE}
+2017-12-22 20:49:45  INFO ServerConnector:266 - Started ServerConnector@57f4db8e{HTTP/1.1}{0.0.0.0:8021}
+2017-12-22 20:49:45  INFO ServerConnector:266 - Started ServerConnector@5e87a956{HTTP/1.1}{0.0.0.0:9021}
+2017-12-22 20:49:45  INFO ServerConnector:266 - Started ServerConnector@7b75f654{HTTP/1.1}{0.0.0.0:9022}
+2017-12-22 20:49:45  INFO Server:350 - Started @767ms
+2017-12-22 20:49:51  INFO NotifyController:68 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 20:49:51  INFO NotifyController:123 - NotifyController.sendMessageToClient: response to client company_id = 4444@@123456, data = 4444@@123456
+2017-12-22 20:51:09  INFO log:178 - Logging initialized @456ms
+2017-12-22 20:51:09  INFO WebServer:78 - Start server...
+2017-12-22 20:51:09  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@59770ada{/,null,null} contextPath ends with /*
+2017-12-22 20:51:09  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5fa1227e{/,null,null} contextPath ends with /*
+2017-12-22 20:51:09  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-22 20:51:09  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@1de3f95d{/static,null,AVAILABLE}
+2017-12-22 20:51:09  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@59770ada{/smart/ntf,null,AVAILABLE}
+2017-12-22 20:51:09  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5fa1227e{/gateway/ntf,null,AVAILABLE}
+2017-12-22 20:51:09  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@691cef7c{/,null,AVAILABLE}
+2017-12-22 20:51:10  INFO ServerConnector:266 - Started ServerConnector@762a4b58{HTTP/1.1}{0.0.0.0:8021}
+2017-12-22 20:51:10  INFO ServerConnector:266 - Started ServerConnector@4f0a6533{HTTP/1.1}{0.0.0.0:9021}
+2017-12-22 20:51:10  INFO ServerConnector:266 - Started ServerConnector@13bc9242{HTTP/1.1}{0.0.0.0:9022}
+2017-12-22 20:51:10  INFO Server:350 - Started @886ms
+2017-12-22 20:51:19  INFO NotifyController:68 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 20:51:19  INFO NotifyController:123 - NotifyController.sendMessageToClient: response to client company_id = 4444@@123456, data = 4444@@123456
+2017-12-22 20:51:30  INFO NotifyController:85 - NotifyController.onClose: remove connect
+2017-12-22 20:51:30  INFO NotifyController:111 - remove session: 4444@@123456
+2017-12-22 20:51:32  INFO NotifyController:68 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 20:51:47  INFO NotifyController:123 - NotifyController.sendMessageToClient: response to client company_id = 4444@@123456, data = 4444@@123456
+2017-12-22 20:52:02  INFO log:178 - Logging initialized @332ms
+2017-12-22 20:52:02  INFO WebServer:78 - Start server...
+2017-12-22 20:52:02  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5fdd06ce{/,null,null} contextPath ends with /*
+2017-12-22 20:52:02  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@95ac827{/,null,null} contextPath ends with /*
+2017-12-22 20:52:02  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-22 20:52:02  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5d024629{/static,null,AVAILABLE}
+2017-12-22 20:52:02  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5fdd06ce{/smart/ntf,null,AVAILABLE}
+2017-12-22 20:52:02  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@95ac827{/gateway/ntf,null,AVAILABLE}
+2017-12-22 20:52:02  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@3c455cac{/,null,AVAILABLE}
+2017-12-22 20:52:02  INFO ServerConnector:266 - Started ServerConnector@2b954c3b{HTTP/1.1}{0.0.0.0:8021}
+2017-12-22 20:52:02  INFO ServerConnector:266 - Started ServerConnector@55dc20cf{HTTP/1.1}{0.0.0.0:9021}
+2017-12-22 20:52:02  INFO ServerConnector:266 - Started ServerConnector@1a69b5bd{HTTP/1.1}{0.0.0.0:9022}
+2017-12-22 20:52:02  INFO Server:350 - Started @710ms
+2017-12-22 20:52:04  INFO NotifyController:68 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 20:52:13  WARN NotifyController:243 - Unhandled Error (closing connection)
+org.eclipse.jetty.websocket.api.WebSocketException: Cannot call method public void com.wahsis.iot.controller.NotifyController#onConnect(org.eclipse.jetty.websocket.api.Session) with args: [org.eclipse.jetty.websocket.common.WebSocketSession]
+	at org.eclipse.jetty.websocket.common.events.annotated.CallableMethod.call(CallableMethod.java:99)
+	at org.eclipse.jetty.websocket.common.events.JettyAnnotatedEventDriver.onConnect(JettyAnnotatedEventDriver.java:131)
+	at org.eclipse.jetty.websocket.common.events.AbstractEventDriver.openSession(AbstractEventDriver.java:227)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.open(WebSocketSession.java:406)
+	at org.eclipse.jetty.websocket.server.WebSocketServerConnection.onOpen(WebSocketServerConnection.java:63)
+	at org.eclipse.jetty.server.HttpConnection.completed(HttpConnection.java:318)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:405)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:232)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:534)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:607)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:536)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.jetty.websocket.common.events.annotated.CallableMethod.call(CallableMethod.java:71)
+	... 11 more
+Caused by: java.lang.ClassCastException: java.util.Collections$SynchronizedSet cannot be cast to java.util.List
+	at com.wahsis.iot.controller.NotifyController.sendMessageToClient(NotifyController.java:130)
+	at com.wahsis.iot.controller.NotifyController.onConnect(NotifyController.java:79)
+	... 16 more
+2017-12-22 20:52:13  INFO NotifyController:85 - NotifyController.onClose: remove connect
+2017-12-22 20:52:13  INFO NotifyController:111 - remove session: 4444@@123456
+2017-12-22 20:53:56  INFO log:178 - Logging initialized @477ms
+2017-12-22 20:53:56  INFO WebServer:78 - Start server...
+2017-12-22 20:53:56  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@2e4acbff{/,null,null} contextPath ends with /*
+2017-12-22 20:53:57  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@48f6bce4{/,null,null} contextPath ends with /*
+2017-12-22 20:53:57  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-22 20:53:57  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@65615964{/static,null,AVAILABLE}
+2017-12-22 20:53:57  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@2e4acbff{/smart/ntf,null,AVAILABLE}
+2017-12-22 20:53:57  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@48f6bce4{/gateway/ntf,null,AVAILABLE}
+2017-12-22 20:53:57  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@907155e{/,null,AVAILABLE}
+2017-12-22 20:53:57  INFO ServerConnector:266 - Started ServerConnector@604ae4e1{HTTP/1.1}{0.0.0.0:8021}
+2017-12-22 20:53:57  INFO ServerConnector:266 - Started ServerConnector@7c68e7eb{HTTP/1.1}{0.0.0.0:9021}
+2017-12-22 20:53:57  INFO ServerConnector:266 - Started ServerConnector@61c272ae{HTTP/1.1}{0.0.0.0:9022}
+2017-12-22 20:53:57  INFO Server:350 - Started @959ms
+2017-12-22 20:55:26  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 20:59:47  INFO log:178 - Logging initialized @278ms
+2017-12-22 20:59:47  INFO WebServer:78 - Start server...
+2017-12-22 20:59:47  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5d69ba98{/,null,null} contextPath ends with /*
+2017-12-22 20:59:47  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@576abd0f{/,null,null} contextPath ends with /*
+2017-12-22 20:59:47  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-22 20:59:47  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@39cde281{/static,null,AVAILABLE}
+2017-12-22 20:59:47  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5d69ba98{/smart/ntf,null,AVAILABLE}
+2017-12-22 20:59:47  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@576abd0f{/gateway/ntf,null,AVAILABLE}
+2017-12-22 20:59:47  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@bc56d4d{/,null,AVAILABLE}
+2017-12-22 20:59:47  INFO ServerConnector:266 - Started ServerConnector@5719fd4{HTTP/1.1}{0.0.0.0:8021}
+2017-12-22 20:59:47  INFO ServerConnector:266 - Started ServerConnector@2c1e3420{HTTP/1.1}{0.0.0.0:9021}
+2017-12-22 20:59:47  INFO ServerConnector:266 - Started ServerConnector@df433ff{HTTP/1.1}{0.0.0.0:9022}
+2017-12-22 20:59:47  INFO Server:350 - Started @580ms
+2017-12-22 20:59:51  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 20:59:54  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 20:59:54  INFO NotifyController:112 - remove session: 4444@@123456
+2017-12-22 20:59:55  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 21:00:27  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@090909
+2017-12-22 21:00:36  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 21:00:36  INFO NotifyController:112 - remove session: 4444@@090909
+2017-12-22 21:00:38  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@090909
+2017-12-22 21:00:48  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 21:00:48  INFO NotifyController:112 - remove session: 4444@@123456
+2017-12-22 21:05:30  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 21:05:30  INFO NotifyController:112 - remove session: 4444@@090909
+2017-12-22 21:05:31  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@090909
+2017-12-22 21:05:41  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 21:05:47  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 21:05:47  INFO NotifyController:112 - remove session: 4444@@090909
+2017-12-22 21:05:48  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@090909
+2017-12-22 22:43:24  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 22:43:24  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 22:43:24  INFO NotifyController:112 - remove session: 4444@@123456
+2017-12-22 22:43:24  INFO NotifyController:112 - remove session: 4444@@090909
+2017-12-22 22:45:44  INFO log:178 - Logging initialized @344ms
+2017-12-22 22:45:44  INFO WebServer:78 - Start server...
+2017-12-22 22:45:45  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@7d697876{/,null,null} contextPath ends with /*
+2017-12-22 22:45:45  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@2427e02c{/,null,null} contextPath ends with /*
+2017-12-22 22:45:45  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-22 22:45:45  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@68258d98{/static,null,AVAILABLE}
+2017-12-22 22:45:45  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@7d697876{/smart/ntf,null,AVAILABLE}
+2017-12-22 22:45:45  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@2427e02c{/gateway/ntf,null,AVAILABLE}
+2017-12-22 22:45:45  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@2eda3940{/,null,AVAILABLE}
+2017-12-22 22:45:45  WARN AbstractLifeCycle:210 - FAILED ServerConnector@5e8707fa{HTTP/1.1}{0.0.0.0:8021}: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:279)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:218)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:337)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at com.wahsis.iot.main.WebServer.run(WebServer.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-22 22:45:45  WARN AbstractLifeCycle:210 - FAILED ServerConnector@1b2e2827{HTTP/1.1}{0.0.0.0:9021}: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:279)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:218)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:337)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at com.wahsis.iot.main.WebServer.run(WebServer.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-22 22:45:45  WARN AbstractLifeCycle:210 - FAILED ServerConnector@55146c52{HTTP/1.1}{0.0.0.0:9022}: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:279)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:218)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:337)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at com.wahsis.iot.main.WebServer.run(WebServer.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-22 22:45:45  WARN AbstractLifeCycle:210 - FAILED org.eclipse.jetty.server.Server@78d712ad: MultiException[java.net.BindException: Address already in use, java.net.BindException: Address already in use, java.net.BindException: Address already in use]
+MultiException[java.net.BindException: Address already in use, java.net.BindException: Address already in use, java.net.BindException: Address already in use]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:303)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at com.wahsis.iot.main.WebServer.run(WebServer.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:279)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:218)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:337)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at com.wahsis.iot.main.WebServer.run(WebServer.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:279)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:218)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:337)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at com.wahsis.iot.main.WebServer.run(WebServer.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:279)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:218)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:337)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at com.wahsis.iot.main.WebServer.run(WebServer.java:127)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-22 22:45:45 ERROR WebServer:130 - Cannot start web server: Multiple exceptions
+2017-12-22 22:45:45  INFO ServiceDaemon:33 - Shutdown thread before webserver getinstance
+2017-12-22 22:45:45  INFO ServerConnector:303 - Stopped ServerConnector@5e8707fa{HTTP/1.1}{0.0.0.0:8021}
+2017-12-22 22:45:45  INFO ServerConnector:303 - Stopped ServerConnector@1b2e2827{HTTP/1.1}{0.0.0.0:9021}
+2017-12-22 22:45:45  INFO ServerConnector:303 - Stopped ServerConnector@55146c52{HTTP/1.1}{0.0.0.0:9022}
+2017-12-22 22:45:45  INFO ContextHandler:864 - Stopped o.e.j.s.ServletContextHandler@2eda3940{/,null,UNAVAILABLE}
+2017-12-22 22:45:45  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@2427e02c{/gateway/ntf,null,UNAVAILABLE}
+2017-12-22 22:45:45  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@7d697876{/smart/ntf,null,UNAVAILABLE}
+2017-12-22 22:45:45  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@68258d98{/static,null,UNAVAILABLE}
+2017-12-22 22:46:40  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 22:46:43  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 22:46:43  INFO NotifyController:112 - remove session: 4444@@123456
+2017-12-22 22:46:44  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 22:47:08  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@090909
+2017-12-22 22:47:24  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 22:47:24  INFO NotifyController:112 - remove session: 4444@@090909
+2017-12-22 22:47:30  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@090909
+2017-12-22 22:47:38  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 22:47:38  INFO NotifyController:112 - remove session: 4444@@090909
+2017-12-22 22:47:40  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@090909
+2017-12-22 22:47:45  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 22:47:45  INFO NotifyController:112 - remove session: 4444@@090909
+2017-12-22 22:47:48  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 22:47:48  INFO NotifyController:112 - remove session: 4444@@123456
+2017-12-22 22:47:49  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 22:47:50  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 22:47:50  INFO NotifyController:112 - remove session: 4444@@123456
+2017-12-22 22:47:50  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 22:47:50  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 22:47:50  INFO NotifyController:112 - remove session: 4444@@123456
+2017-12-22 22:47:50  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 22:47:51  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 22:47:51  INFO NotifyController:112 - remove session: 4444@@123456
+2017-12-22 22:47:51  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 22:47:51  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 22:47:51  INFO NotifyController:112 - remove session: 4444@@123456
+2017-12-22 22:47:51  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 22:47:51  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 22:47:51  INFO NotifyController:112 - remove session: 4444@@123456
+2017-12-22 22:47:52  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 22:47:52  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 22:47:52  INFO NotifyController:112 - remove session: 4444@@123456
+2017-12-22 22:47:52  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 22:47:52  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 22:47:52  INFO NotifyController:112 - remove session: 4444@@123456
+2017-12-22 22:47:52  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 22:47:52  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 22:47:52  INFO NotifyController:112 - remove session: 4444@@123456
+2017-12-22 22:47:53  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 22:47:53  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 22:47:53  INFO NotifyController:112 - remove session: 4444@@123456
+2017-12-22 22:47:53  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 22:47:53  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 22:47:53  INFO NotifyController:112 - remove session: 4444@@123456
+2017-12-22 23:11:04  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 23:11:07  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 23:11:07  INFO NotifyController:112 - remove session: 4444@@123456
+2017-12-22 23:11:08  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 23:11:09  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 23:11:09  INFO NotifyController:112 - remove session: 4444@@123456
+2017-12-22 23:11:09  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 23:11:09  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 23:11:09  INFO NotifyController:112 - remove session: 4444@@123456
+2017-12-22 23:11:09  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 23:11:10  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 23:11:10  INFO NotifyController:112 - remove session: 4444@@123456
+2017-12-22 23:11:10  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 23:11:10  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 23:11:10  INFO NotifyController:112 - remove session: 4444@@123456
+2017-12-22 23:11:10  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 23:11:10  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 23:11:10  INFO NotifyController:112 - remove session: 4444@@123456
+2017-12-22 23:11:14  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 23:13:28  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 23:13:28  INFO NotifyController:112 - remove session: 4444@@123456
+2017-12-22 23:13:29  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 23:13:33  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 23:13:33  INFO NotifyController:112 - remove session: 4444@@123456
+2017-12-22 23:13:34  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 4444@@123456
+2017-12-22 23:23:34  INFO NotifyController:86 - NotifyController.onClose: remove connect
+2017-12-22 23:23:34  INFO NotifyController:112 - remove session: 4444@@123456
+2017-12-23 01:33:12  INFO ServiceDaemon:33 - Shutdown thread before webserver getinstance
+2017-12-23 01:33:12  INFO ServerConnector:303 - Stopped ServerConnector@5719fd4{HTTP/1.1}{0.0.0.0:8021}
+2017-12-23 01:33:12  INFO ServerConnector:303 - Stopped ServerConnector@2c1e3420{HTTP/1.1}{0.0.0.0:9021}
+2017-12-23 01:33:12  INFO ServerConnector:303 - Stopped ServerConnector@df433ff{HTTP/1.1}{0.0.0.0:9022}
+2017-12-23 01:33:12  INFO ContextHandler:864 - Stopped o.e.j.s.ServletContextHandler@bc56d4d{/,null,UNAVAILABLE}
+2017-12-23 01:33:12  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@576abd0f{/gateway/ntf,null,UNAVAILABLE}
+2017-12-23 01:33:12  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@5d69ba98{/smart/ntf,null,UNAVAILABLE}
+2017-12-23 01:33:12  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@39cde281{/static,null,UNAVAILABLE}
+2017-12-25 11:05:45  INFO log:178 - Logging initialized @858ms
+2017-12-25 11:05:45  INFO WebServer:78 - Start server...
+2017-12-25 11:05:45  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@3ef9ef4f{/,null,null} contextPath ends with /*
+2017-12-25 11:05:45  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@175c6d2c{/,null,null} contextPath ends with /*
+2017-12-25 11:05:46  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-25 11:05:46  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5b1288c4{/static,null,AVAILABLE}
+2017-12-25 11:05:46  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@3ef9ef4f{/smart/ntf,null,AVAILABLE}
+2017-12-25 11:05:46  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@175c6d2c{/gateway/ntf,null,AVAILABLE}
+2017-12-25 11:05:46  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@20c43ace{/,null,AVAILABLE}
+2017-12-25 11:05:46  INFO ServerConnector:266 - Started ServerConnector@1f2d6881{HTTP/1.1}{0.0.0.0:8021}
+2017-12-25 11:05:46  INFO ServerConnector:266 - Started ServerConnector@5fd798cf{HTTP/1.1}{0.0.0.0:9021}
+2017-12-25 11:05:46  INFO ServerConnector:266 - Started ServerConnector@1c6353c0{HTTP/1.1}{0.0.0.0:9022}
+2017-12-25 11:05:46  INFO Server:350 - Started @1457ms
+2017-12-25 11:06:03  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:06:03  INFO LightController:278 - LightController.switchOnOff, light: 1
+2017-12-25 11:06:03  INFO LightController:279 - LightController.switchOnOff, company_id: 54880
+2017-12-25 11:06:03  INFO DeviceNotifyController:97 - push data to client, ssid: 54880
+2017-12-25 11:06:03  INFO AddLogTask:126 - AddLogTask.addSWitchOnOffMsg: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:06:03  INFO AddLogTask:60 - msg type: 1002
+2017-12-25 11:06:03  INFO AddLogTask:61 - msg data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:06:03  INFO AddLogTask:65 - AddLogTask.addSWitchOnOffMsg, begin update database, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:06:20  INFO AddLogTask:81 - AddLogTask.addSWitchOnOffMsg, company_id: 54880
+2017-12-25 11:06:20  INFO AddLogTask:82 - AddLogTask.addSWitchOnOffMsg, light_id: 0
+2017-12-25 11:06:20  INFO AddLogTask:83 - AddLogTask.addSWitchOnOffMsg, light_code: 1
+2017-12-25 11:06:20  INFO LightModel:100 - LightModel.updateOnOffByID, company_id: 54880
+2017-12-25 11:06:25  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:06:27  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-25 11:06:27  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:06:27 ERROR PartnerServerModelSQL:92 - PartnerServerModelSQL.selectAllPartnerServer : Invalid object name 'partner_server'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name 'partner_server'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.database.PartnerServerModelSQL.selectAllPartnerServer(PartnerServerModelSQL.java:55)
+	at com.wahsis.iot.database.SQLConnFactory.<clinit>(SQLConnFactory.java:38)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:106)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:84)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-25 11:06:27  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-25 11:06:27  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:06:28  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-25 11:06:28  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:06:28  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-25 11:06:28  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:06:28  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-25 11:06:28  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:06:28  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-25 11:06:28  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:06:29  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-25 11:06:29  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:06:29 ERROR LightModel:138 - LightModel.updateOnOffByID : Invalid object name '54880_company.dbo.room_area_light'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name '54880_company.dbo.room_area_light'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:124)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:84)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-25 11:06:29  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-25 11:06:29  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:06:29  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-25 11:06:29  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:06:29  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-25 11:06:29  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:06:29  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-25 11:06:29  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:06:30  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-25 11:06:33  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:06:33  INFO LightController:278 - LightController.switchOnOff, light: 1
+2017-12-25 11:06:33  INFO LightController:279 - LightController.switchOnOff, company_id: null
+2017-12-25 11:06:33  INFO DeviceNotifyController:97 - push data to client, ssid: null
+2017-12-25 11:06:33  INFO AddLogTask:126 - AddLogTask.addSWitchOnOffMsg: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:06:33  INFO AddLogTask:60 - msg type: 1002
+2017-12-25 11:06:33  INFO AddLogTask:61 - msg data: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:06:33  INFO AddLogTask:65 - AddLogTask.addSWitchOnOffMsg, begin update database, data: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:07:28  INFO AddLogTask:81 - AddLogTask.addSWitchOnOffMsg, company_id: null
+2017-12-25 11:07:37  INFO AddLogTask:82 - AddLogTask.addSWitchOnOffMsg, light_id: 0
+2017-12-25 11:07:39  INFO AddLogTask:83 - AddLogTask.addSWitchOnOffMsg, light_code: 1
+2017-12-25 11:07:41  INFO LightModel:100 - LightModel.updateOnOffByID, company_id: null
+2017-12-25 11:07:47  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:07:47  INFO LightController:278 - LightController.switchOnOff, light: 1
+2017-12-25 11:07:47  INFO LightController:279 - LightController.switchOnOff, company_id: null
+2017-12-25 11:07:47  INFO DeviceNotifyController:97 - push data to client, ssid: null
+2017-12-25 11:07:47  INFO AddLogTask:126 - AddLogTask.addSWitchOnOffMsg: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:10:15  INFO log:178 - Logging initialized @566ms
+2017-12-25 11:10:16  INFO WebServer:78 - Start server...
+2017-12-25 11:10:16  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5a97d7cf{/,null,null} contextPath ends with /*
+2017-12-25 11:10:16  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@2aa9fbf1{/,null,null} contextPath ends with /*
+2017-12-25 11:10:16  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-25 11:10:16  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@7d38ae4d{/static,null,AVAILABLE}
+2017-12-25 11:10:16  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5a97d7cf{/smart/ntf,null,AVAILABLE}
+2017-12-25 11:10:16  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@2aa9fbf1{/gateway/ntf,null,AVAILABLE}
+2017-12-25 11:10:16  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@6677b00f{/,null,AVAILABLE}
+2017-12-25 11:10:16  INFO ServerConnector:266 - Started ServerConnector@604ae4e1{HTTP/1.1}{0.0.0.0:8021}
+2017-12-25 11:10:16  INFO ServerConnector:266 - Started ServerConnector@57f4db8e{HTTP/1.1}{0.0.0.0:9021}
+2017-12-25 11:10:16  INFO ServerConnector:266 - Started ServerConnector@5e87a956{HTTP/1.1}{0.0.0.0:9022}
+2017-12-25 11:10:16  INFO Server:350 - Started @1290ms
+2017-12-25 11:12:37  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:12:37  INFO LightController:278 - LightController.switchOnOff, light: 1
+2017-12-25 11:12:37  INFO LightController:279 - LightController.switchOnOff, company_id: null
+2017-12-25 11:12:37  INFO DeviceNotifyController:97 - push data to client, ssid: null
+2017-12-25 11:12:37  INFO AddLogTask:126 - AddLogTask.addSWitchOnOffMsg: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:12:37  INFO AddLogTask:60 - msg type: 1002
+2017-12-25 11:12:37  INFO AddLogTask:61 - msg data: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:12:37  INFO AddLogTask:65 - AddLogTask.addSWitchOnOffMsg, begin update database, data: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:12:47  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:12:47  INFO LightController:278 - LightController.switchOnOff, light: 1
+2017-12-25 11:12:47  INFO LightController:279 - LightController.switchOnOff, company_id: null
+2017-12-25 11:12:47  INFO DeviceNotifyController:97 - push data to client, ssid: null
+2017-12-25 11:12:47  INFO AddLogTask:126 - AddLogTask.addSWitchOnOffMsg: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:12:47  INFO AddLogTask:60 - msg type: 1002
+2017-12-25 11:12:47  INFO AddLogTask:61 - msg data: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:12:47  INFO AddLogTask:65 - AddLogTask.addSWitchOnOffMsg, begin update database, data: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:13:06  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:13:06  INFO LightController:278 - LightController.switchOnOff, light: 1
+2017-12-25 11:13:06  INFO LightController:279 - LightController.switchOnOff, company_id: 54880
+2017-12-25 11:13:06  INFO DeviceNotifyController:97 - push data to client, ssid: 54880
+2017-12-25 11:13:06  INFO AddLogTask:126 - AddLogTask.addSWitchOnOffMsg: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:13:06  INFO AddLogTask:60 - msg type: 1002
+2017-12-25 11:13:06  INFO AddLogTask:61 - msg data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:13:06  INFO AddLogTask:65 - AddLogTask.addSWitchOnOffMsg, begin update database, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:13:26  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:13:26  INFO LightController:278 - LightController.switchOnOff, light: 1
+2017-12-25 11:13:26  INFO LightController:279 - LightController.switchOnOff, company_id: 54880
+2017-12-25 11:13:26  INFO DeviceNotifyController:97 - push data to client, ssid: 54880
+2017-12-25 11:13:26  INFO AddLogTask:126 - AddLogTask.addSWitchOnOffMsg: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:13:26  INFO AddLogTask:60 - msg type: 1002
+2017-12-25 11:13:26  INFO AddLogTask:61 - msg data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:13:26  INFO AddLogTask:65 - AddLogTask.addSWitchOnOffMsg, begin update database, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:14:56  INFO log:178 - Logging initialized @438ms
+2017-12-25 11:14:56  INFO WebServer:78 - Start server...
+2017-12-25 11:14:56  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@21a07ef3{/,null,null} contextPath ends with /*
+2017-12-25 11:14:56  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@7c106ee3{/,null,null} contextPath ends with /*
+2017-12-25 11:14:56  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-25 11:14:56  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@20629131{/static,null,AVAILABLE}
+2017-12-25 11:14:56  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@21a07ef3{/smart/ntf,null,AVAILABLE}
+2017-12-25 11:14:56  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@7c106ee3{/gateway/ntf,null,AVAILABLE}
+2017-12-25 11:14:56  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@3d6d04fb{/,null,AVAILABLE}
+2017-12-25 11:14:56  INFO ServerConnector:266 - Started ServerConnector@51db3126{HTTP/1.1}{0.0.0.0:8021}
+2017-12-25 11:14:56  INFO ServerConnector:266 - Started ServerConnector@3a8cb807{HTTP/1.1}{0.0.0.0:9021}
+2017-12-25 11:14:56  INFO ServerConnector:266 - Started ServerConnector@7959f1{HTTP/1.1}{0.0.0.0:9022}
+2017-12-25 11:14:56  INFO Server:350 - Started @882ms
+2017-12-25 11:15:20  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:15:20  INFO LightController:278 - LightController.switchOnOff, light: 1
+2017-12-25 11:15:20  INFO LightController:279 - LightController.switchOnOff, company_id: 54880
+2017-12-25 11:15:20  INFO DeviceNotifyController:97 - push data to client, ssid: 54880
+2017-12-25 11:15:20  INFO AddLogTask:126 - AddLogTask.addSWitchOnOffMsg: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:15:20  INFO AddLogTask:60 - msg type: 1002
+2017-12-25 11:15:20  INFO AddLogTask:61 - msg data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:15:20  INFO AddLogTask:65 - AddLogTask.addSWitchOnOffMsg, begin update database, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:15:20  INFO AddLogTask:81 - AddLogTask.addSWitchOnOffMsg, company_id: 54880
+2017-12-25 11:15:20  INFO AddLogTask:82 - AddLogTask.addSWitchOnOffMsg, light_id: 0
+2017-12-25 11:15:20  INFO AddLogTask:83 - AddLogTask.addSWitchOnOffMsg, light_code: 1
+2017-12-25 11:15:20  INFO LightModel:100 - LightModel.updateOnOffByID, company_id: 54880
+2017-12-25 11:15:20  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:15:22  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-25 11:15:22  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:15:22 ERROR PartnerServerModelSQL:92 - PartnerServerModelSQL.selectAllPartnerServer : Invalid object name 'partner_server'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name 'partner_server'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.database.PartnerServerModelSQL.selectAllPartnerServer(PartnerServerModelSQL.java:55)
+	at com.wahsis.iot.database.SQLConnFactory.<clinit>(SQLConnFactory.java:38)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:106)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:84)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-25 11:15:22  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-25 11:15:22  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:15:22  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-25 11:15:22  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:15:22  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-25 11:15:22  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:15:22  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-25 11:15:22  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:15:22  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-25 11:15:22  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:15:23  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-25 11:15:23  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:15:23 ERROR LightModel:138 - LightModel.updateOnOffByID : Invalid object name '54880_company.dbo.room_area_light'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name '54880_company.dbo.room_area_light'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:124)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:84)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-25 11:15:23  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-25 11:15:23  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:15:23  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-25 11:15:23  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:15:23  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-25 11:15:23  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:15:23  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-25 11:15:23  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:15:23  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-25 11:15:29  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:15:29  INFO LightController:278 - LightController.switchOnOff, light: 1
+2017-12-25 11:15:29  INFO LightController:279 - LightController.switchOnOff, company_id: null
+2017-12-25 11:15:29  INFO DeviceNotifyController:97 - push data to client, ssid: null
+2017-12-25 11:15:29  INFO AddLogTask:126 - AddLogTask.addSWitchOnOffMsg: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:15:29  INFO AddLogTask:60 - msg type: 1002
+2017-12-25 11:15:29  INFO AddLogTask:61 - msg data: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:15:29  INFO AddLogTask:65 - AddLogTask.addSWitchOnOffMsg, begin update database, data: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:15:29  INFO AddLogTask:81 - AddLogTask.addSWitchOnOffMsg, company_id: null
+2017-12-25 11:15:29  INFO AddLogTask:82 - AddLogTask.addSWitchOnOffMsg, light_id: 0
+2017-12-25 11:15:29  INFO AddLogTask:83 - AddLogTask.addSWitchOnOffMsg, light_code: 1
+2017-12-25 11:15:29  INFO LightModel:100 - LightModel.updateOnOffByID, company_id: null
+2017-12-25 11:15:58  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:15:58  INFO LightController:278 - LightController.switchOnOff, light: 1
+2017-12-25 11:15:58  INFO LightController:279 - LightController.switchOnOff, company_id: 54880
+2017-12-25 11:15:58  INFO DeviceNotifyController:97 - push data to client, ssid: 54880
+2017-12-25 11:15:58  INFO AddLogTask:126 - AddLogTask.addSWitchOnOffMsg: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:17:39  INFO ServiceDaemon:33 - Shutdown thread before webserver getinstance
+2017-12-25 11:17:39  INFO ServerConnector:303 - Stopped ServerConnector@51db3126{HTTP/1.1}{0.0.0.0:8021}
+2017-12-25 11:17:39  INFO ServerConnector:303 - Stopped ServerConnector@3a8cb807{HTTP/1.1}{0.0.0.0:9021}
+2017-12-25 11:17:39  INFO ServerConnector:303 - Stopped ServerConnector@7959f1{HTTP/1.1}{0.0.0.0:9022}
+2017-12-25 11:17:39  INFO ContextHandler:864 - Stopped o.e.j.s.ServletContextHandler@3d6d04fb{/,null,UNAVAILABLE}
+2017-12-25 11:17:39  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@7c106ee3{/gateway/ntf,null,UNAVAILABLE}
+2017-12-25 11:17:39  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@21a07ef3{/smart/ntf,null,UNAVAILABLE}
+2017-12-25 11:17:39  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@20629131{/static,null,UNAVAILABLE}
+2017-12-25 11:17:53  INFO log:178 - Logging initialized @458ms
+2017-12-25 11:17:53  INFO WebServer:78 - Start server...
+2017-12-25 11:17:54  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@21a07ef3{/,null,null} contextPath ends with /*
+2017-12-25 11:17:54  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@7c106ee3{/,null,null} contextPath ends with /*
+2017-12-25 11:17:54  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-25 11:17:54  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@20629131{/static,null,AVAILABLE}
+2017-12-25 11:17:54  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@21a07ef3{/smart/ntf,null,AVAILABLE}
+2017-12-25 11:17:54  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@7c106ee3{/gateway/ntf,null,AVAILABLE}
+2017-12-25 11:17:54  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@3d6d04fb{/,null,AVAILABLE}
+2017-12-25 11:17:54  INFO ServerConnector:266 - Started ServerConnector@34a1dfcd{HTTP/1.1}{0.0.0.0:8021}
+2017-12-25 11:17:54  INFO ServerConnector:266 - Started ServerConnector@51db3126{HTTP/1.1}{0.0.0.0:9021}
+2017-12-25 11:17:54  INFO ServerConnector:266 - Started ServerConnector@3a8cb807{HTTP/1.1}{0.0.0.0:9022}
+2017-12-25 11:17:54  INFO Server:350 - Started @988ms
+2017-12-25 11:18:07  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:18:07  INFO LightController:278 - LightController.switchOnOff, light: 1
+2017-12-25 11:18:07  INFO LightController:279 - LightController.switchOnOff, company_id: 54880
+2017-12-25 11:18:07  INFO DeviceNotifyController:97 - push data to client, ssid: 54880
+2017-12-25 11:18:07  INFO AddLogTask:128 - AddLogTask.addSWitchOnOffMsg: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:18:07  INFO AddLogTask:60 - msg type: 1002
+2017-12-25 11:18:07  INFO AddLogTask:61 - msg data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:18:07  INFO AddLogTask:65 - AddLogTask.addSWitchOnOffMsg, begin update database, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:18:07  INFO AddLogTask:81 - AddLogTask.addSWitchOnOffMsg, company_id: 54880
+2017-12-25 11:18:07  INFO AddLogTask:82 - AddLogTask.addSWitchOnOffMsg, light_id: 0
+2017-12-25 11:18:07  INFO AddLogTask:83 - AddLogTask.addSWitchOnOffMsg, light_code: 1
+2017-12-25 11:18:07  INFO LightModel:100 - LightModel.updateOnOffByID, company_id: 54880
+2017-12-25 11:18:07  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:18:07  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-25 11:18:07 ERROR PartnerServerModelSQL:92 - PartnerServerModelSQL.selectAllPartnerServer : Invalid object name 'partner_server'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name 'partner_server'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.database.PartnerServerModelSQL.selectAllPartnerServer(PartnerServerModelSQL.java:55)
+	at com.wahsis.iot.database.SQLConnFactory.<clinit>(SQLConnFactory.java:38)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:106)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:85)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-25 11:18:07  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:18:07  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:18:07  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-25 11:18:07  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:18:07  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-25 11:18:07  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:18:07 ERROR LightModel:138 - LightModel.updateOnOffByID : Invalid object name '54880_company.dbo.room_area_light'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name '54880_company.dbo.room_area_light'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:124)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:85)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-25 11:18:08  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-25 11:18:08  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:18:08  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-25 11:18:08  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:18:08  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-25 11:18:08  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:18:08  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-25 11:18:08  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:18:08  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-25 11:18:08  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-25 11:18:08  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:18:08  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-25 11:18:08  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-25 11:18:08  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-25 11:18:17  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:18:17  INFO LightController:278 - LightController.switchOnOff, light: 1
+2017-12-25 11:18:17  INFO LightController:279 - LightController.switchOnOff, company_id: 54880
+2017-12-25 11:18:17  INFO DeviceNotifyController:97 - push data to client, ssid: 54880
+2017-12-25 11:18:17  INFO AddLogTask:128 - AddLogTask.addSWitchOnOffMsg: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:18:17  INFO AddLogTask:60 - msg type: 1002
+2017-12-25 11:18:17  INFO AddLogTask:61 - msg data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:18:17  INFO AddLogTask:65 - AddLogTask.addSWitchOnOffMsg, begin update database, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:18:17  INFO AddLogTask:81 - AddLogTask.addSWitchOnOffMsg, company_id: 54880
+2017-12-25 11:18:17  INFO AddLogTask:82 - AddLogTask.addSWitchOnOffMsg, light_id: 0
+2017-12-25 11:18:17  INFO AddLogTask:83 - AddLogTask.addSWitchOnOffMsg, light_code: 1
+2017-12-25 11:18:17  INFO LightModel:100 - LightModel.updateOnOffByID, company_id: 54880
+2017-12-25 11:18:17 ERROR LightModel:138 - LightModel.updateOnOffByID : Invalid object name '54880_company.dbo.room_area_light'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name '54880_company.dbo.room_area_light'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:124)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:85)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-25 11:18:38  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:18:38  INFO LightController:278 - LightController.switchOnOff, light: 1
+2017-12-25 11:18:38  INFO LightController:279 - LightController.switchOnOff, company_id: 54880
+2017-12-25 11:18:38  INFO DeviceNotifyController:97 - push data to client, ssid: 54880
+2017-12-25 11:18:38  INFO AddLogTask:128 - AddLogTask.addSWitchOnOffMsg: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:18:38  INFO AddLogTask:60 - msg type: 1002
+2017-12-25 11:18:38  INFO AddLogTask:61 - msg data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:18:38  INFO AddLogTask:65 - AddLogTask.addSWitchOnOffMsg, begin update database, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:18:38  INFO AddLogTask:81 - AddLogTask.addSWitchOnOffMsg, company_id: 54880
+2017-12-25 11:18:38  INFO AddLogTask:82 - AddLogTask.addSWitchOnOffMsg, light_id: 0
+2017-12-25 11:18:38  INFO AddLogTask:83 - AddLogTask.addSWitchOnOffMsg, light_code: 1
+2017-12-25 11:18:38  INFO LightModel:100 - LightModel.updateOnOffByID, company_id: 54880
+2017-12-25 11:18:38 ERROR LightModel:138 - LightModel.updateOnOffByID : Invalid object name '54880_company.dbo.room_area_light'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name '54880_company.dbo.room_area_light'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:124)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:85)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-25 11:18:48  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:18:48  INFO LightController:278 - LightController.switchOnOff, light: 1
+2017-12-25 11:18:48  INFO LightController:279 - LightController.switchOnOff, company_id: 54880
+2017-12-25 11:18:48  INFO DeviceNotifyController:97 - push data to client, ssid: 54880
+2017-12-25 11:18:48  INFO AddLogTask:128 - AddLogTask.addSWitchOnOffMsg: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:18:48  INFO AddLogTask:60 - msg type: 1002
+2017-12-25 11:18:48  INFO AddLogTask:61 - msg data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:18:48  INFO AddLogTask:65 - AddLogTask.addSWitchOnOffMsg, begin update database, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:18:48  INFO AddLogTask:81 - AddLogTask.addSWitchOnOffMsg, company_id: 54880
+2017-12-25 11:18:48  INFO AddLogTask:82 - AddLogTask.addSWitchOnOffMsg, light_id: 0
+2017-12-25 11:18:48  INFO AddLogTask:83 - AddLogTask.addSWitchOnOffMsg, light_code: 1
+2017-12-25 11:18:48  INFO LightModel:100 - LightModel.updateOnOffByID, company_id: 54880
+2017-12-25 11:18:48 ERROR LightModel:138 - LightModel.updateOnOffByID : Invalid object name '54880_company.dbo.room_area_light'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name '54880_company.dbo.room_area_light'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:124)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:85)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-25 11:19:05  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:19:05  INFO LightController:278 - LightController.switchOnOff, light: 1
+2017-12-25 11:19:05  INFO LightController:279 - LightController.switchOnOff, company_id: null
+2017-12-25 11:19:05  INFO DeviceNotifyController:97 - push data to client, ssid: null
+2017-12-25 11:19:05  INFO AddLogTask:128 - AddLogTask.addSWitchOnOffMsg: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:19:05  INFO AddLogTask:60 - msg type: 1002
+2017-12-25 11:19:05  INFO AddLogTask:61 - msg data: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:19:05  INFO AddLogTask:65 - AddLogTask.addSWitchOnOffMsg, begin update database, data: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:19:05  INFO AddLogTask:81 - AddLogTask.addSWitchOnOffMsg, company_id: null
+2017-12-25 11:19:05  INFO AddLogTask:82 - AddLogTask.addSWitchOnOffMsg, light_id: 0
+2017-12-25 11:19:05  INFO AddLogTask:83 - AddLogTask.addSWitchOnOffMsg, light_code: 1
+2017-12-25 11:19:16  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:19:16  INFO LightController:278 - LightController.switchOnOff, light: 1
+2017-12-25 11:19:16  INFO LightController:279 - LightController.switchOnOff, company_id: null
+2017-12-25 11:19:16  INFO DeviceNotifyController:97 - push data to client, ssid: null
+2017-12-25 11:19:16  INFO AddLogTask:128 - AddLogTask.addSWitchOnOffMsg: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:19:16  INFO AddLogTask:60 - msg type: 1002
+2017-12-25 11:19:16  INFO AddLogTask:61 - msg data: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:19:16  INFO AddLogTask:65 - AddLogTask.addSWitchOnOffMsg, begin update database, data: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:19:16  INFO AddLogTask:81 - AddLogTask.addSWitchOnOffMsg, company_id: null
+2017-12-25 11:19:16  INFO AddLogTask:82 - AddLogTask.addSWitchOnOffMsg, light_id: 0
+2017-12-25 11:19:16  INFO AddLogTask:83 - AddLogTask.addSWitchOnOffMsg, light_code: 1
+2017-12-25 11:19:22  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:19:22  INFO LightController:278 - LightController.switchOnOff, light: 1
+2017-12-25 11:19:22  INFO LightController:279 - LightController.switchOnOff, company_id: null
+2017-12-25 11:19:22  INFO DeviceNotifyController:97 - push data to client, ssid: null
+2017-12-25 11:19:22  INFO AddLogTask:128 - AddLogTask.addSWitchOnOffMsg: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:19:22  INFO AddLogTask:60 - msg type: 1002
+2017-12-25 11:19:22  INFO AddLogTask:61 - msg data: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:19:22  INFO AddLogTask:65 - AddLogTask.addSWitchOnOffMsg, begin update database, data: {"light":{"light_code":"1","on_off":0},"company":{"company_idfff":54880}}
+2017-12-25 11:19:22  INFO AddLogTask:81 - AddLogTask.addSWitchOnOffMsg, company_id: null
+2017-12-25 11:19:22  INFO AddLogTask:82 - AddLogTask.addSWitchOnOffMsg, light_id: 0
+2017-12-25 11:19:22  INFO AddLogTask:83 - AddLogTask.addSWitchOnOffMsg, light_code: 1
+2017-12-25 11:19:37  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:19:37  INFO LightController:278 - LightController.switchOnOff, light: 1
+2017-12-25 11:19:37  INFO LightController:279 - LightController.switchOnOff, company_id: 54880
+2017-12-25 11:19:37  INFO DeviceNotifyController:97 - push data to client, ssid: 54880
+2017-12-25 11:19:37  INFO AddLogTask:128 - AddLogTask.addSWitchOnOffMsg: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:19:37  INFO AddLogTask:60 - msg type: 1002
+2017-12-25 11:19:37  INFO AddLogTask:61 - msg data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:19:37  INFO AddLogTask:65 - AddLogTask.addSWitchOnOffMsg, begin update database, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:19:37  INFO AddLogTask:81 - AddLogTask.addSWitchOnOffMsg, company_id: 54880
+2017-12-25 11:19:37  INFO AddLogTask:82 - AddLogTask.addSWitchOnOffMsg, light_id: 0
+2017-12-25 11:19:37  INFO AddLogTask:83 - AddLogTask.addSWitchOnOffMsg, light_code: 1
+2017-12-25 11:19:37  INFO LightModel:100 - LightModel.updateOnOffByID, company_id: 54880
+2017-12-25 11:19:37 ERROR LightModel:138 - LightModel.updateOnOffByID : Invalid object name '54880_company.dbo.room_area_light'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name '54880_company.dbo.room_area_light'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:124)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:85)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-25 11:19:46  INFO LightController:70 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:19:46  INFO LightController:278 - LightController.switchOnOff, light: 1
+2017-12-25 11:19:46  INFO LightController:279 - LightController.switchOnOff, company_id: 54880
+2017-12-25 11:19:46  INFO DeviceNotifyController:97 - push data to client, ssid: 54880
+2017-12-25 11:19:46  INFO AddLogTask:128 - AddLogTask.addSWitchOnOffMsg: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:19:46  INFO AddLogTask:60 - msg type: 1002
+2017-12-25 11:19:46  INFO AddLogTask:61 - msg data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:19:46  INFO AddLogTask:65 - AddLogTask.addSWitchOnOffMsg, begin update database, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":54880}}
+2017-12-25 11:19:46  INFO AddLogTask:81 - AddLogTask.addSWitchOnOffMsg, company_id: 54880
+2017-12-25 11:19:46  INFO AddLogTask:82 - AddLogTask.addSWitchOnOffMsg, light_id: 0
+2017-12-25 11:19:46  INFO AddLogTask:83 - AddLogTask.addSWitchOnOffMsg, light_code: 1
+2017-12-25 11:19:46  INFO LightModel:100 - LightModel.updateOnOffByID, company_id: 54880
+2017-12-25 11:19:46 ERROR LightModel:138 - LightModel.updateOnOffByID : Invalid object name '54880_company.dbo.room_area_light'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name '54880_company.dbo.room_area_light'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:124)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:85)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-25 11:19:58  INFO ServiceDaemon:33 - Shutdown thread before webserver getinstance
+2017-12-25 11:19:58  INFO ServerConnector:303 - Stopped ServerConnector@34a1dfcd{HTTP/1.1}{0.0.0.0:8021}
+2017-12-25 11:19:58  INFO ServerConnector:303 - Stopped ServerConnector@51db3126{HTTP/1.1}{0.0.0.0:9021}
+2017-12-25 11:19:58  INFO ServerConnector:303 - Stopped ServerConnector@3a8cb807{HTTP/1.1}{0.0.0.0:9022}
+2017-12-25 11:19:58  INFO ContextHandler:864 - Stopped o.e.j.s.ServletContextHandler@3d6d04fb{/,null,UNAVAILABLE}
+2017-12-25 11:19:58  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@7c106ee3{/gateway/ntf,null,UNAVAILABLE}
+2017-12-25 11:19:58  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@21a07ef3{/smart/ntf,null,UNAVAILABLE}
+2017-12-25 11:19:58  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@20629131{/static,null,UNAVAILABLE}
+2017-12-25 11:19:58  INFO AddLogTask:60 - msg type: 3
+2017-12-25 11:19:58  INFO AddLogTask:61 - msg data: null
