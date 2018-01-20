@@ -257,9 +257,9 @@ public class LightController extends HttpServlet {
         int ret = -1;
         try {
             JsonObject jsonObject = JsonParserUtil.parseJsonObject(data);
-            Light light = new Light();
-            Company company = new Company();
-            CresnetUnit cunit = new CresnetUnit();
+            Light light = null;
+            Company company = null;
+            CresnetUnit cunit = null;
             if (jsonObject != null) {
                 if (jsonObject.has("light")) {
                     light = _gson.fromJson(jsonObject.get("light").getAsJsonObject(), Light.class);
@@ -267,54 +267,38 @@ public class LightController extends HttpServlet {
                 if (jsonObject.has("company")) {
                     company = _gson.fromJson(jsonObject.get("company").getAsJsonObject(), Company.class);
                 }
-                if(jsonObject.has("cunit")) {
+                if (jsonObject.has("cunit")) {
                     cunit = _gson.fromJson(jsonObject.get("cunit").getAsJsonObject(), CresnetUnit.class);
                 }
             }
-            if (light == null || company == null) {
+            if (light == null || company == null || cunit == null) {
                 return CommonModel.FormatResponse(ret, "Invalid parameter");
             } else {
-                String value;
                 int on_off = light.getOn_off();
+                int is_dim = light.getIs_dim();
                 String cunit_serialno = cunit.getSerial_number();
                 String light_code = light.getLight_code();
                 String company_id = company.getCompany_id();
-                logger.info(getClass().getSimpleName() + ".switchOnOff, light: " + light_code);
-                logger.info(getClass().getSimpleName() + ".switchOnOff, company_id: " + company_id);
-                String msg_device_notify;
-                if (on_off == 0) {
-                    value = "0";
-                } else {
-                    value = String.valueOf(65535);
+                if(cunit_serialno.isEmpty() || light_code.isEmpty() || company_id.isEmpty()) {
+                    return CommonModel.FormatResponse(ret, "Invalid parameter");
                 }
-
+                String msg_device_notify;
                 JsonObject dt = new JsonObject();
+                dt.addProperty("company_id", company_id);
                 dt.addProperty("light_code", light_code);
-                dt.addProperty("light_onoff", value);
+                dt.addProperty("light_onoff", on_off);
+                dt.addProperty("is_dim", is_dim);
                 JsonObject dt_push_gw = new JsonObject();
-                
+
                 dt_push_gw.addProperty("msg_type", MessageType.MSG_LIGHT_SWITCH_ONOFF);
                 dt_push_gw.addProperty("dt", _gson.toJson(dt));
-                
                 msg_device_notify = _gson.toJson(dt_push_gw);
-                
-                //push notify to crestron gateway
-                DeviceNotifyController.sendMessageToClient(company_id, msg_device_notify);
-//                if(cunit_serialno == null) {
-//                    logger.info("PUSH GATEWAY TO VALEO");
-//                    DeviceNotifyController.sendMessageToClient(company_id, msg_device_notify);
-//                } else {
-//                    logger.info("PUSH GATEWAY TO WAHSIS");
-//                    DeviceNotifyController.sendMessageToClient(cunit_serialno, msg_device_notify);
-//                }
-                
-                                                      
-//                AddLogTask.getInstance().addSWitchOnOffMsg(data);
 
+                //push notify to crestron gateway
+                DeviceNotifyController.sendMessageToClient(cunit_serialno, msg_device_notify);
                 ret = 0;
                 content = CommonModel.FormatResponse(ret, "light switch onoff success");
             }
-
         } catch (JsonSyntaxException ex) {
             logger.error(getClass().getSimpleName() + ".switchOnOff: " + ex.getMessage(), ex);
             content = CommonModel.FormatResponse(ret, ex.getMessage());
@@ -508,7 +492,6 @@ public class LightController extends HttpServlet {
                 //push notify to crestron gateway
                 DeviceNotifyController.sendMessageToClient(company_id, msg_device_notify);
                 content = CommonModel.FormatResponse(0, "light change brightness success");
-                
 
                 //save to database
                 JsonObject light_db = new JsonObject();
