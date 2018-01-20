@@ -117,7 +117,9 @@ public class NotifyController {
     public static boolean sendMessageToClient(String company_id, String data) throws IOException {
         Set<String> keys = _clientSessionMap.keySet();
         for (String key : keys) {
-            if (key.split("@@")[0].compareTo(company_id) == 0) {
+            logger.info("NotifyController.sendMessageToClient, KEY: " + key.split("@@")[0].trim().toString());
+            if (key.split("@@")[0].trim().toString().compareTo(company_id) == 0) {
+                logger.info("NotifyController.sendMessageToClient, PUSH DATA TO CLIENT");
                 ClientSessionInfo clientSession = _clientSessionMap.get(key);
                 clientSession.getSession().getRemote().sendString(data);
             }

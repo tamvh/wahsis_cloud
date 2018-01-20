@@ -94,7 +94,7 @@ public class WebServer implements Runnable{
             };
             ContextHandler wsContextHandler = new ContextHandler();
             wsContextHandler.setHandler(wsHandler);
-            wsContextHandler.setContextPath("/smart/ntf/*");
+            wsContextHandler.setContextPath("/socket.io/*");
             
             WebSocketHandler wsHandler_gateway = new WebSocketHandler() {
                 @Override

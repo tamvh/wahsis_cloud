@@ -58,8 +58,8 @@ public class AddLogTask implements Runnable {
         while (true) {
             try {
                 msg = msgQueue.take();
-                logger.info("msg type: " + msg.type);
-                logger.info("msg data: " + msg.data);
+                logger.info("AddLogTask.run(), msg type: " + msg.type);
+                logger.info("AddLogTask.run(), msg data: " + msg.data);
                 if (msg != null) {
                     switch (msg.type) {
                         case MessageType.MSG_LIGHT_SWITCH_ONOFF: 
@@ -85,6 +85,7 @@ public class AddLogTask implements Runnable {
                                 logger.info("AddLogTask.addSWitchOnOffMsg, light_code: " + light.getLight_code());
                                 if(company.getCompany_id() != null) {
                                     ret_swith_onoff = LightModel.getInstance().updateOnOffByID(company.getCompany_id(), light);
+                                    
                                     if(ret_swith_onoff == 0) {
                                         // push data to Notify Client.
                                         JsonObject dt = new JsonObject();

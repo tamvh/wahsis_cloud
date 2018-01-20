@@ -8,16 +8,15 @@ package com.wahsis.iot.controller;
 import com.wahsis.iot.common.CommonModel;
 import com.wahsis.iot.common.JsonParserUtil;
 import com.wahsis.iot.common.MessageType;
-import com.wahsis.iot.common.CommonController;
 import com.wahsis.iot.data.Light;
 import com.wahsis.iot.data.Company;
 import com.wahsis.iot.model.LightModel;
-import com.wahsis.iot.controller.DeviceNotifyController;
 import com.wahsis.iot.task.AddLogTask;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonSyntaxException;
+import com.wahsis.iot.data.CresnetUnit;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -260,6 +259,7 @@ public class LightController extends HttpServlet {
             JsonObject jsonObject = JsonParserUtil.parseJsonObject(data);
             Light light = new Light();
             Company company = new Company();
+            CresnetUnit cunit = new CresnetUnit();
             if (jsonObject != null) {
                 if (jsonObject.has("light")) {
                     light = _gson.fromJson(jsonObject.get("light").getAsJsonObject(), Light.class);
@@ -267,12 +267,16 @@ public class LightController extends HttpServlet {
                 if (jsonObject.has("company")) {
                     company = _gson.fromJson(jsonObject.get("company").getAsJsonObject(), Company.class);
                 }
+                if(jsonObject.has("cunit")) {
+                    cunit = _gson.fromJson(jsonObject.get("cunit").getAsJsonObject(), CresnetUnit.class);
+                }
             }
             if (light == null || company == null) {
                 return CommonModel.FormatResponse(ret, "Invalid parameter");
             } else {
-                int on_off = light.getOn_off();
                 String value;
+                int on_off = light.getOn_off();
+                String cunit_serialno = cunit.getSerial_number();
                 String light_code = light.getLight_code();
                 String company_id = company.getCompany_id();
                 logger.info(getClass().getSimpleName() + ".switchOnOff, light: " + light_code);
@@ -288,14 +292,24 @@ public class LightController extends HttpServlet {
                 dt.addProperty("light_code", light_code);
                 dt.addProperty("light_onoff", value);
                 JsonObject dt_push_gw = new JsonObject();
-                dt_push_gw.addProperty("cm", "switch_on_off");
+                
+                dt_push_gw.addProperty("msg_type", MessageType.MSG_LIGHT_SWITCH_ONOFF);
                 dt_push_gw.addProperty("dt", _gson.toJson(dt));
+                
                 msg_device_notify = _gson.toJson(dt_push_gw);
                 
                 //push notify to crestron gateway
                 DeviceNotifyController.sendMessageToClient(company_id, msg_device_notify);
+//                if(cunit_serialno == null) {
+//                    logger.info("PUSH GATEWAY TO VALEO");
+//                    DeviceNotifyController.sendMessageToClient(company_id, msg_device_notify);
+//                } else {
+//                    logger.info("PUSH GATEWAY TO WAHSIS");
+//                    DeviceNotifyController.sendMessageToClient(cunit_serialno, msg_device_notify);
+//                }
+                
                                                       
-                AddLogTask.getInstance().addSWitchOnOffMsg(data);
+//                AddLogTask.getInstance().addSWitchOnOffMsg(data);
 
                 ret = 0;
                 content = CommonModel.FormatResponse(ret, "light switch onoff success");

@@ -4891,3 +4891,230 @@ com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name '54880_comp
 2017-12-25 11:19:58  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@20629131{/static,null,UNAVAILABLE}
 2017-12-25 11:19:58  INFO AddLogTask:60 - msg type: 3
 2017-12-25 11:19:58  INFO AddLogTask:61 - msg data: null
+2017-12-27 01:02:57  INFO log:178 - Logging initialized @572ms
+2017-12-27 01:02:57  INFO WebServer:78 - Start server...
+2017-12-27 01:02:57  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@67503894{/,null,null} contextPath ends with /*
+2017-12-27 01:02:57  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@37a13f27{/,null,null} contextPath ends with /*
+2017-12-27 01:02:58  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-27 01:02:58  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@72c60926{/static,null,AVAILABLE}
+2017-12-27 01:02:58  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@67503894{/smart/ntf,null,AVAILABLE}
+2017-12-27 01:02:58  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@37a13f27{/gateway/ntf,null,AVAILABLE}
+2017-12-27 01:02:58  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@373220f8{/,null,AVAILABLE}
+2017-12-27 01:02:58  INFO ServerConnector:266 - Started ServerConnector@572c28da{HTTP/1.1}{0.0.0.0:8021}
+2017-12-27 01:02:58  INFO ServerConnector:266 - Started ServerConnector@6fde5dbc{HTTP/1.1}{0.0.0.0:9021}
+2017-12-27 01:02:58  INFO ServerConnector:266 - Started ServerConnector@64eeb57d{HTTP/1.1}{0.0.0.0:9022}
+2017-12-27 01:02:58  INFO Server:350 - Started @1180ms
+2017-12-27 01:03:50  INFO LightController:71 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":40743}, "cunit":{"serial_number":"14912543"}}
+2017-12-27 01:03:50  INFO LightController:284 - LightController.switchOnOff, light: 1
+2017-12-27 01:03:50  INFO LightController:285 - LightController.switchOnOff, company_id: 40743
+2017-12-27 01:03:50  INFO LightController:302 - LightController.switchOnOff: Wahsis
+2017-12-27 01:03:50  INFO LightController:314 - PUSH GATEWAY TO WAHSIS
+2017-12-27 01:03:50  INFO DeviceNotifyController:130 - push data to client, ssid: 14912543
+2017-12-27 01:03:50  INFO AddLogTask:142 - AddLogTask.addSWitchOnOffMsg: {"light":{"light_code":"1","on_off":0},"company":{"company_id":40743}, "cunit":{"serial_number":"14912543"}}
+2017-12-27 01:03:50  INFO AddLogTask:61 - msg type: 1002
+2017-12-27 01:03:50  INFO AddLogTask:62 - msg data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":40743}, "cunit":{"serial_number":"14912543"}}
+2017-12-27 01:03:50  INFO AddLogTask:67 - AddLogTask.addSWitchOnOffMsg, begin update database, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":40743}, "cunit":{"serial_number":"14912543"}}
+2017-12-27 01:03:50  INFO AddLogTask:83 - AddLogTask.addSWitchOnOffMsg, company_id: 40743
+2017-12-27 01:03:50  INFO AddLogTask:84 - AddLogTask.addSWitchOnOffMsg, light_id: 0
+2017-12-27 01:03:50  INFO AddLogTask:85 - AddLogTask.addSWitchOnOffMsg, light_code: 1
+2017-12-27 01:04:10  INFO LightModel:100 - LightModel.updateOnOffByID, company_id: 40743
+2017-12-27 01:04:10  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-27 01:04:13  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-27 01:04:13 ERROR PartnerServerModelSQL:92 - PartnerServerModelSQL.selectAllPartnerServer : Invalid object name 'partner_server'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name 'partner_server'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.database.PartnerServerModelSQL.selectAllPartnerServer(PartnerServerModelSQL.java:55)
+	at com.wahsis.iot.database.SQLConnFactory.<clinit>(SQLConnFactory.java:38)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:110)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:87)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-27 01:04:13  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-27 01:04:13  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-27 01:04:13  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-27 01:04:13  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-27 01:04:13  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-27 01:04:13  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-27 01:04:13  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-27 01:04:13  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-27 01:04:13  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-27 01:04:13  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-27 01:04:13  INFO LightModel:129 - LightModel.updateOnOffByID, kq: true
+2017-12-27 01:04:13  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-27 01:04:14  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-27 01:04:14  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-27 01:04:14  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-27 01:04:14  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-27 01:04:14  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-27 01:04:14  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-27 01:04:14  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-27 01:06:49  INFO log:178 - Logging initialized @690ms
+2017-12-27 01:06:50  INFO WebServer:78 - Start server...
+2017-12-27 01:06:50  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5fdd06ce{/,null,null} contextPath ends with /*
+2017-12-27 01:06:50  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@95ac827{/,null,null} contextPath ends with /*
+2017-12-27 01:06:50  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-27 01:06:50  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@4c13cf46{/static,null,AVAILABLE}
+2017-12-27 01:06:50  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5fdd06ce{/smart/ntf,null,AVAILABLE}
+2017-12-27 01:06:50  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@95ac827{/gateway/ntf,null,AVAILABLE}
+2017-12-27 01:06:50  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@5a59c6f4{/,null,AVAILABLE}
+2017-12-27 01:06:50  INFO ServerConnector:266 - Started ServerConnector@3bbeb3fb{HTTP/1.1}{0.0.0.0:8021}
+2017-12-27 01:06:50  INFO ServerConnector:266 - Started ServerConnector@39157a14{HTTP/1.1}{0.0.0.0:9021}
+2017-12-27 01:06:50  INFO ServerConnector:266 - Started ServerConnector@3db89e8a{HTTP/1.1}{0.0.0.0:9022}
+2017-12-27 01:06:50  INFO Server:350 - Started @1325ms
+2017-12-27 01:06:57  INFO LightController:71 - LightController, cmd: switch_on_off, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":40743}, "cunit":{"serial_number":"14912543"}}
+2017-12-27 01:06:57  INFO LightController:284 - LightController.switchOnOff, light: 1
+2017-12-27 01:06:57  INFO LightController:285 - LightController.switchOnOff, company_id: 40743
+2017-12-27 01:06:57  INFO LightController:302 - LightController.switchOnOff: Wahsis
+2017-12-27 01:06:57  INFO LightController:314 - PUSH GATEWAY TO WAHSIS
+2017-12-27 01:06:57  INFO DeviceNotifyController:130 - push data to client, ssid: 14912543
+2017-12-27 01:06:57  INFO AddLogTask:142 - AddLogTask.addSWitchOnOffMsg: {"light":{"light_code":"1","on_off":0},"company":{"company_id":40743}, "cunit":{"serial_number":"14912543"}}
+2017-12-27 01:06:57  INFO AddLogTask:61 - msg type: 1002
+2017-12-27 01:06:57  INFO AddLogTask:62 - msg data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":40743}, "cunit":{"serial_number":"14912543"}}
+2017-12-27 01:06:57  INFO AddLogTask:67 - AddLogTask.addSWitchOnOffMsg, begin update database, data: {"light":{"light_code":"1","on_off":0},"company":{"company_id":40743}, "cunit":{"serial_number":"14912543"}}
+2017-12-27 01:06:57  INFO AddLogTask:83 - AddLogTask.addSWitchOnOffMsg, company_id: 40743
+2017-12-27 01:06:57  INFO AddLogTask:84 - AddLogTask.addSWitchOnOffMsg, light_id: 0
+2017-12-27 01:06:57  INFO AddLogTask:85 - AddLogTask.addSWitchOnOffMsg, light_code: 1
+2017-12-27 01:07:31  INFO LightModel:100 - LightModel.updateOnOffByID, company_id: 40743
+2017-12-27 01:07:44  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-27 01:08:12  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-27 01:08:15 ERROR PartnerServerModelSQL:92 - PartnerServerModelSQL.selectAllPartnerServer : Invalid object name 'partner_server'.
+com.microsoft.sqlserver.jdbc.SQLServerException: Invalid object name 'partner_server'.
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1515)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.doExecutePreparedStatement(SQLServerPreparedStatement.java:404)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement$PrepStmtExecCmd.doExecute(SQLServerPreparedStatement.java:350)
+	at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:180)
+	at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:155)
+	at com.microsoft.sqlserver.jdbc.SQLServerPreparedStatement.execute(SQLServerPreparedStatement.java:332)
+	at snaq.db.CachedPreparedStatement.execute(CachedPreparedStatement.java:328)
+	at com.wahsis.iot.database.PartnerServerModelSQL.selectAllPartnerServer(PartnerServerModelSQL.java:55)
+	at com.wahsis.iot.database.SQLConnFactory.<clinit>(SQLConnFactory.java:38)
+	at com.wahsis.iot.model.LightModel.updateOnOffByID(LightModel.java:110)
+	at com.wahsis.iot.task.AddLogTask.run(AddLogTask.java:87)
+	at java.lang.Thread.run(Thread.java:748)
+2017-12-27 01:08:15  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-27 01:08:15  INFO pos_pool:839 - pos_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=master;user=wahsis_dev;password=WahSiS@123456
+2017-12-27 01:08:15  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-27 01:08:15  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-27 01:08:15  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-27 01:08:15  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-27 01:08:15  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-27 01:08:15  INFO pos_live_pool:839 - pos_live_pool: Getting connection (user/password): jdbc:sqlserver://10.9.11.11:1433;databaseName=40743_company;user=wahsis_dev;password=WahSiS@123456
+2017-12-27 01:08:15  INFO pos_pool:839 - pos_pool: Created a new connection
+2017-12-27 01:08:15  INFO pos_live_pool:839 - pos_live_pool: Created a new connection
+2017-12-27 01:08:39  INFO LightModel:129 - LightModel.updateOnOffByID, kq: true
+2017-12-27 21:22:30  INFO log:178 - Logging initialized @427ms
+2017-12-27 21:22:30  INFO WebServer:78 - Start server...
+2017-12-27 21:22:30  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@4e3ddf0a{/,null,null} contextPath ends with /*
+2017-12-27 21:22:30  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@76b5f648{/,null,null} contextPath ends with /*
+2017-12-27 21:22:30  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-27 21:22:30  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@1f8fb513{/static,null,AVAILABLE}
+2017-12-27 21:22:30  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@4e3ddf0a{/smart/ntf,null,AVAILABLE}
+2017-12-27 21:22:30  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@76b5f648{/gateway/ntf,null,AVAILABLE}
+2017-12-27 21:22:30  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@75e6ec71{/,null,AVAILABLE}
+2017-12-27 21:22:30  INFO ServerConnector:266 - Started ServerConnector@7af38264{HTTP/1.1}{0.0.0.0:8021}
+2017-12-27 21:22:30  INFO ServerConnector:266 - Started ServerConnector@38499bec{HTTP/1.1}{0.0.0.0:9021}
+2017-12-27 21:22:30  INFO ServerConnector:266 - Started ServerConnector@1b152c4c{HTTP/1.1}{0.0.0.0:9022}
+2017-12-27 21:22:30  INFO Server:350 - Started @900ms
+2017-12-27 21:30:04  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 40713@@1233
+2017-12-27 21:30:11  INFO ServiceDaemon:33 - Shutdown thread before webserver getinstance
+2017-12-27 21:30:11  INFO ServerConnector:303 - Stopped ServerConnector@7af38264{HTTP/1.1}{0.0.0.0:8021}
+2017-12-27 21:30:11  INFO ServerConnector:303 - Stopped ServerConnector@38499bec{HTTP/1.1}{0.0.0.0:9021}
+2017-12-27 21:30:11  INFO ServerConnector:303 - Stopped ServerConnector@1b152c4c{HTTP/1.1}{0.0.0.0:9022}
+2017-12-27 21:30:11  INFO ContextHandler:864 - Stopped o.e.j.s.ServletContextHandler@75e6ec71{/,null,UNAVAILABLE}
+2017-12-27 21:30:11  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@76b5f648{/gateway/ntf,null,UNAVAILABLE}
+2017-12-27 21:30:11  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@4e3ddf0a{/smart/ntf,null,UNAVAILABLE}
+2017-12-27 21:30:11  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@1f8fb513{/static,null,UNAVAILABLE}
+2017-12-27 21:30:11  INFO AddLogTask:61 - msg type: 3
+2017-12-27 21:30:11  INFO AddLogTask:62 - msg data: null
+2017-12-27 21:30:21  INFO log:178 - Logging initialized @440ms
+2017-12-27 21:30:21  INFO WebServer:78 - Start server...
+2017-12-27 21:30:21  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@5860acfc{/,null,null} contextPath ends with /*
+2017-12-27 21:30:21  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@47c76215{/,null,null} contextPath ends with /*
+2017-12-27 21:30:21  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-27 21:30:21  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@39cde281{/static,null,AVAILABLE}
+2017-12-27 21:30:21  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@5860acfc{/smart/ntf,null,AVAILABLE}
+2017-12-27 21:30:21  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@47c76215{/gateway/ntf,null,AVAILABLE}
+2017-12-27 21:30:21  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@bc56d4d{/,null,AVAILABLE}
+2017-12-27 21:30:21  INFO ServerConnector:266 - Started ServerConnector@7a2cd4ad{HTTP/1.1}{0.0.0.0:8021}
+2017-12-27 21:30:21  INFO ServerConnector:266 - Started ServerConnector@2c1e3420{HTTP/1.1}{0.0.0.0:9021}
+2017-12-27 21:30:21  INFO ServerConnector:266 - Started ServerConnector@df433ff{HTTP/1.1}{0.0.0.0:9022}
+2017-12-27 21:30:21  INFO Server:350 - Started @873ms
+2017-12-27 21:30:24  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 40713@@1233
+2017-12-27 21:35:48  INFO NotifyController:85 - NotifyController.onClose: remove connect
+2017-12-27 21:35:48  INFO NotifyController:110 - remove session: 40713@@1233
+2017-12-27 21:35:48  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 40713@@1233
+2017-12-27 21:35:50  INFO NotifyController:85 - NotifyController.onClose: remove connect
+2017-12-27 21:35:50  INFO NotifyController:110 - remove session: 40713@@1233
+2017-12-27 21:35:50  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 40713@@1233
+2017-12-27 21:35:58  INFO NotifyController:85 - NotifyController.onClose: remove connect
+2017-12-27 21:35:58  INFO NotifyController:110 - remove session: 40713@@1233
+2017-12-27 21:35:58  INFO NotifyController:69 - NotifyController.onConnect: client sessionId = 40713@@1233
+2017-12-27 21:39:29  INFO NotifyController:85 - NotifyController.onClose: remove connect
+2017-12-27 21:39:29  INFO NotifyController:110 - remove session: 40713@@1233
+2017-12-28 11:11:03  INFO ServiceDaemon:33 - Shutdown thread before webserver getinstance
+2017-12-28 11:11:03  INFO ServerConnector:303 - Stopped ServerConnector@7a2cd4ad{HTTP/1.1}{0.0.0.0:8021}
+2017-12-28 11:11:03  INFO ServerConnector:303 - Stopped ServerConnector@2c1e3420{HTTP/1.1}{0.0.0.0:9021}
+2017-12-28 11:11:03  INFO ServerConnector:303 - Stopped ServerConnector@df433ff{HTTP/1.1}{0.0.0.0:9022}
+2017-12-28 11:11:03  INFO ContextHandler:864 - Stopped o.e.j.s.ServletContextHandler@bc56d4d{/,null,UNAVAILABLE}
+2017-12-28 11:11:03  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@47c76215{/gateway/ntf,null,UNAVAILABLE}
+2017-12-28 11:11:03  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@5860acfc{/smart/ntf,null,UNAVAILABLE}
+2017-12-28 11:11:03  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@39cde281{/static,null,UNAVAILABLE}
+2017-12-28 11:11:03  INFO AddLogTask:61 - msg type: 3
+2017-12-28 11:11:03  INFO AddLogTask:62 - msg data: null
+2017-12-28 11:11:07  INFO log:178 - Logging initialized @374ms
+2017-12-28 11:11:07  INFO WebServer:78 - Start server...
+2017-12-28 11:11:08  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@7d697876{/,null,null} contextPath ends with /*
+2017-12-28 11:11:08  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@2427e02c{/,null,null} contextPath ends with /*
+2017-12-28 11:11:08  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-28 11:11:08  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@68258d98{/static,null,AVAILABLE}
+2017-12-28 11:11:08  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@7d697876{/smart/ntf,null,AVAILABLE}
+2017-12-28 11:11:08  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@2427e02c{/gateway/ntf,null,AVAILABLE}
+2017-12-28 11:11:08  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@2eda3940{/,null,AVAILABLE}
+2017-12-28 11:11:08  INFO ServerConnector:266 - Started ServerConnector@3feb3240{HTTP/1.1}{0.0.0.0:8021}
+2017-12-28 11:11:08  INFO ServerConnector:266 - Started ServerConnector@4ab3f23b{HTTP/1.1}{0.0.0.0:9021}
+2017-12-28 11:11:08  INFO ServerConnector:266 - Started ServerConnector@2213f2b2{HTTP/1.1}{0.0.0.0:9022}
+2017-12-28 11:11:08  INFO Server:350 - Started @785ms
+2017-12-28 11:14:43  INFO ServiceDaemon:33 - Shutdown thread before webserver getinstance
+2017-12-28 11:14:43  INFO ServerConnector:303 - Stopped ServerConnector@3feb3240{HTTP/1.1}{0.0.0.0:8021}
+2017-12-28 11:14:43  INFO ServerConnector:303 - Stopped ServerConnector@4ab3f23b{HTTP/1.1}{0.0.0.0:9021}
+2017-12-28 11:14:43  INFO ServerConnector:303 - Stopped ServerConnector@2213f2b2{HTTP/1.1}{0.0.0.0:9022}
+2017-12-28 11:14:43  INFO ContextHandler:864 - Stopped o.e.j.s.ServletContextHandler@2eda3940{/,null,UNAVAILABLE}
+2017-12-28 11:14:43  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@2427e02c{/gateway/ntf,null,UNAVAILABLE}
+2017-12-28 11:14:43  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@7d697876{/smart/ntf,null,UNAVAILABLE}
+2017-12-28 11:14:43  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@68258d98{/static,null,UNAVAILABLE}
+2017-12-28 11:14:43  INFO AddLogTask:61 - msg type: 3
+2017-12-28 11:14:43  INFO AddLogTask:62 - msg data: null
+2017-12-28 11:15:35  INFO log:178 - Logging initialized @411ms
+2017-12-28 11:15:35  INFO WebServer:78 - Start server...
+2017-12-28 11:15:35  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@4e3ddf0a{/,null,null} contextPath ends with /*
+2017-12-28 11:15:35  WARN ContextHandler:1324 - o.e.j.s.h.ContextHandler@76b5f648{/,null,null} contextPath ends with /*
+2017-12-28 11:15:36  INFO Server:301 - jetty-9.1.5.v20140505
+2017-12-28 11:15:36  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@1f8fb513{/static,null,AVAILABLE}
+2017-12-28 11:15:36  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@4e3ddf0a{/socket.io,null,AVAILABLE}
+2017-12-28 11:15:36  INFO ContextHandler:747 - Started o.e.j.s.h.ContextHandler@76b5f648{/gateway/ntf,null,AVAILABLE}
+2017-12-28 11:15:36  INFO ContextHandler:747 - Started o.e.j.s.ServletContextHandler@75e6ec71{/,null,AVAILABLE}
+2017-12-28 11:15:36  INFO ServerConnector:266 - Started ServerConnector@7af38264{HTTP/1.1}{0.0.0.0:8021}
+2017-12-28 11:15:36  INFO ServerConnector:266 - Started ServerConnector@4e45a654{HTTP/1.1}{0.0.0.0:9021}
+2017-12-28 11:15:36  INFO ServerConnector:266 - Started ServerConnector@1b152c4c{HTTP/1.1}{0.0.0.0:9022}
+2017-12-28 11:15:36  INFO Server:350 - Started @883ms
+2017-12-28 15:38:48  INFO ServiceDaemon:33 - Shutdown thread before webserver getinstance
+2017-12-28 15:38:48  INFO ServerConnector:303 - Stopped ServerConnector@7af38264{HTTP/1.1}{0.0.0.0:8021}
+2017-12-28 15:38:48  INFO ServerConnector:303 - Stopped ServerConnector@4e45a654{HTTP/1.1}{0.0.0.0:9021}
+2017-12-28 15:38:48  INFO ServerConnector:303 - Stopped ServerConnector@1b152c4c{HTTP/1.1}{0.0.0.0:9022}
+2017-12-28 15:38:48  INFO ContextHandler:864 - Stopped o.e.j.s.ServletContextHandler@75e6ec71{/,null,UNAVAILABLE}
+2017-12-28 15:38:48  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@76b5f648{/gateway/ntf,null,UNAVAILABLE}
+2017-12-28 15:38:48  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@4e3ddf0a{/socket.io,null,UNAVAILABLE}
+2017-12-28 15:38:48  INFO ContextHandler:864 - Stopped o.e.j.s.h.ContextHandler@1f8fb513{/static,null,UNAVAILABLE}
+2017-12-28 15:38:48  INFO AddLogTask:61 - msg type: 3
+2017-12-28 15:38:48  INFO AddLogTask:62 - msg data: null
