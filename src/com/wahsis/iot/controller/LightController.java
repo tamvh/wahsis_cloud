@@ -10,16 +10,13 @@ import com.wahsis.iot.common.JsonParserUtil;
 import com.wahsis.iot.common.MessageType;
 import com.wahsis.iot.data.Light;
 import com.wahsis.iot.data.Company;
+import com.wahsis.iot.data.CresnetUnit;
 import com.wahsis.iot.model.LightModel;
 import com.wahsis.iot.task.AddLogTask;
-
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonSyntaxException;
-import com.wahsis.iot.data.CresnetUnit;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -80,176 +77,9 @@ public class LightController extends HttpServlet {
             case "change_brightness_group":
                 content = changeBrightnessGroup(data);
                 break;
-            case "update_data_switch_on_off_from_gateway":
-                content = updateDataSwitchOnOff(data);
-                break;
-            case "update_data_switch_on_off_group_from_gateway":
-                content = updateDataSwitchOnOffGroup(data);
-                break;
-            case "update_data_change_brightness_from_gateway":
-                content = updateDataChangeBrightness(data);
-                break;
         }
 
         CommonModel.out(content, resp);
-    }
-
-    public String updateDataSwitchOnOff(String data) {
-        String content = null;
-        int ret = -1;
-        try {
-            JsonObject jsonObject = JsonParserUtil.parseJsonObject(data);
-            if (jsonObject == null) {
-                content = CommonModel.FormatResponse(ret, "Invalid parameter");
-            } else {
-                Light light = new Light();
-                Company company = new Company();
-                if (jsonObject.has("light")) {
-                    light = _gson.fromJson(jsonObject.get("light").getAsJsonObject(), Light.class);
-                }
-                if (jsonObject.has("company")) {
-                    company = _gson.fromJson(jsonObject.get("company").getAsJsonObject(), Company.class);
-                }
-                String company_id = company.getCompany_id();
-                ret = LightModel.getInstance().updateOnOffByID(company_id, light);
-                if (ret == 0) {
-                    content = CommonModel.FormatResponse(ret, "update data switch onoff success");
-                } else {
-                    content = CommonModel.FormatResponse(ret, "update data switch onoff faile");
-                }
-                JsonObject jsonMain = new JsonObject();
-                JsonObject jcontent = new JsonObject();
-                jcontent.addProperty("light_code", light.getLight_code());
-                jcontent.addProperty("on_off", light.getOn_off());
-                jsonMain.addProperty("msg_type", MessageType.MSG_LIGHT_SWITCH_ONOFF);
-                jsonMain.add("dt", jcontent);
-                String sendData = _gson.toJson(jsonMain);
-                logger.info("updateDataSwitchOnOff: data notify: " + sendData);
-                NotifyController.sendMessageToClient(sendData);
-            }
-        } catch (IOException ex) {
-            logger.error(getClass().getSimpleName() + ".updateOnOff: " + ex.getMessage(), ex);
-            content = CommonModel.FormatResponse(ret, ex.getMessage());
-        }
-
-        return content;
-    }
-
-    public String updateDataSwitchOnOffGroup(String data) {
-        String content = null;
-        int ret = -1;
-        content = CommonModel.FormatResponse(ret, "unknown");
-        try {
-            JsonObject jsonObject = JsonParserUtil.parseJsonObject(data);
-            if (jsonObject == null) {
-                content = CommonModel.FormatResponse(ret, "Invalid parameter");
-            } else {
-                String list_light_code = "";
-                int on_off = -1;
-                String company_id = "";
-                JsonObject json_light = null;
-                Company company = new Company();
-                if (jsonObject.has("company")) {
-                    company = _gson.fromJson(jsonObject.get("company").getAsJsonObject(), Company.class);
-                }
-
-                if (jsonObject.has("light")) {
-                    json_light = jsonObject.get("light").getAsJsonObject();
-                }
-
-                if (company != null && json_light != null) {
-                    company_id = company.getCompany_id();
-                    if (json_light.has("list_light_code") && json_light.has("on_off")) {
-                        list_light_code = json_light.get("list_light_code").getAsString();
-                        on_off = json_light.get("on_off").getAsInt();
-                    }
-                } else {
-                    content = CommonModel.FormatResponse(ret, "Invalid parameter");
-                    return content;
-                }
-
-                if (list_light_code != "" && company_id != "" && on_off >= 0) {
-                    ret = LightModel.getInstance().updateOnOffByGroupId(company_id, list_light_code, on_off);
-                    if (ret == 0) {
-                        content = CommonModel.FormatResponse(ret, "update data switch onoff group success");
-                    } else {
-                        content = CommonModel.FormatResponse(ret, "update data switch onoff group faile");
-                    }
-                } else {
-                    content = CommonModel.FormatResponse(ret, "Invalid parameter");
-                    return content;
-                }
-
-                JsonObject jsonMain = new JsonObject();
-                String arr_light_code[] = list_light_code.split(",");
-                List<JsonObject> arr_json_data = new ArrayList<>();
-                for (int i = 0; i < arr_light_code.length; i++) {
-                    JsonObject jsonData = new JsonObject();
-                    int brightness = 0;
-                    jsonData.addProperty("light_code", arr_light_code[i]);
-                    jsonData.addProperty("on_off", on_off);
-                    if (on_off == 1) {
-                        brightness = 100;
-                    }
-                    jsonData.addProperty("brightness", brightness);
-                    arr_json_data.add(jsonData);
-                }
-
-                jsonMain.addProperty("msg_type", MessageType.MSG_LIGHT_SWITCH_ONOFF_GROUP);
-                jsonMain.addProperty("dt", arr_json_data.toString());
-                String sendData = _gson.toJson(jsonMain);
-                logger.info("updateDataSwitchOnOffGroup: data notify: " + sendData);
-                NotifyController.sendMessageToClient(sendData);
-            }
-        } catch (IOException ex) {
-            logger.error(getClass().getSimpleName() + ".updateDataSwitchOnOffGroup: " + ex.getMessage(), ex);
-            content = CommonModel.FormatResponse(ret, ex.getMessage());
-        }
-
-        return content;
-    }
-
-    public String updateDataChangeBrightness(String data) {
-        String content = "";
-        int ret = -1;
-        try {
-            JsonObject jsonObject = JsonParserUtil.parseJsonObject(data);
-            if (jsonObject == null) {
-                content = CommonModel.FormatResponse(ret, "Invalid parameter");
-            } else {
-                Light light = new Light();
-                Company company = new Company();
-                if (jsonObject.has("light")) {
-                    light = _gson.fromJson(jsonObject.get("light").getAsJsonObject(), Light.class);
-                }
-                if (jsonObject.has("company")) {
-                    company = _gson.fromJson(jsonObject.get("company").getAsJsonObject(), Company.class);
-                }
-                String company_id = company.getCompany_id();
-                ret = LightModel.getInstance().updateBrightnessByID(company_id, light);
-                if (ret == 0) {
-                    content = CommonModel.FormatResponse(ret, "update data when change brightness success");
-                } else {
-                    content = CommonModel.FormatResponse(ret, "update data when change brightness faile");
-                }
-                JsonObject jsonMain = new JsonObject();
-                JsonObject jsonData = new JsonObject();
-                jsonData.addProperty("light_code", light.getLight_code());
-                jsonData.addProperty("on_off", light.getOn_off());
-                jsonData.addProperty("brightness", light.getBrightness());
-                jsonMain.addProperty("msg_type", MessageType.MSG_LIGHT_CHANGE_BRIGHTNESS);
-                jsonMain.add("dt", jsonData);
-                String sendData = _gson.toJson(jsonMain);
-
-                logger.info("updateDataChangeBrightness: data notify: " + sendData);
-                NotifyController.sendMessageToClient(sendData);
-            }
-        } catch (IOException ex) {
-            logger.error(getClass().getSimpleName() + ".updateBrightness: " + ex.getMessage(), ex);
-            content = CommonModel.FormatResponse(ret, ex.getMessage());
-        }
-
-        return content;
     }
 
     public String switchOnOff(String data) throws IOException {
@@ -295,6 +125,8 @@ public class LightController extends HttpServlet {
                 msg_device_notify = _gson.toJson(dt_push_gw);
 
                 //push notify to crestron gateway
+                logger.info(getClass().getSimpleName() + ".switchOnOff, cunit_serialno:    " + cunit_serialno);
+                logger.info(getClass().getSimpleName() + ".switchOnOff, msg_device_notify: " + msg_device_notify);
                 DeviceNotifyController.sendMessageToClient(cunit_serialno, msg_device_notify);
                 ret = 0;
                 content = CommonModel.FormatResponse(ret, "light switch onoff success");
@@ -376,7 +208,7 @@ public class LightController extends HttpServlet {
     }
 
     private String switchOnOffGroup(String data) {
-        String content = null;
+        String content = "";
         int ret = -1;
 
         try {
@@ -384,10 +216,15 @@ public class LightController extends HttpServlet {
             if (jsonObject == null) {
                 content = CommonModel.FormatResponse(ret, "Invalid parameter");
             } else {
-                Company company = new Company();
+                Company company = null;
+                CresnetUnit cunit = null;
 
                 if (jsonObject.has("company")) {
                     company = _gson.fromJson(jsonObject.get("company").getAsJsonObject(), Company.class);
+                }
+                
+                if (jsonObject.has("cunit")) {
+                    
                 }
 
                 if (jsonObject.has("light")) {
@@ -436,7 +273,6 @@ public class LightController extends HttpServlet {
                             JsonObject jsonData = new JsonObject();
                             jsonData.add("light", light);
                             jsonData.add("company", jsonObject.get("company").getAsJsonObject());
-//                            AddLogTask.getInstance().addSwitchLightMessage(jsonData);
                         }
                     } else {
                         return CommonModel.FormatResponse(ret, "Invalid parameter");
@@ -456,7 +292,7 @@ public class LightController extends HttpServlet {
     }
 
     private String changeBrightness(String data) {
-        String content;
+        String content = "";
         int ret = -1;
 
         try {
@@ -464,47 +300,49 @@ public class LightController extends HttpServlet {
             if (jsonObject == null) {
                 content = CommonModel.FormatResponse(ret, "Invalid parameter");
             } else {
-                Light light = new Light();
-                Company company = new Company();
+                Light light = null;
+                Company company = null;
+                CresnetUnit cunit = null;
                 if (jsonObject.has("light")) {
                     light = _gson.fromJson(jsonObject.get("light").getAsJsonObject(), Light.class);
                 }
                 if (jsonObject.has("company")) {
                     company = _gson.fromJson(jsonObject.get("company").getAsJsonObject(), Company.class);
                 }
+                if (jsonObject.has("cunit")) {
+                    cunit = _gson.fromJson(jsonObject.get("cunit").getAsJsonObject(), CresnetUnit.class);
+                }
 
+                if(light == null || company == null || cunit == null) {
+                    content = CommonModel.FormatResponse(ret, "Invalid parameter");
+                }
+                
                 String value;
                 String light_code = light.getLight_code();
                 String company_id = company.getCompany_id();
                 int brightness = light.getBrightness();
+                String cunit_serial_number = cunit.getSerial_number();
+                
                 String msg_device_notify;
 
                 value = String.valueOf((int) brightness * 655.35);
 
                 JsonObject dt = new JsonObject();
+                dt.addProperty("company_id", company_id);
                 dt.addProperty("light_code", light_code);
-                dt.addProperty("light_onoff", value);
+                dt.addProperty("brightness", value);
                 JsonObject dt_push_gw = new JsonObject();
-                dt_push_gw.addProperty("cm", "change_brightness");
+                dt_push_gw.addProperty("msg_type", MessageType.MSG_LIGHT_CHANGE_BRIGHTNESS);
                 dt_push_gw.addProperty("dt", _gson.toJson(dt));
                 msg_device_notify = _gson.toJson(dt_push_gw);
 
                 //push notify to crestron gateway
-                DeviceNotifyController.sendMessageToClient(company_id, msg_device_notify);
-                content = CommonModel.FormatResponse(0, "light change brightness success");
-
-                //save to database
-                JsonObject light_db = new JsonObject();
-                light_db.addProperty("brightness", brightness);
-                light_db.addProperty("light_code", light_code);
-                JsonObject jsonData = new JsonObject();
-                jsonData.add("light", light_db);
-                jsonData.add("company", jsonObject.get("company").getAsJsonObject());
-                AddLogTask.getInstance().addChangeBrightnessMessage(jsonData);
+                DeviceNotifyController.sendMessageToClient(cunit_serial_number, msg_device_notify);
+                content = CommonModel.FormatResponse(0, "change brightness success");
             }
         } catch (Exception ex) {
             logger.error(getClass().getSimpleName() + ".changeBrightness: " + ex.getMessage(), ex);
-            content = CommonModel.FormatResponse(ret, ex.getMessage());
+            return CommonModel.FormatResponse(ret, ex.getMessage());
         }
 
         return content;

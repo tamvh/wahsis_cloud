@@ -11,9 +11,6 @@ import com.wahsis.iot.common.JsonParserUtil;
 import com.wahsis.iot.info.ClientSessionInfo;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
-import com.wahsis.iot.data.Company;
-import com.wahsis.iot.data.CresnetUnit;
-import com.wahsis.iot.data.Light;
 import com.wahsis.iot.task.AddLogTask;
 import java.io.IOException;
 import java.net.HttpCookie;
@@ -83,6 +80,7 @@ public class DeviceNotifyController {
     public void onText(Session session, String message) {
         //samble data: {"msg_type":1, "dt":{"light_code":1, "on_off":0,"brightness":100}}
         logger.info("DeviceNotifyController.onText, Received message from gateway:" + message);
+//        logger.info("public ip: " + String.valueOf(session.getUserProperties().get("javax.websocket.endpoint.remoteAddress")));
         JsonObject jsonObject = JsonParserUtil.parseJsonObject(message);
         int msg_type = 0;
         JsonObject json_dt = null;
@@ -94,12 +92,12 @@ public class DeviceNotifyController {
             switch (msg_type) {
                 case MessageType.MSG_PING:
                     //ping-pong, {"msg_type":1, "dt":{"msg":"ping", "serial_number":"1234"}}
-                    logger.info("DeviceNotifyController.onText: send pong");
                     json_response = new JsonObject();
                     dt_response = new JsonObject();
                     json_response.addProperty("msg_type", MessageType.MSG_PONG);
                     dt_response.addProperty("msg", "pong");
                     json_response.addProperty("dt", dt_response.toString());
+                    logger.info("DeviceNotifyController.onText: send pong data: " + json_response.toString());
                     sendMessageToClient(session, json_response.toString());
                     break;
                 case MessageType.MSG_LIGHT_SWITCH_ONOFF:

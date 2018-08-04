@@ -22,4 +22,7 @@ public class MessageType {
     public static final int MSG_LIGHT_SWITCH_ONOFF= MSG_RESPONSE + 2; 
     public static final int MSG_LIGHT_CHANGE_BRIGHTNESS= MSG_RESPONSE + 3; 
     public static final int MSG_LIGHT_SWITCH_ONOFF_GROUP= MSG_RESPONSE + 4;
+    
+    
+    public static final int MSG_GET_IP_PUBLIC= MSG_RESPONSE + 100;
 }

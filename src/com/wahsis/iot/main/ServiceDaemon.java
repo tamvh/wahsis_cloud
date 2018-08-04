@@ -18,12 +18,15 @@ public class ServiceDaemon {
     private static final String DEFAULT_CONFIGURATION_FILE = "wahsis_iot_cloud.conf";
     private static final Logger logger = Logger.getLogger(ServiceDaemon.class);
     private static WebServer webServer = null;
+    private static ScheduleThread scheduleThread = null;
     
     public static void main(String[] args) {
         try {
             Config.init(DEFAULT_CONFIGURATION_FILE);
             webServer = WebServer.getInstance();
+            scheduleThread = new ScheduleThread();
             new Thread(webServer).start();
+            new Thread(scheduleThread).start();
             AddLogTask.getInstance().start();
              
             Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {

@@ -6,6 +6,7 @@
 package com.wahsis.iot.main;
 
 import com.wahsis.iot.common.Config;
+import com.wahsis.iot.controller.CommonController;
 import com.wahsis.iot.controller.LightController;
 import com.wahsis.iot.controller.AreaController;
 import com.wahsis.iot.controller.RootAreaCotroller;
@@ -78,6 +79,7 @@ public class WebServer implements Runnable{
             logger.info("Start server...");
             
             ServletHandler servletHandler = new ServletHandler();
+            servletHandler.addServletWithMapping(CommonController.class, "/smart/api/common/*");
             servletHandler.addServletWithMapping(LightController.class, "/smart/api/light/*");
             servletHandler.addServletWithMapping(AreaController.class, "/smart/api/area/*");
             servletHandler.addServletWithMapping(RootAreaCotroller.class, "/smart/api/rootarea/*");
@@ -121,7 +123,7 @@ public class WebServer implements Runnable{
             SessionHandler sessions = new SessionHandler(manager);
 
             HandlerList handlers = new HandlerList();
-            handlers.setHandlers(new Handler[]{sessions, resourceContext, wsContextHandler, wsContextHandler_gateway, servletContext, new DefaultHandler()});
+            handlers.setHandlers(new Handler[]{sessions, resourceContext, wsContextHandler_gateway, servletContext, new DefaultHandler()});
             server.setHandler(handlers);
             
             server.start();

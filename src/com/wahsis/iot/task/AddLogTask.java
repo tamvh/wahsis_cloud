@@ -20,8 +20,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.logging.Level;
-import org.apache.log4j.Logger;
-
+import org.apache.log4j.Logger; 
 /**
  *
  * @author diepth
